@@ -1,0 +1,12712 @@
+/* Dark_Mode_Landing */
+
+position: relative;
+width: 1920px;
+height: 3879px;
+
+background: #031713;
+
+
+/* Frame 1686551546 */
+
+position: absolute;
+width: 1440px;
+height: 820px;
+left: calc(50% - 1440px/2);
+top: calc(50% - 820px/2 - 1429.5px);
+
+opacity: 0.8;
+
+
+/* Frame 1686551545 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 160px;
+
+position: absolute;
+width: 1440px;
+height: 820px;
+left: calc(50% - 1440px/2);
+top: 0px;
+
+
+
+/* Vector 21 */
+
+width: 0px;
+height: 820px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector 23 */
+
+width: 0px;
+height: 820px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector 24 */
+
+width: 0px;
+height: 820px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Vector 25 */
+
+width: 0px;
+height: 820px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Vector 26 */
+
+width: 0px;
+height: 820px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* Vector 27 */
+
+width: 0px;
+height: 820px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+flex-grow: 0;
+
+
+/* Vector 28 */
+
+width: 0px;
+height: 820px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 6;
+flex-grow: 0;
+
+
+/* Vector 29 */
+
+width: 0px;
+height: 820px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 7;
+flex-grow: 0;
+
+
+/* Vector 30 */
+
+width: 0px;
+height: 820px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 8;
+flex-grow: 0;
+
+
+/* Vector 31 */
+
+width: 0px;
+height: 820px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 9;
+flex-grow: 0;
+
+
+/* Vector 25 */
+
+position: absolute;
+width: 0px;
+height: 1440px;
+left: 0px;
+top: 170px;
+
+transform: rotate(90deg);
+
+
+/* Vector 26 */
+
+position: absolute;
+width: 0px;
+height: 1440px;
+left: 0px;
+top: 330px;
+
+transform: rotate(90deg);
+
+
+/* Vector 27 */
+
+position: absolute;
+width: 0px;
+height: 1440px;
+left: 0px;
+top: 490px;
+
+transform: rotate(90deg);
+
+
+/* Vector 28 */
+
+position: absolute;
+width: 0px;
+height: 1440px;
+left: 0px;
+top: 650px;
+
+transform: rotate(90deg);
+
+
+/* Ellipse 1 */
+
+position: absolute;
+visibility: hidden;
+width: 328px;
+height: 328px;
+left: calc(50% - 328px/2 + 1px);
+top: calc(50% - 328px/2 - 1469.5px);
+
+background: rgba(7, 242, 88, 0.28);
+
+
+/* Header */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 1920px;
+height: 104px;
+left: 0px;
+top: 0px;
+
+background: #031713;
+
+
+/* Logo */
+
+position: absolute;
+width: 243.52px;
+height: 50px;
+left: 176px;
+top: calc(50% - 50px/2);
+
+
+
+/* Logo Icon */
+
+position: absolute;
+width: 53.64px;
+height: 50px;
+left: 0px;
+top: 0px;
+
+
+
+/* Subtract */
+
+position: absolute;
+width: 26.6px;
+height: 23.4px;
+left: 12.77px;
+top: 26.6px;
+
+background: #07F258;
+
+
+/* Vector 19 */
+
+position: absolute;
+width: 26.6px;
+height: 23.4px;
+left: 12.77px;
+top: 26.6px;
+
+background: #000000;
+
+
+/* Vector 20 */
+
+position: absolute;
+width: 9.57px;
+height: 7.98px;
+left: 21.28px;
+top: 34.77px;
+
+background: #000000;
+
+
+/* Subtract */
+
+position: absolute;
+width: 26.6px;
+height: 23.4px;
+left: 12.77px;
+top: 0px;
+
+background: #07F258;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Vector 19 */
+
+position: absolute;
+width: 26.6px;
+height: 23.4px;
+left: 12.77px;
+top: 0px;
+
+background: #000000;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Vector 20 */
+
+position: absolute;
+width: 9.57px;
+height: 7.98px;
+left: 21.28px;
+top: 7.25px;
+
+background: #000000;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Subtract */
+
+position: absolute;
+width: 26.6px;
+height: 23.4px;
+left: 28.88px;
+top: 11.7px;
+
+background: #07F258;
+transform: matrix(0, 1, 1, 0, 0, 0);
+
+
+/* Vector 19 */
+
+position: absolute;
+width: 26.6px;
+height: 23.4px;
+left: 28.88px;
+top: 11.7px;
+
+background: #000000;
+transform: matrix(0, 1, 1, 0, 0, 0);
+
+
+/* Vector 20 */
+
+position: absolute;
+width: 9.57px;
+height: 7.98px;
+left: 37.05px;
+top: 20.21px;
+
+background: #000000;
+transform: matrix(0, 1, 1, 0, 0, 0);
+
+
+/* Subtract */
+
+position: absolute;
+width: 26.6px;
+height: 23.4px;
+left: 0px;
+top: 11.7px;
+
+background: #07F258;
+transform: rotate(90deg);
+
+
+/* Vector 19 */
+
+position: absolute;
+width: 26.6px;
+height: 23.4px;
+left: 0px;
+top: 11.7px;
+
+background: #000000;
+transform: rotate(90deg);
+
+
+/* Vector 20 */
+
+position: absolute;
+width: 9.57px;
+height: 7.98px;
+left: 7.25px;
+top: 20.21px;
+
+background: #000000;
+transform: rotate(90deg);
+
+
+/* Agentverse */
+
+position: absolute;
+width: 177.88px;
+height: 20.25px;
+left: 65.64px;
+top: 14.87px;
+
+
+
+/* Vector */
+
+position: absolute;
+width: 12.6px;
+height: 19.69px;
+left: 230.92px;
+top: 15.15px;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+width: 14.77px;
+height: 20.25px;
+left: 213.16px;
+top: 14.87px;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+width: 15.19px;
+height: 19.69px;
+left: 196.11px;
+top: 15.15px;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+width: 12.6px;
+height: 19.69px;
+left: 180.59px;
+top: 15.15px;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+width: 19.07px;
+height: 19.69px;
+left: 159.59px;
+top: 15.15px;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+width: 15.81px;
+height: 19.69px;
+left: 142.94px;
+top: 15.15px;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+width: 17.1px;
+height: 19.69px;
+left: 123.91px;
+top: 15.15px;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+width: 12.6px;
+height: 19.69px;
+left: 108.39px;
+top: 15.15px;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+width: 20.33px;
+height: 20.25px;
+left: 85.3px;
+top: 14.87px;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+width: 19.92px;
+height: 19.69px;
+left: 65.64px;
+top: 15.15px;
+
+background: #FFFFFF;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 13px 24px;
+gap: 10px;
+
+position: absolute;
+width: 140px;
+height: 54px;
+left: 1605px;
+top: calc(50% - 54px/2);
+
+background: linear-gradient(270deg, #058E38 0%, rgba(7, 242, 88, 0.06) 100%);
+border-radius: 94px;
+
+
+/* Submit Button Text */
+
+width: 62px;
+height: 28px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+/* identical to box height, or 156% */
+
+/* White Global */
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame */
+
+width: 20px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 15.62%;
+right: 15.62%;
+top: 50%;
+bottom: 50%;
+
+border: 1.5px solid #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 56.25%;
+right: 15.62%;
+top: 21.88%;
+bottom: 21.88%;
+
+border: 1.5px solid #FFFFFF;
+
+
+/* Frame 1686551549 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 32px;
+
+position: absolute;
+width: 864px;
+height: 414px;
+left: calc(50% - 864px/2);
+top: 178px;
+
+
+
+/* Frame 1686551548 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 24px;
+
+width: 864px;
+height: 302px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 13px 24px;
+gap: 10px;
+
+width: 454px;
+height: 54px;
+
+background: linear-gradient(0deg, rgba(255, 255, 255, 0.1) -10.19%, rgba(255, 255, 255, 0.02) 100%);
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* 🔥 Added 38 New AI Agents Just Last Week! */
+
+width: 406px;
+height: 28px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+/* identical to box height, or 156% */
+letter-spacing: 1px;
+
+/* White Global */
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Uncover Your Ultimate
+AI Productivity Suite */
+
+width: 864px;
+height: 224px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 80px;
+line-height: 112px;
+/* or 140% */
+text-align: center;
+
+background: linear-gradient(180deg, #FFFFFF 11.38%, #CCCCCC 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Discover our curated selection of AI agents and create your digital team effortlessly in no time. */
+
+width: 715px;
+height: 80px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 40px;
+/* or 167% */
+text-align: center;
+
+background: linear-gradient(180deg, #FFFFFF 17.5%, #CCCCCC 91.87%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1000001448 */
+
+position: absolute;
+width: 600px;
+height: 58px;
+left: calc(50% - 600px/2);
+top: 644px;
+
+background: #031713;
+border-radius: 95px;
+
+
+/* Frame 1686551550 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 12px;
+
+position: absolute;
+width: 300px;
+height: 23px;
+left: 18px;
+top: calc(50% - 23px/2 + 0.5px);
+
+
+
+/* vuesax/linear/search-normal */
+
+width: 22px;
+height: 22px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* vuesax/linear/search-normal */
+
+position: absolute;
+width: 22px;
+height: 22px;
+left: 0px;
+top: 0px;
+
+
+
+/* search-normal */
+
+position: absolute;
+width: 22px;
+height: 22px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 12.5%;
+top: 8.33%;
+bottom: 12.5%;
+
+border: 1.375px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 83.33%;
+right: 8.33%;
+top: 83.33%;
+bottom: 8.33%;
+
+border: 1.375px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+
+
+/* Frame 1000001447 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 6px;
+
+width: 266px;
+height: 23px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Task Description */
+
+width: 266px;
+height: 23px;
+
+/* Heading 07/Heading 07 Medium */
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 23px;
+/* identical to box height, or 144% */
+display: flex;
+align-items: center;
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1686551551 */
+
+position: absolute;
+width: 1920px;
+height: 236px;
+left: 0px;
+top: 782px;
+
+background: #031713;
+
+
+/* Frame 1686551643 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 18px;
+
+position: absolute;
+width: 1580px;
+height: 202px;
+left: calc(50% - 1580px/2);
+top: 18px;
+
+
+
+/* Frame 1686551642 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 14px;
+
+width: 1494px;
+height: 54px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 14px;
+gap: 10px;
+
+width: 100px;
+height: 54px;
+
+background: #041B16;
+backdrop-filter: blur(7.44681px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 100px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 5.16717px;
+gap: 12.92px;
+
+width: 36.17px;
+height: 36.17px;
+
+background: rgba(255, 10, 82, 0.2);
+border-radius: 94.3009px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame */
+
+width: 25.84px;
+height: 25.84px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 50%;
+right: 15.62%;
+top: 50%;
+bottom: 50%;
+
+border: 1.61474px solid #FF0A52;
+
+
+/* Vector */
+
+position: absolute;
+left: 50%;
+right: 15.62%;
+top: 25%;
+bottom: 75%;
+
+border: 1.61474px solid #FF0A52;
+
+
+/* Vector */
+
+position: absolute;
+left: 50%;
+right: 15.62%;
+top: 75%;
+bottom: 25%;
+
+border: 1.61474px solid #FF0A52;
+
+
+/* Vector */
+
+position: absolute;
+left: 15.63%;
+right: 65.62%;
+top: 18.75%;
+bottom: 68.75%;
+
+border: 1.61474px solid #FF0A52;
+
+
+/* Vector */
+
+position: absolute;
+left: 15.63%;
+right: 65.62%;
+top: 43.75%;
+bottom: 43.75%;
+
+border: 1.61474px solid #FF0A52;
+
+
+/* Vector */
+
+position: absolute;
+left: 15.63%;
+right: 65.62%;
+top: 68.75%;
+bottom: 18.75%;
+
+border: 1.61474px solid #FF0A52;
+
+
+/* All */
+
+width: 23px;
+height: 28px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 28px;
+/* identical to box height, or 140% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 14px;
+gap: 10px;
+
+width: 148px;
+height: 54px;
+
+background: #041B16;
+backdrop-filter: blur(7.44681px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 100px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 5.16717px;
+gap: 12.92px;
+
+width: 36.17px;
+height: 36.17px;
+
+background: rgba(122, 152, 235, 0.2);
+border-radius: 94.3009px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame */
+
+width: 25.84px;
+height: 25.84px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 9.38%;
+right: 68.75%;
+top: 15.63%;
+bottom: 15.62%;
+
+border: 1.93769px solid #7A98EB;
+
+
+/* Vector */
+
+position: absolute;
+left: 68.75%;
+right: 9.38%;
+top: 15.63%;
+bottom: 15.62%;
+
+border: 1.93769px solid #7A98EB;
+
+
+/* Coding */
+
+width: 72px;
+height: 28px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 28px;
+/* identical to box height, or 140% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 14px;
+gap: 10px;
+
+width: 238px;
+height: 54px;
+
+background: #041B16;
+backdrop-filter: blur(7.44681px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 100px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Frame 1 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 5.16717px;
+gap: 12.92px;
+
+width: 36.17px;
+height: 36.17px;
+
+background: rgba(7, 242, 88, 0.12);
+border-radius: 94.3009px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame */
+
+width: 25.84px;
+height: 25.84px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 6.25%;
+right: 75%;
+top: 34.38%;
+bottom: 34.37%;
+
+border: 1.61474px solid #07F258;
+
+
+/* Vector */
+
+position: absolute;
+left: 75%;
+right: 6.25%;
+top: 34.38%;
+bottom: 34.37%;
+
+border: 1.61474px solid #07F258;
+
+
+/* Vector */
+
+position: absolute;
+left: 37.5%;
+right: 37.5%;
+top: 15.63%;
+bottom: 15.62%;
+
+border: 1.61474px solid #07F258;
+
+
+/* AI Agent Builders */
+
+width: 162px;
+height: 28px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 28px;
+/* identical to box height, or 140% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 14px;
+gap: 10px;
+
+width: 194px;
+height: 54px;
+
+background: #041B16;
+backdrop-filter: blur(7.44681px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 100px;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Frame 1 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 5.16717px;
+gap: 12.92px;
+
+width: 36.17px;
+height: 36.17px;
+
+background: rgba(182, 120, 242, 0.12);
+border-radius: 94.3009px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* vuesax/linear/favorite-chart */
+
+width: 25.84px;
+height: 25.84px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* vuesax/linear/favorite-chart */
+
+position: absolute;
+width: 25.84px;
+height: 25.84px;
+left: 0px;
+top: 0px;
+
+
+
+/* favorite-chart */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1.61474px solid #B678F2;
+
+
+/* Vector */
+
+position: absolute;
+left: 30.54%;
+right: 30.54%;
+top: 39.62%;
+bottom: 39.63%;
+
+border: 1.61474px solid #B678F2;
+
+
+/* Group */
+
+position: absolute;
+left: 62.48%;
+right: 8.31%;
+top: 62.51%;
+bottom: 8.31%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 62.48%;
+right: 8.31%;
+top: 62.51%;
+bottom: 8.31%;
+
+border: 1.61474px solid #B678F2;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+
+
+/* Productivity */
+
+width: 118px;
+height: 28px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 28px;
+/* identical to box height, or 140% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 14px;
+gap: 10px;
+
+width: 250px;
+height: 54px;
+
+background: #041B16;
+backdrop-filter: blur(7.44681px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 100px;
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* Frame 1 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 5.16717px;
+gap: 12.92px;
+
+width: 36.17px;
+height: 36.17px;
+
+background: rgba(244, 14, 171, 0.16);
+border-radius: 94.3009px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* vuesax/linear/profile-circle */
+
+width: 25.84px;
+height: 25.84px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* vuesax/linear/profile-circle */
+
+position: absolute;
+width: 25.84px;
+height: 25.84px;
+left: 0px;
+top: 0px;
+
+
+
+/* profile-circle */
+
+position: absolute;
+width: 25.84px;
+height: 25.84px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 36.33%;
+right: 36.33%;
+top: 25.96%;
+bottom: 46.75%;
+
+border: 1.61474px solid #F40EAB;
+
+
+/* Vector */
+
+position: absolute;
+left: 21.92%;
+right: 21.92%;
+top: 64.31%;
+bottom: 8.33%;
+
+border: 1.61474px solid #F40EAB;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1.61474px solid #F40EAB;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+transform: rotate(-180deg);
+
+
+/* Personal Assistant */
+
+width: 175px;
+height: 28px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 28px;
+/* identical to box height, or 140% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 14px;
+gap: 10px;
+
+width: 236px;
+height: 54px;
+
+background: #041B16;
+backdrop-filter: blur(7.44681px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 100px;
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+flex-grow: 0;
+
+
+/* Frame 1 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 5.16717px;
+gap: 12.92px;
+
+width: 36.17px;
+height: 36.17px;
+
+background: rgba(0, 153, 218, 0.16);
+border-radius: 94.3009px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame */
+
+width: 25.84px;
+height: 25.84px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 45.83%;
+right: 45.83%;
+top: 45.83%;
+bottom: 45.83%;
+
+border: 1.61474px solid #0099DA;
+
+
+/* Vector */
+
+position: absolute;
+left: 29.17%;
+right: 29.17%;
+top: 29.17%;
+bottom: 29.17%;
+
+border: 1.60828px solid #0099DA;
+
+
+/* Vector */
+
+position: absolute;
+left: 12.49%;
+right: 12.51%;
+top: 12.5%;
+bottom: 12.5%;
+
+border: 1.60828px solid #0099DA;
+
+
+/* Vector */
+
+position: absolute;
+left: 62.5%;
+right: 12.5%;
+top: 12.5%;
+bottom: 62.5%;
+
+border: 1.60828px solid #0099DA;
+
+
+/* Vector */
+
+position: absolute;
+left: 50%;
+right: 37.5%;
+top: 37.5%;
+bottom: 50%;
+
+border: 1.60828px solid #0099DA;
+
+
+/* General Purpose */
+
+width: 160px;
+height: 28px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 28px;
+/* identical to box height, or 140% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 14px;
+gap: 10px;
+
+width: 244px;
+height: 54px;
+
+background: #041B16;
+backdrop-filter: blur(7.44681px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 100px;
+
+/* Inside auto layout */
+flex: none;
+order: 6;
+flex-grow: 0;
+
+
+/* Frame 1 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 5.16717px;
+gap: 12.92px;
+
+width: 36.17px;
+height: 36.17px;
+
+background: rgba(255, 143, 50, 0.16);
+border-radius: 94.3009px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame */
+
+width: 25.84px;
+height: 25.84px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 18.75%;
+right: 18.75%;
+top: 12.5%;
+bottom: 12.5%;
+
+border: 1.61474px solid #FF8F32;
+
+
+/* Vector */
+
+position: absolute;
+left: 59.37%;
+right: 18.75%;
+top: 12.5%;
+bottom: 65.62%;
+
+border: 1.61474px solid #FF8F32;
+
+
+/* Vector */
+
+position: absolute;
+left: 37.5%;
+right: 37.5%;
+top: 53.12%;
+bottom: 46.88%;
+
+border: 1.61474px solid #FF8F32;
+
+
+/* Vector */
+
+position: absolute;
+left: 37.5%;
+right: 37.5%;
+top: 65.62%;
+bottom: 34.38%;
+
+border: 1.61474px solid #FF8F32;
+
+
+/* Content Creation */
+
+width: 167px;
+height: 28px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 28px;
+/* identical to box height, or 140% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1686551641 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 14px;
+
+width: 1580px;
+height: 56px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 14px;
+gap: 10px;
+
+width: 166px;
+height: 54px;
+
+background: #041B16;
+backdrop-filter: blur(7.44681px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 100px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 5.16717px;
+gap: 12.92px;
+
+width: 36.17px;
+height: 36.17px;
+
+background: rgba(7, 242, 88, 0.12);
+border-radius: 94.3009px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* vuesax/linear/calendar-search */
+
+width: 25.84px;
+height: 25.84px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* vuesax/linear/calendar-search */
+
+position: absolute;
+width: 25.84px;
+height: 25.84px;
+left: 0px;
+top: 0px;
+
+
+
+/* calendar-search */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 62.5%;
+right: 8.33%;
+top: 62.5%;
+bottom: 8.33%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 62.5%;
+right: 10.83%;
+top: 62.5%;
+bottom: 10.83%;
+
+border: 1.61474px solid #07F258;
+
+
+/* Vector */
+
+position: absolute;
+left: 87.5%;
+right: 8.33%;
+top: 87.5%;
+bottom: 8.33%;
+
+border: 1.61474px solid #07F258;
+
+
+/* Vector */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 14.58%;
+bottom: 8.33%;
+
+border: 1.61474px solid #07F258;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 29.17%;
+right: 45.83%;
+top: 41.67%;
+bottom: 58.33%;
+
+border: 1.61474px solid #07F258;
+
+
+/* Vector */
+
+position: absolute;
+left: 29.17%;
+right: 59.92%;
+top: 62.5%;
+bottom: 37.5%;
+
+border: 1.61474px solid #07F258;
+
+
+/* Research */
+
+width: 90px;
+height: 28px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 28px;
+/* identical to box height, or 140% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 14px;
+gap: 10px;
+
+width: 222px;
+height: 54px;
+
+background: #041B16;
+backdrop-filter: blur(7.44681px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 100px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 5.16717px;
+gap: 12.92px;
+
+width: 36.17px;
+height: 36.17px;
+
+background: rgba(255, 176, 47, 0.12);
+border-radius: 94.3009px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame */
+
+width: 25.84px;
+height: 25.84px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 16.67%;
+bottom: 25.67%;
+
+border: 1.61474px solid #FFB02F;
+
+
+/* Vector */
+
+position: absolute;
+left: 41.67%;
+right: 41.67%;
+top: 50%;
+bottom: 33.33%;
+
+border: 1.61474px solid #FFB02F;
+
+
+/* Vector */
+
+position: absolute;
+left: 33.33%;
+right: 33.33%;
+top: 79.17%;
+bottom: 12.5%;
+
+border: 1.61474px solid #FFB02F;
+
+
+/* Digital Workers */
+
+width: 145px;
+height: 28px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 28px;
+/* identical to box height, or 140% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 14px;
+gap: 10px;
+
+width: 278px;
+height: 54px;
+
+background: #041B16;
+backdrop-filter: blur(7.44681px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 100px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Frame 1 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 5.16717px;
+gap: 12.92px;
+
+width: 36.17px;
+height: 36.17px;
+
+background: rgba(246, 138, 81, 0.12);
+border-radius: 94.3009px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* vuesax/linear/chart-success */
+
+width: 25.84px;
+height: 25.84px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* vuesax/linear/chart-success */
+
+position: absolute;
+width: 25.84px;
+height: 25.84px;
+left: 0px;
+top: 0px;
+
+
+
+/* chart-success */
+
+position: absolute;
+width: 25.84px;
+height: 25.84px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1.61474px solid #F68A51;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1.61474px solid #F68A51;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1.61474px solid #F68A51;
+
+
+/* Vector */
+
+position: absolute;
+left: 66.67%;
+right: 12.5%;
+top: 70.83%;
+bottom: 12.5%;
+
+border: 1.61474px solid #F68A51;
+
+
+/* Vector */
+
+position: absolute;
+left: 29.17%;
+right: 70.83%;
+top: 43.75%;
+bottom: 43.75%;
+
+border: 1.61474px solid #F68A51;
+
+
+/* Vector */
+
+position: absolute;
+left: 50%;
+right: 50%;
+top: 43.75%;
+bottom: 43.75%;
+
+border: 1.61474px solid #F68A51;
+
+
+/* Vector */
+
+position: absolute;
+left: 70.83%;
+right: 29.17%;
+top: 43.75%;
+bottom: 43.75%;
+
+border: 1.61474px solid #F68A51;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+
+
+/* Business Intelligence */
+
+width: 201px;
+height: 28px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 28px;
+/* identical to box height, or 140% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 14px;
+gap: 10px;
+
+width: 128px;
+height: 54px;
+
+background: #041B16;
+backdrop-filter: blur(7.44681px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 100px;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Frame 2 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 5.16717px;
+gap: 12.92px;
+
+width: 36.17px;
+height: 36.17px;
+
+background: rgba(255, 10, 82, 0.12);
+border-radius: 94.3009px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* vuesax/linear/status-up */
+
+width: 25.84px;
+height: 25.84px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* vuesax/linear/status-up */
+
+position: absolute;
+width: 25.84px;
+height: 25.84px;
+left: 0px;
+top: 0px;
+
+
+
+/* status-up */
+
+position: absolute;
+width: 25.84px;
+height: 25.84px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 28.67%;
+right: 71.33%;
+top: 67%;
+bottom: 24.37%;
+
+border: 1.61474px solid #FF0A52;
+
+
+/* Vector */
+
+position: absolute;
+left: 50%;
+right: 50%;
+top: 58.38%;
+bottom: 24.37%;
+
+border: 1.61474px solid #FF0A52;
+
+
+/* Vector */
+
+position: absolute;
+left: 71.33%;
+right: 28.67%;
+top: 49.71%;
+bottom: 24.37%;
+
+border: 1.61474px solid #FF0A52;
+
+
+/* Vector */
+
+position: absolute;
+left: 28.67%;
+right: 28.67%;
+top: 24.38%;
+bottom: 48.21%;
+
+border: 1.61474px solid #FF0A52;
+
+
+/* Vector */
+
+position: absolute;
+left: 59.12%;
+right: 28.67%;
+top: 24.38%;
+bottom: 63.46%;
+
+border: 1.61474px solid #FF0A52;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1.61474px solid #FF0A52;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+
+
+/* Sales */
+
+width: 52px;
+height: 28px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 28px;
+/* identical to box height, or 140% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 14px;
+gap: 10px;
+
+width: 174px;
+height: 54px;
+
+background: #041B16;
+backdrop-filter: blur(7.44681px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 100px;
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* Frame 1 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 5.16717px;
+gap: 12.92px;
+
+width: 36.17px;
+height: 36.17px;
+
+background: rgba(122, 152, 235, 0.2);
+border-radius: 94.3009px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame */
+
+width: 25.84px;
+height: 25.84px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 75%;
+right: 12.5%;
+top: 33.33%;
+bottom: 41.67%;
+
+border: 1.61474px solid #7A98EB;
+
+
+/* Vector */
+
+position: absolute;
+left: 29.17%;
+right: 58.33%;
+top: 33.33%;
+bottom: 16.67%;
+
+border: 1.61474px solid #7A98EB;
+
+
+/* Vector */
+
+position: absolute;
+left: 12.5%;
+right: 25%;
+top: 16.76%;
+bottom: 25.09%;
+
+border: 1.61474px solid #7A98EB;
+
+
+/* Marketing */
+
+width: 97px;
+height: 28px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 28px;
+/* identical to box height, or 140% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 14px;
+gap: 10px;
+
+width: 152px;
+height: 54px;
+
+background: #041B16;
+backdrop-filter: blur(7.44681px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 100px;
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+flex-grow: 0;
+
+
+/* Frame 1 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 5.16717px;
+gap: 12.92px;
+
+width: 36.17px;
+height: 36.17px;
+
+background: rgba(2, 159, 98, 0.16);
+border-radius: 94.3009px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame */
+
+width: 25.84px;
+height: 25.84px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 6.25%;
+right: 31.25%;
+top: 18.75%;
+bottom: 53.12%;
+
+border: 1.61474px solid #029F62;
+
+
+/* Vector */
+
+position: absolute;
+left: 6.25%;
+right: 31.25%;
+top: 32.81%;
+bottom: 37.5%;
+
+border: 1.61474px solid #029F62;
+
+
+/* Vector */
+
+position: absolute;
+left: 25%;
+right: 75%;
+top: 45.7%;
+bottom: 38.67%;
+
+border: 1.61474px solid #029F62;
+
+
+/* Vector */
+
+position: absolute;
+left: 42.39%;
+right: 6.25%;
+top: 37.78%;
+bottom: 34.37%;
+
+border: 1.61474px solid #029F62;
+
+
+/* Vector */
+
+position: absolute;
+left: 31.25%;
+right: 6.25%;
+top: 51.56%;
+bottom: 18.75%;
+
+border: 1.61474px solid #029F62;
+
+
+/* Vector */
+
+position: absolute;
+left: 75%;
+right: 25%;
+top: 64.45%;
+bottom: 19.92%;
+
+border: 1.61474px solid #029F62;
+
+
+/* Vector */
+
+position: absolute;
+left: 50%;
+right: 50%;
+top: 45.7%;
+bottom: 19.92%;
+
+border: 1.61474px solid #029F62;
+
+
+/* Finance */
+
+width: 76px;
+height: 28px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 28px;
+/* identical to box height, or 140% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 14px;
+gap: 10px;
+
+width: 144px;
+height: 54px;
+
+background: #041B16;
+backdrop-filter: blur(7.44681px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 100px;
+
+/* Inside auto layout */
+flex: none;
+order: 6;
+flex-grow: 0;
+
+
+/* Frame 1 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 5.16717px;
+gap: 12.92px;
+
+width: 36.17px;
+height: 36.17px;
+
+background: rgba(182, 120, 242, 0.16);
+border-radius: 94.3009px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* vuesax/linear/pen-tool */
+
+width: 25.84px;
+height: 25.84px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* vuesax/linear/pen-tool */
+
+position: absolute;
+width: 25.84px;
+height: 25.84px;
+left: 0px;
+top: 0px;
+
+
+
+/* pen-tool */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 30.21%;
+right: 30.14%;
+top: 44.68%;
+bottom: 6.25%;
+
+
+
+/* Group */
+
+position: absolute;
+left: 30.21%;
+right: 30.14%;
+top: 44.68%;
+bottom: 6.25%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 38.84%;
+right: 38.75%;
+top: 79.92%;
+bottom: 6.25%;
+
+border: 1.61474px solid #B678F2;
+
+
+/* Vector */
+
+position: absolute;
+left: 30.21%;
+right: 30.14%;
+top: 44.68%;
+bottom: 20.12%;
+
+border: 1.61474px solid #B678F2;
+
+
+/* Vector */
+
+position: absolute;
+left: 50.04%;
+right: 49.96%;
+top: 46.33%;
+bottom: 43.12%;
+
+border: 1.61474px solid #B678F2;
+
+
+/* Vector */
+
+position: absolute;
+left: 41.74%;
+right: 41.74%;
+top: 6.57%;
+bottom: 76.91%;
+
+border: 1.61474px solid #B678F2;
+
+
+/* Vector */
+
+position: absolute;
+left: 76.04%;
+right: 9.38%;
+top: 40.88%;
+bottom: 44.54%;
+
+border: 1.61474px solid #B678F2;
+
+
+/* Vector */
+
+position: absolute;
+left: 9.37%;
+right: 76.04%;
+top: 40.88%;
+bottom: 44.54%;
+
+border: 1.61474px solid #B678F2;
+
+
+/* Vector */
+
+position: absolute;
+left: 55.17%;
+right: 22.75%;
+top: 20%;
+bottom: 57.92%;
+
+border: 1.61474px solid #B678F2;
+
+
+/* Vector */
+
+position: absolute;
+left: 22.75%;
+right: 55.17%;
+top: 20%;
+bottom: 57.92%;
+
+border: 1.61474px solid #B678F2;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+
+
+/* Design */
+
+width: 67px;
+height: 28px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 28px;
+/* identical to box height, or 140% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 14px;
+gap: 10px;
+
+width: 204px;
+height: 56px;
+
+background: #041B16;
+backdrop-filter: blur(7.44681px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 100px;
+
+/* Inside auto layout */
+flex: none;
+order: 7;
+flex-grow: 0;
+
+
+/* Frame 1 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 5.16717px;
+gap: 12.92px;
+
+width: 36.17px;
+height: 36.17px;
+
+background: rgba(239, 59, 234, 0.16);
+border-radius: 94.3009px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame */
+
+width: 25.84px;
+height: 25.84px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 50%;
+right: 50%;
+top: 65.62%;
+bottom: 12.5%;
+
+border: 1.61474px solid #EF3BEA;
+
+
+/* Vector */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 12.5%;
+bottom: 12.5%;
+
+border: 1.61474px solid #EF3BEA;
+
+
+/* Vector */
+
+position: absolute;
+left: 13.77%;
+right: 65.1%;
+top: 54.05%;
+bottom: 40.29%;
+
+border: 1.61474px solid #EF3BEA;
+
+
+/* Data Analysis */
+
+width: 127px;
+height: 28px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 28px;
+/* identical to box height, or 140% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1686551640 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 14px;
+
+width: 692px;
+height: 56px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 14px;
+gap: 10px;
+
+width: 248px;
+height: 54px;
+
+background: #041B16;
+backdrop-filter: blur(7.44681px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 100px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 5.16717px;
+gap: 12.92px;
+
+width: 36.17px;
+height: 36.17px;
+
+background: rgba(0, 153, 218, 0.16);
+border-radius: 94.3009px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame */
+
+width: 25.84px;
+height: 25.84px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 53.12%;
+right: 12.5%;
+top: 78.12%;
+bottom: 6.25%;
+
+border: 1.61474px solid #0099DA;
+
+
+/* Vector */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 12.5%;
+bottom: 21.87%;
+
+border: 1.61474px solid #0099DA;
+
+
+/* Customer Service */
+
+width: 172px;
+height: 28px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 28px;
+/* identical to box height, or 140% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 14px;
+gap: 10px;
+
+width: 154px;
+height: 56px;
+
+background: #041B16;
+backdrop-filter: blur(7.44681px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 100px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 5.16717px;
+gap: 12.92px;
+
+width: 36.17px;
+height: 36.17px;
+
+background: rgba(7, 242, 88, 0.12);
+border-radius: 94.3009px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame */
+
+width: 25.84px;
+height: 25.84px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 34.38%;
+right: 34.37%;
+top: 12.5%;
+bottom: 87.5%;
+
+border: 1.61474px solid #07F258;
+
+
+/* Vector */
+
+position: absolute;
+left: 15.62%;
+right: 15.63%;
+top: 12.5%;
+bottom: 15.62%;
+
+border: 1.61474px solid #07F258;
+
+
+/* Vector */
+
+position: absolute;
+left: 27.98%;
+right: 23.63%;
+top: 59.37%;
+bottom: 31.25%;
+
+border: 1.61474px solid #07F258;
+
+
+/* Science */
+
+width: 78px;
+height: 28px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 28px;
+/* identical to box height, or 140% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 14px;
+gap: 10px;
+
+width: 104px;
+height: 54px;
+
+background: #041B16;
+backdrop-filter: blur(7.44681px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 100px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Frame 1 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 5.16717px;
+gap: 12.92px;
+
+width: 36.17px;
+height: 36.17px;
+
+background: rgba(255, 143, 50, 0.16);
+border-radius: 94.3009px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame */
+
+width: 25.84px;
+height: 25.84px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 12.5%;
+right: 46.88%;
+top: 21.88%;
+bottom: 37.5%;
+
+border: 1.61474px solid #FF8F32;
+
+
+/* Vector */
+
+position: absolute;
+left: 4%;
+right: 38.37%;
+top: 62.49%;
+bottom: 21.87%;
+
+border: 1.61474px solid #FF8F32;
+
+
+/* Vector */
+
+position: absolute;
+left: 67.19%;
+right: 4%;
+top: 62.5%;
+bottom: 21.87%;
+
+border: 1.61474px solid #FF8F32;
+
+
+/* Vector */
+
+position: absolute;
+left: 59.64%;
+right: 12.52%;
+top: 21.88%;
+bottom: 37.5%;
+
+border: 1.61474px solid #FF8F32;
+
+
+/* HR */
+
+width: 28px;
+height: 28px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 28px;
+/* identical to box height, or 140% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 14px;
+gap: 10px;
+
+width: 144px;
+height: 54px;
+
+background: #041B16;
+backdrop-filter: blur(7.44681px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 100px;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Frame 1 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 5.16717px;
+gap: 12.92px;
+
+width: 36.17px;
+height: 36.17px;
+
+background: rgba(249, 82, 62, 0.14);
+border-radius: 94.3009px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame */
+
+width: 25.84px;
+height: 25.84px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 12.5%;
+bottom: 12.5%;
+
+border: 1.61474px solid #F9523E;
+
+
+/* Vector */
+
+position: absolute;
+left: 45.31%;
+right: 45.31%;
+top: 45.31%;
+bottom: 45.31%;
+
+background: #F9523E;
+
+
+/* Vector */
+
+position: absolute;
+left: 62.5%;
+right: 28.12%;
+top: 45.31%;
+bottom: 45.31%;
+
+background: #F9523E;
+
+
+/* Vector */
+
+position: absolute;
+left: 28.13%;
+right: 62.5%;
+top: 45.31%;
+bottom: 45.31%;
+
+background: #F9523E;
+
+
+/* Others */
+
+width: 67px;
+height: 28px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 28px;
+/* identical to box height, or 140% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1686551586 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 1568px;
+height: 510px;
+left: 176px;
+top: 3369px;
+
+
+
+/* Frame 1686551579 */
+
+box-sizing: border-box;
+
+width: 1568px;
+height: 420px;
+
+background: #031713;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1686551593 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 30px;
+
+position: absolute;
+width: 1557px;
+height: 284px;
+left: 0px;
+top: 62px;
+
+
+
+/* Frame 1686551582 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+width: 369px;
+height: 126px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1686551547 */
+
+width: 243.52px;
+height: 50px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 9 */
+
+position: absolute;
+width: 53.64px;
+height: 50px;
+left: 0px;
+top: 0px;
+
+
+
+/* Subtract */
+
+position: absolute;
+width: 26.6px;
+height: 23.4px;
+left: 12.77px;
+top: 26.6px;
+
+background: #07F258;
+
+
+/* Vector 19 */
+
+position: absolute;
+width: 26.6px;
+height: 23.4px;
+left: 12.77px;
+top: 26.6px;
+
+background: #000000;
+
+
+/* Vector 20 */
+
+position: absolute;
+width: 9.57px;
+height: 7.98px;
+left: 21.28px;
+top: 34.77px;
+
+background: #000000;
+
+
+/* Subtract */
+
+position: absolute;
+width: 26.6px;
+height: 23.4px;
+left: 12.77px;
+top: 0px;
+
+background: #07F258;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Vector 19 */
+
+position: absolute;
+width: 26.6px;
+height: 23.4px;
+left: 12.77px;
+top: 0px;
+
+background: #000000;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Vector 20 */
+
+position: absolute;
+width: 9.57px;
+height: 7.98px;
+left: 21.28px;
+top: 7.25px;
+
+background: #000000;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+
+/* Subtract */
+
+position: absolute;
+width: 26.6px;
+height: 23.4px;
+left: 28.88px;
+top: 11.7px;
+
+background: #07F258;
+transform: matrix(0, 1, 1, 0, 0, 0);
+
+
+/* Vector 19 */
+
+position: absolute;
+width: 26.6px;
+height: 23.4px;
+left: 28.88px;
+top: 11.7px;
+
+background: #000000;
+transform: matrix(0, 1, 1, 0, 0, 0);
+
+
+/* Vector 20 */
+
+position: absolute;
+width: 9.57px;
+height: 7.98px;
+left: 37.05px;
+top: 20.21px;
+
+background: #000000;
+transform: matrix(0, 1, 1, 0, 0, 0);
+
+
+/* Subtract */
+
+position: absolute;
+width: 26.6px;
+height: 23.4px;
+left: 0px;
+top: 11.7px;
+
+background: #07F258;
+transform: rotate(90deg);
+
+
+/* Vector 19 */
+
+position: absolute;
+width: 26.6px;
+height: 23.4px;
+left: 0px;
+top: 11.7px;
+
+background: #000000;
+transform: rotate(90deg);
+
+
+/* Vector 20 */
+
+position: absolute;
+width: 9.57px;
+height: 7.98px;
+left: 7.25px;
+top: 20.21px;
+
+background: #000000;
+transform: rotate(90deg);
+
+
+/* Agentverse */
+
+position: absolute;
+width: 177.88px;
+height: 20.25px;
+left: 65.64px;
+top: 14.87px;
+
+
+
+/* Vector */
+
+position: absolute;
+width: 12.6px;
+height: 19.69px;
+left: 230.92px;
+top: 15.15px;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+width: 14.77px;
+height: 20.25px;
+left: 213.16px;
+top: 14.87px;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+width: 15.19px;
+height: 19.69px;
+left: 196.11px;
+top: 15.15px;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+width: 12.6px;
+height: 19.69px;
+left: 180.59px;
+top: 15.15px;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+width: 19.07px;
+height: 19.69px;
+left: 159.59px;
+top: 15.15px;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+width: 15.81px;
+height: 19.69px;
+left: 142.94px;
+top: 15.15px;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+width: 17.1px;
+height: 19.69px;
+left: 123.91px;
+top: 15.15px;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+width: 12.6px;
+height: 19.69px;
+left: 108.39px;
+top: 15.15px;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+width: 20.33px;
+height: 20.25px;
+left: 85.3px;
+top: 14.87px;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+width: 19.92px;
+height: 19.69px;
+left: 65.64px;
+top: 15.15px;
+
+background: #FFFFFF;
+
+
+/* Discover the best AI agents from across the internet. */
+
+width: 369px;
+height: 52px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 26px;
+/* or 144% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1686551592 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 28px;
+
+width: 1158px;
+height: 284px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1686551591 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 30px;
+
+width: 770px;
+height: 284px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Explore Agents */
+
+width: 770px;
+height: 26px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 26px;
+/* identical to box height, or 144% */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1686551590 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 28px;
+
+width: 770px;
+height: 228px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1686551583 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 18px;
+
+width: 238px;
+height: 228px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Coding */
+
+width: 238px;
+height: 23px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height, or 140% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* AI Agent Builders */
+
+width: 238px;
+height: 23px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height, or 140% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Productivity */
+
+width: 238px;
+height: 23px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height, or 140% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Personal Assistant */
+
+width: 238px;
+height: 23px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height, or 140% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* General Purpose */
+
+width: 238px;
+height: 23px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height, or 140% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Content Creation */
+
+width: 238px;
+height: 23px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height, or 140% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1686551584 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 18px;
+
+width: 238px;
+height: 228px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Research */
+
+width: 238px;
+height: 23px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height, or 140% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Digital Workers */
+
+width: 238px;
+height: 23px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height, or 140% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Business Intelligence */
+
+width: 238px;
+height: 23px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height, or 140% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Sales */
+
+width: 238px;
+height: 23px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height, or 140% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Marketing */
+
+width: 238px;
+height: 23px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height, or 140% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Finance */
+
+width: 238px;
+height: 23px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height, or 140% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1686551585 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 18px;
+
+width: 238px;
+height: 228px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Design */
+
+width: 238px;
+height: 23px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height, or 140% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Data Analysis */
+
+width: 238px;
+height: 23px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height, or 140% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Customer Service */
+
+width: 238px;
+height: 23px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height, or 140% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Science */
+
+width: 238px;
+height: 23px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height, or 140% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* HR */
+
+width: 238px;
+height: 23px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height, or 140% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Other */
+
+width: 238px;
+height: 23px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height, or 140% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1686551589 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 25px;
+
+width: 360px;
+height: 275px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1686551588 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 360px;
+height: 196px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Unleash Your AI Assistant */
+
+width: 360px;
+height: 40px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 39px;
+/* identical to box height, or 140% */
+
+background: linear-gradient(180deg, #FFFFFF 11.38%, #CCCCCC 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Empower your ideas with an intelligent AI agent designed to provide instant answers, streamline tasks, and deliver personalized support. Submit your AI agent now and let innovation take the lead! */
+
+width: 360px;
+height: 140px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 28px;
+/* or 175% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 13px 24px;
+gap: 10px;
+
+width: 140px;
+height: 54px;
+
+background: linear-gradient(270deg, rgba(7, 242, 88, 0.1) 0%, rgba(7, 242, 88, 0.06) 100%);
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Submit */
+
+width: 62px;
+height: 28px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+/* identical to box height, or 156% */
+
+/* White Global */
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame */
+
+width: 20px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 15.62%;
+right: 15.62%;
+top: 50%;
+bottom: 50%;
+
+border: 1.5px solid #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 56.25%;
+right: 15.62%;
+top: 21.88%;
+bottom: 21.88%;
+
+border: 1.5px solid #FFFFFF;
+
+
+/* Frame 1686551580 */
+
+box-sizing: border-box;
+
+width: 1568px;
+height: 90px;
+
+background: #031713;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* © 2025 Agentverse. All rights reserved. */
+
+position: absolute;
+width: 261px;
+height: 20px;
+left: calc(50% - 261px/2 + 0.5px);
+top: calc(50% - 20px/2);
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 140% */
+
+color: #CCCCCC;
+
+
+
+/* Frame 1686551587 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 62px;
+
+position: absolute;
+width: 1568px;
+height: 2171px;
+left: 176px;
+top: 1098px;
+
+
+
+/* Frame 1686551578 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 28px;
+
+width: 1568px;
+height: 2060px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1686551576 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 28px;
+
+width: 1568px;
+height: 320px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Card Hover Effect */
+
+box-sizing: border-box;
+
+width: 504px;
+height: 320px;
+
+background: linear-gradient(180deg, #041B16 0%, #031713 100%);
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1686551575 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+position: absolute;
+width: 446px;
+height: 270px;
+left: 30px;
+top: 30px;
+
+
+
+/* Frame 1686551574 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 30px;
+
+width: 446px;
+height: 216px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1686551571 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+width: 366px;
+height: 186px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 60px;
+height: 60px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* image 1 */
+
+width: 50px;
+height: 50px;
+
+background: url(image.png);
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1686551570 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+width: 366px;
+height: 106px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* AutoGPT */
+
+width: 366px;
+height: 42px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 42px;
+/* identical to box height, or 140% */
+
+background: linear-gradient(180deg, #FFFFFF 11.38%, #CCCCCC 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Build and deploy custom AI agents for task automation */
+
+width: 366px;
+height: 52px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 26px;
+/* or 144% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 32 */
+
+width: 444px;
+height: 0px;
+
+border: 1px solid #1D2B28;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1686551573 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 192px;
+
+width: 446px;
+height: 34px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1686551572 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 220px;
+height: 34px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 140px;
+height: 34px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* General Purpose */
+
+width: 112px;
+height: 17px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height, or 120% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 20px;
+gap: 10px;
+
+width: 70px;
+height: 34px;
+
+background: linear-gradient(270deg, rgba(7, 242, 88, 0.1) 0%, rgba(7, 242, 88, 0.06) 100%);
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Free */
+
+width: 30px;
+height: 17px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height, or 120% */
+
+color: #07F258;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 34px;
+height: 34px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* vuesax/linear/export */
+
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* vuesax/linear/export */
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 0px;
+top: 0px;
+
+
+
+/* export */
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 54.17%;
+right: 11.67%;
+top: 11.67%;
+bottom: 54.17%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 71.67%;
+right: 8.33%;
+top: 8.33%;
+bottom: 71.67%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+transform: rotate(-180deg);
+
+
+/* Frame 1686551570 */
+
+box-sizing: border-box;
+
+width: 504px;
+height: 320px;
+
+background: linear-gradient(180deg, #041B16 0%, #031713 100%);
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1686551575 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+position: absolute;
+width: 446px;
+height: 270px;
+left: 30px;
+top: 30px;
+
+
+
+/* Frame 1686551574 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 30px;
+
+width: 446px;
+height: 216px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1686551571 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+width: 446px;
+height: 186px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 60px;
+height: 60px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* image 2 */
+
+width: 50px;
+height: 50px;
+
+background: url(image.png);
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1686551570 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+width: 434px;
+height: 106px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* GPT Pilot */
+
+width: 434px;
+height: 42px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 42px;
+/* identical to box height, or 140% */
+
+background: linear-gradient(180deg, #FFFFFF 11.38%, #CCCCCC 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* The first real AI developer companion for creating full-scale applications */
+
+width: 434px;
+height: 52px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 26px;
+/* or 144% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 32 */
+
+width: 444px;
+height: 0px;
+
+border: 1px solid #1D2B28;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1686551573 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 192px;
+
+width: 446px;
+height: 34px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1686551572 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 158px;
+height: 34px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 78px;
+height: 34px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Coding */
+
+width: 50px;
+height: 17px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height, or 120% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 20px;
+gap: 10px;
+
+width: 70px;
+height: 34px;
+
+background: linear-gradient(270deg, rgba(7, 242, 88, 0.1) 0%, rgba(7, 242, 88, 0.06) 100%);
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Free */
+
+width: 30px;
+height: 17px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height, or 120% */
+
+color: #07F258;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 34px;
+height: 34px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* vuesax/linear/export */
+
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* vuesax/linear/export */
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 0px;
+top: 0px;
+
+
+
+/* export */
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 54.17%;
+right: 11.67%;
+top: 11.67%;
+bottom: 54.17%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 71.67%;
+right: 8.33%;
+top: 8.33%;
+bottom: 71.67%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+transform: rotate(-180deg);
+
+
+/* Frame 1686551571 */
+
+box-sizing: border-box;
+
+width: 504px;
+height: 320px;
+
+background: linear-gradient(180deg, #041B16 0%, #031713 100%);
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Frame 1686551575 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+position: absolute;
+width: 446px;
+height: 270px;
+left: 30px;
+top: 30px;
+
+
+
+/* Frame 1686551574 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 30px;
+
+width: 446px;
+height: 216px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1686551571 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+width: 366px;
+height: 186px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 60px;
+height: 60px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* image 3 */
+
+width: 50px;
+height: 50px;
+
+background: url(image.png);
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1686551570 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+width: 366px;
+height: 106px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* BabyAGI */
+
+width: 366px;
+height: 42px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 42px;
+/* identical to box height, or 140% */
+
+background: linear-gradient(180deg, #FFFFFF 11.38%, #CCCCCC 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* AI-driven autonomous task management system */
+
+width: 366px;
+height: 52px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 26px;
+/* or 144% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 32 */
+
+width: 444px;
+height: 0px;
+
+border: 1px solid #1D2B28;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1686551573 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 192px;
+
+width: 446px;
+height: 34px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1686551572 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 220px;
+height: 34px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 140px;
+height: 34px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* General Purpose */
+
+width: 112px;
+height: 17px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height, or 120% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 20px;
+gap: 10px;
+
+width: 70px;
+height: 34px;
+
+background: linear-gradient(270deg, rgba(7, 242, 88, 0.1) 0%, rgba(7, 242, 88, 0.06) 100%);
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Free */
+
+width: 30px;
+height: 17px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height, or 120% */
+
+color: #07F258;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 34px;
+height: 34px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* vuesax/linear/export */
+
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* vuesax/linear/export */
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 0px;
+top: 0px;
+
+
+
+/* export */
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 54.17%;
+right: 11.67%;
+top: 11.67%;
+bottom: 54.17%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 71.67%;
+right: 8.33%;
+top: 8.33%;
+bottom: 71.67%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+transform: rotate(-180deg);
+
+
+/* Frame 1686551577 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 28px;
+
+width: 1568px;
+height: 320px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1686551560 */
+
+box-sizing: border-box;
+
+width: 504px;
+height: 320px;
+
+background: linear-gradient(180deg, #041B16 0%, #031713 100%);
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1686551575 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+position: absolute;
+width: 446px;
+height: 270px;
+left: 30px;
+top: 30px;
+
+
+
+/* Frame 1686551574 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 30px;
+
+width: 446px;
+height: 216px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1686551571 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+width: 446px;
+height: 186px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 60px;
+height: 60px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* image 4 */
+
+width: 50px;
+height: 50px;
+
+background: url(image.png);
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1686551570 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+width: 441px;
+height: 106px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* JARVIS */
+
+width: 441px;
+height: 42px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 42px;
+/* identical to box height, or 140% */
+
+background: linear-gradient(180deg, #FFFFFF 11.38%, #CCCCCC 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Collaborative AI system integrating ChatGPT with HuggingFace models for AGI research */
+
+width: 441px;
+height: 52px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 26px;
+/* or 144% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 32 */
+
+width: 444px;
+height: 0px;
+
+border: 1px solid #1D2B28;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1686551573 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 192px;
+
+width: 446px;
+height: 34px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1686551572 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 222px;
+height: 34px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 142px;
+height: 34px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* AI Agent Builders */
+
+width: 114px;
+height: 17px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height, or 120% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 20px;
+gap: 10px;
+
+width: 70px;
+height: 34px;
+
+background: linear-gradient(270deg, rgba(7, 242, 88, 0.1) 0%, rgba(7, 242, 88, 0.06) 100%);
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Free */
+
+width: 30px;
+height: 17px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height, or 120% */
+
+color: #07F258;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 34px;
+height: 34px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* vuesax/linear/export */
+
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* vuesax/linear/export */
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 0px;
+top: 0px;
+
+
+
+/* export */
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 54.17%;
+right: 11.67%;
+top: 11.67%;
+bottom: 54.17%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 71.67%;
+right: 8.33%;
+top: 8.33%;
+bottom: 71.67%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+transform: rotate(-180deg);
+
+
+/* Frame 1686551570 */
+
+box-sizing: border-box;
+
+width: 504px;
+height: 320px;
+
+background: linear-gradient(180deg, #041B16 0%, #031713 100%);
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1686551575 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+position: absolute;
+width: 446px;
+height: 270px;
+left: 30px;
+top: 30px;
+
+
+
+/* Frame 1686551574 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 30px;
+
+width: 446px;
+height: 216px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1686551571 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+width: 446px;
+height: 186px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 60px;
+height: 60px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* image 5 */
+
+width: 50px;
+height: 50px;
+
+background: url(image.png);
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1686551570 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+width: 434px;
+height: 106px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* GPT Researcher */
+
+width: 434px;
+height: 42px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 42px;
+/* identical to box height, or 140% */
+
+background: linear-gradient(180deg, #FFFFFF 11.38%, #CCCCCC 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* AI-powered autonomous agent for comprehensive online research */
+
+width: 434px;
+height: 52px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 26px;
+/* or 144% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 32 */
+
+width: 444px;
+height: 0px;
+
+border: 1px solid #1D2B28;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1686551573 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 192px;
+
+width: 446px;
+height: 34px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1686551572 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 171px;
+height: 34px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 91px;
+height: 34px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Research */
+
+width: 63px;
+height: 17px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height, or 120% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 20px;
+gap: 10px;
+
+width: 70px;
+height: 34px;
+
+background: linear-gradient(270deg, rgba(248, 177, 62, 0.1) 0%, rgba(248, 177, 62, 0.06) 100%);
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Paid */
+
+width: 30px;
+height: 17px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height, or 120% */
+
+color: #F8B13E;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 34px;
+height: 34px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* vuesax/linear/export */
+
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* vuesax/linear/export */
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 0px;
+top: 0px;
+
+
+
+/* export */
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 54.17%;
+right: 11.67%;
+top: 11.67%;
+bottom: 54.17%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 71.67%;
+right: 8.33%;
+top: 8.33%;
+bottom: 71.67%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+transform: rotate(-180deg);
+
+
+/* Frame 1686551571 */
+
+box-sizing: border-box;
+
+width: 504px;
+height: 320px;
+
+background: linear-gradient(180deg, #041B16 0%, #031713 100%);
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Frame 1686551575 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+position: absolute;
+width: 446px;
+height: 270px;
+left: 30px;
+top: 30px;
+
+
+
+/* Frame 1686551574 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 30px;
+
+width: 446px;
+height: 216px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1686551571 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+width: 444px;
+height: 186px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 60px;
+height: 60px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* image 6 */
+
+width: 50px;
+height: 50px;
+
+background: url(image.png);
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1686551570 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+width: 444px;
+height: 106px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Self-operating computer */
+
+width: 444px;
+height: 42px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 42px;
+/* identical to box height, or 140% */
+
+background: linear-gradient(180deg, #FFFFFF 11.38%, #CCCCCC 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* AI framework for autonomous computer operation */
+
+width: 444px;
+height: 52px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 26px;
+/* or 144% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 32 */
+
+width: 444px;
+height: 0px;
+
+border: 1px solid #1D2B28;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1686551573 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 192px;
+
+width: 446px;
+height: 34px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1686551572 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 190px;
+height: 34px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 110px;
+height: 34px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Productivity */
+
+width: 82px;
+height: 17px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height, or 120% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 20px;
+gap: 10px;
+
+width: 70px;
+height: 34px;
+
+background: linear-gradient(270deg, rgba(7, 242, 88, 0.1) 0%, rgba(7, 242, 88, 0.06) 100%);
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Free */
+
+width: 30px;
+height: 17px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height, or 120% */
+
+color: #07F258;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 34px;
+height: 34px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* vuesax/linear/export */
+
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* vuesax/linear/export */
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 0px;
+top: 0px;
+
+
+
+/* export */
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 54.17%;
+right: 11.67%;
+top: 11.67%;
+bottom: 54.17%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 71.67%;
+right: 8.33%;
+top: 8.33%;
+bottom: 71.67%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+transform: rotate(-180deg);
+
+
+/* Frame 1686551578 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 28px;
+
+width: 1568px;
+height: 320px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1686551560 */
+
+box-sizing: border-box;
+
+width: 504px;
+height: 320px;
+
+background: linear-gradient(180deg, #041B16 0%, #031713 100%);
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1686551575 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+position: absolute;
+width: 446px;
+height: 270px;
+left: 30px;
+top: 30px;
+
+
+
+/* Frame 1686551574 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 30px;
+
+width: 446px;
+height: 216px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1686551571 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+width: 446px;
+height: 186px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 60px;
+height: 60px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* image 7 */
+
+width: 50px;
+height: 50px;
+
+background: url(image.png);
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1686551570 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+width: 441px;
+height: 106px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* OpenDevin */
+
+width: 441px;
+height: 42px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 42px;
+/* identical to box height, or 140% */
+
+background: linear-gradient(180deg, #FFFFFF 11.38%, #CCCCCC 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* AI-powered autonomous software engineer for complex development tasks */
+
+width: 441px;
+height: 52px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 26px;
+/* or 144% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 32 */
+
+width: 444px;
+height: 0px;
+
+border: 1px solid #1D2B28;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1686551573 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 192px;
+
+width: 446px;
+height: 34px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1686551572 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 158px;
+height: 34px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 78px;
+height: 34px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Coding */
+
+width: 50px;
+height: 17px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height, or 120% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 20px;
+gap: 10px;
+
+width: 70px;
+height: 34px;
+
+background: linear-gradient(270deg, rgba(7, 242, 88, 0.1) 0%, rgba(7, 242, 88, 0.06) 100%);
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Free */
+
+width: 30px;
+height: 17px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height, or 120% */
+
+color: #07F258;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 34px;
+height: 34px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* vuesax/linear/export */
+
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* vuesax/linear/export */
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 0px;
+top: 0px;
+
+
+
+/* export */
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 54.17%;
+right: 11.67%;
+top: 11.67%;
+bottom: 54.17%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 71.67%;
+right: 8.33%;
+top: 8.33%;
+bottom: 71.67%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+transform: rotate(-180deg);
+
+
+/* Frame 1686551570 */
+
+box-sizing: border-box;
+
+width: 504px;
+height: 320px;
+
+background: linear-gradient(180deg, #041B16 0%, #031713 100%);
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1686551575 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+position: absolute;
+width: 446px;
+height: 270px;
+left: 30px;
+top: 30px;
+
+
+
+/* Frame 1686551574 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 30px;
+
+width: 446px;
+height: 216px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1686551571 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+width: 446px;
+height: 186px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 60px;
+height: 60px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* image 8 */
+
+width: 50px;
+height: 50px;
+
+background: url(image.png);
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1686551570 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+width: 434px;
+height: 106px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* AutoGen */
+
+width: 434px;
+height: 42px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 42px;
+/* identical to box height, or 140% */
+
+background: linear-gradient(180deg, #FFFFFF 11.38%, #CCCCCC 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Build cooperative AI agents with AutoGen's open-source framework */
+
+width: 434px;
+height: 52px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 26px;
+/* or 144% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 32 */
+
+width: 444px;
+height: 0px;
+
+border: 1px solid #1D2B28;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1686551573 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 192px;
+
+width: 446px;
+height: 34px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1686551572 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 265px;
+height: 34px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 142px;
+height: 34px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* AI Agent Builders */
+
+width: 114px;
+height: 17px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height, or 120% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 20px;
+gap: 10px;
+
+width: 113px;
+height: 34px;
+
+background: linear-gradient(270deg, rgba(136, 254, 208, 0.1) 0%, rgba(136, 254, 208, 0.06) 100%);
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Free + Paid */
+
+width: 73px;
+height: 17px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height, or 120% */
+
+color: #88FED0;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 34px;
+height: 34px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* vuesax/linear/export */
+
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* vuesax/linear/export */
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 0px;
+top: 0px;
+
+
+
+/* export */
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 54.17%;
+right: 11.67%;
+top: 11.67%;
+bottom: 54.17%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 71.67%;
+right: 8.33%;
+top: 8.33%;
+bottom: 71.67%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+transform: rotate(-180deg);
+
+
+/* Frame 1686551571 */
+
+box-sizing: border-box;
+
+width: 504px;
+height: 320px;
+
+background: linear-gradient(180deg, #041B16 0%, #031713 100%);
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Frame 1686551575 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+position: absolute;
+width: 446px;
+height: 270px;
+left: 30px;
+top: 30px;
+
+
+
+/* Frame 1686551574 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 30px;
+
+width: 446px;
+height: 216px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1686551571 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+width: 444px;
+height: 186px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 60px;
+height: 60px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* image 9 */
+
+width: 50px;
+height: 50px;
+
+background: url(image.png);
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1686551570 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+width: 444px;
+height: 106px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Flowise */
+
+width: 444px;
+height: 42px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 42px;
+/* identical to box height, or 140% */
+
+background: linear-gradient(180deg, #FFFFFF 11.38%, #CCCCCC 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Build custom LLM flows with drag-and-drop simplicity */
+
+width: 444px;
+height: 52px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 26px;
+/* or 144% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 32 */
+
+width: 444px;
+height: 0px;
+
+border: 1px solid #1D2B28;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1686551573 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 192px;
+
+width: 446px;
+height: 34px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1686551572 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 222px;
+height: 34px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 142px;
+height: 34px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* AI Agent Builders */
+
+width: 114px;
+height: 17px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height, or 120% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 20px;
+gap: 10px;
+
+width: 70px;
+height: 34px;
+
+background: linear-gradient(270deg, rgba(7, 242, 88, 0.1) 0%, rgba(7, 242, 88, 0.06) 100%);
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Free */
+
+width: 30px;
+height: 17px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height, or 120% */
+
+color: #07F258;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 34px;
+height: 34px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* vuesax/linear/export */
+
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* vuesax/linear/export */
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 0px;
+top: 0px;
+
+
+
+/* export */
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 54.17%;
+right: 11.67%;
+top: 11.67%;
+bottom: 54.17%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 71.67%;
+right: 8.33%;
+top: 8.33%;
+bottom: 71.67%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+transform: rotate(-180deg);
+
+
+/* Frame 1686551579 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 28px;
+
+width: 1568px;
+height: 320px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1686551560 */
+
+box-sizing: border-box;
+
+width: 504px;
+height: 320px;
+
+background: linear-gradient(180deg, #041B16 0%, #031713 100%);
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1686551575 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+position: absolute;
+width: 446px;
+height: 270px;
+left: 30px;
+top: 30px;
+
+
+
+/* Frame 1686551574 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 30px;
+
+width: 446px;
+height: 216px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1686551571 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+width: 446px;
+height: 186px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 60px;
+height: 60px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* image 10 */
+
+width: 50px;
+height: 50px;
+
+background: url(image.png);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1686551570 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+width: 441px;
+height: 106px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Lindy */
+
+width: 80px;
+height: 42px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 42px;
+/* identical to box height, or 140% */
+
+background: linear-gradient(180deg, #FFFFFF 11.38%, #CCCCCC 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Build custom AI assistants for automated business workflows */
+
+width: 441px;
+height: 52px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 26px;
+/* or 144% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 32 */
+
+width: 444px;
+height: 0px;
+
+border: 1px solid #1D2B28;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1686551573 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 192px;
+
+width: 446px;
+height: 34px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1686551572 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 230px;
+height: 34px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 150px;
+height: 34px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Personal Assistant */
+
+width: 122px;
+height: 17px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height, or 120% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 20px;
+gap: 10px;
+
+width: 70px;
+height: 34px;
+
+background: linear-gradient(270deg, rgba(7, 242, 88, 0.1) 0%, rgba(7, 242, 88, 0.06) 100%);
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Free */
+
+width: 30px;
+height: 17px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height, or 120% */
+
+color: #07F258;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 34px;
+height: 34px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* vuesax/linear/export */
+
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* vuesax/linear/export */
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 0px;
+top: 0px;
+
+
+
+/* export */
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 54.17%;
+right: 11.67%;
+top: 11.67%;
+bottom: 54.17%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 71.67%;
+right: 8.33%;
+top: 8.33%;
+bottom: 71.67%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+transform: rotate(-180deg);
+
+
+/* Frame 1686551570 */
+
+box-sizing: border-box;
+
+width: 504px;
+height: 320px;
+
+background: linear-gradient(180deg, #041B16 0%, #031713 100%);
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1686551575 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+position: absolute;
+width: 446px;
+height: 270px;
+left: 30px;
+top: 30px;
+
+
+
+/* Frame 1686551574 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 30px;
+
+width: 446px;
+height: 216px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1686551571 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+width: 446px;
+height: 186px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 60px;
+height: 60px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* image 11 */
+
+width: 50px;
+height: 50px;
+
+background: url(image.png);
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1686551570 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+width: 434px;
+height: 106px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Cursor */
+
+width: 434px;
+height: 42px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 42px;
+/* identical to box height, or 140% */
+
+background: linear-gradient(180deg, #FFFFFF 11.38%, #CCCCCC 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* AI-powered code editor for extraordinary productivity */
+
+width: 434px;
+height: 52px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 26px;
+/* or 144% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 32 */
+
+width: 444px;
+height: 0px;
+
+border: 1px solid #1D2B28;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1686551573 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 192px;
+
+width: 446px;
+height: 34px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1686551572 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 158px;
+height: 34px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 78px;
+height: 34px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Coding */
+
+width: 50px;
+height: 17px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height, or 120% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 20px;
+gap: 10px;
+
+width: 70px;
+height: 34px;
+
+background: linear-gradient(270deg, rgba(7, 242, 88, 0.1) 0%, rgba(7, 242, 88, 0.06) 100%);
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Free */
+
+width: 30px;
+height: 17px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height, or 120% */
+
+color: #07F258;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 34px;
+height: 34px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* vuesax/linear/export */
+
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* vuesax/linear/export */
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 0px;
+top: 0px;
+
+
+
+/* export */
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 54.17%;
+right: 11.67%;
+top: 11.67%;
+bottom: 54.17%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 71.67%;
+right: 8.33%;
+top: 8.33%;
+bottom: 71.67%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+transform: rotate(-180deg);
+
+
+/* Frame 1686551571 */
+
+box-sizing: border-box;
+
+width: 504px;
+height: 320px;
+
+background: linear-gradient(180deg, #041B16 0%, #031713 100%);
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Frame 1686551575 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+position: absolute;
+width: 446px;
+height: 270px;
+left: 30px;
+top: 30px;
+
+
+
+/* Frame 1686551574 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 30px;
+
+width: 446px;
+height: 216px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1686551571 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+width: 444px;
+height: 186px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 60px;
+height: 60px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* image 12 */
+
+width: 50px;
+height: 50px;
+
+background: url(image.png);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1686551570 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+width: 444px;
+height: 106px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* CrewAI */
+
+width: 444px;
+height: 42px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 42px;
+/* identical to box height, or 140% */
+
+background: linear-gradient(180deg, #FFFFFF 11.38%, #CCCCCC 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Empowering AI collaboration through role-based agent orchestration */
+
+width: 444px;
+height: 52px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 26px;
+/* or 144% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 32 */
+
+width: 444px;
+height: 0px;
+
+border: 1px solid #1D2B28;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1686551573 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 192px;
+
+width: 446px;
+height: 34px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1686551572 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 265px;
+height: 34px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 142px;
+height: 34px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* AI Agent Builders */
+
+width: 114px;
+height: 17px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height, or 120% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 20px;
+gap: 10px;
+
+width: 113px;
+height: 34px;
+
+background: linear-gradient(270deg, rgba(136, 254, 208, 0.1) 0%, rgba(136, 254, 208, 0.06) 100%);
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Free + Paid */
+
+width: 73px;
+height: 17px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height, or 120% */
+
+color: #88FED0;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 34px;
+height: 34px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* vuesax/linear/export */
+
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* vuesax/linear/export */
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 0px;
+top: 0px;
+
+
+
+/* export */
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 54.17%;
+right: 11.67%;
+top: 11.67%;
+bottom: 54.17%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 71.67%;
+right: 8.33%;
+top: 8.33%;
+bottom: 71.67%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+transform: rotate(-180deg);
+
+
+/* Frame 1686551580 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 28px;
+
+width: 1568px;
+height: 320px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1686551560 */
+
+box-sizing: border-box;
+
+width: 504px;
+height: 320px;
+
+background: linear-gradient(180deg, #041B16 0%, #031713 100%);
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1686551575 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+position: absolute;
+width: 446px;
+height: 270px;
+left: 30px;
+top: 30px;
+
+
+
+/* Frame 1686551574 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 30px;
+
+width: 446px;
+height: 216px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1686551571 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+width: 446px;
+height: 186px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 60px;
+height: 60px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* image 13 */
+
+width: 50px;
+height: 50px;
+
+background: url(image.png);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1686551570 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+width: 441px;
+height: 106px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Private GPT */
+
+width: 168px;
+height: 42px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 42px;
+/* identical to box height, or 140% */
+
+background: linear-gradient(180deg, #FFFFFF 11.38%, #CCCCCC 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Interact with documents using GPT, 100% privately, no data leaks */
+
+width: 441px;
+height: 52px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 26px;
+/* or 144% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 32 */
+
+width: 444px;
+height: 0px;
+
+border: 1px solid #1D2B28;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1686551573 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 192px;
+
+width: 446px;
+height: 34px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1686551572 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 171px;
+height: 34px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 91px;
+height: 34px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Research */
+
+width: 63px;
+height: 17px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height, or 120% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 20px;
+gap: 10px;
+
+width: 70px;
+height: 34px;
+
+background: linear-gradient(270deg, rgba(7, 242, 88, 0.1) 0%, rgba(7, 242, 88, 0.06) 100%);
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Free */
+
+width: 30px;
+height: 17px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height, or 120% */
+
+color: #07F258;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 34px;
+height: 34px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* vuesax/linear/export */
+
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* vuesax/linear/export */
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 0px;
+top: 0px;
+
+
+
+/* export */
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 54.17%;
+right: 11.67%;
+top: 11.67%;
+bottom: 54.17%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 71.67%;
+right: 8.33%;
+top: 8.33%;
+bottom: 71.67%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+transform: rotate(-180deg);
+
+
+/* Frame 1686551570 */
+
+box-sizing: border-box;
+
+width: 504px;
+height: 320px;
+
+background: linear-gradient(180deg, #041B16 0%, #031713 100%);
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1686551575 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+position: absolute;
+width: 446px;
+height: 270px;
+left: 30px;
+top: 30px;
+
+
+
+/* Frame 1686551574 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 30px;
+
+width: 446px;
+height: 216px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1686551571 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+width: 446px;
+height: 186px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 60px;
+height: 60px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* image 14 */
+
+width: 50px;
+height: 50px;
+
+background: url(image.png);
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1686551570 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+width: 434px;
+height: 106px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Aider */
+
+width: 434px;
+height: 42px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 42px;
+/* identical to box height, or 140% */
+
+background: linear-gradient(180deg, #FFFFFF 11.38%, #CCCCCC 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* AI pair programming in your terminal */
+
+width: 434px;
+height: 52px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 26px;
+/* or 144% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 32 */
+
+width: 444px;
+height: 0px;
+
+border: 1px solid #1D2B28;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1686551573 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 192px;
+
+width: 446px;
+height: 34px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1686551572 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 201px;
+height: 34px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 78px;
+height: 34px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Coding */
+
+width: 50px;
+height: 17px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height, or 120% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 20px;
+gap: 10px;
+
+width: 113px;
+height: 34px;
+
+background: linear-gradient(270deg, rgba(136, 254, 208, 0.1) 0%, rgba(136, 254, 208, 0.06) 100%);
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Free + Paid */
+
+width: 73px;
+height: 17px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height, or 120% */
+
+color: #88FED0;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 34px;
+height: 34px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* vuesax/linear/export */
+
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* vuesax/linear/export */
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 0px;
+top: 0px;
+
+
+
+/* export */
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 54.17%;
+right: 11.67%;
+top: 11.67%;
+bottom: 54.17%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 71.67%;
+right: 8.33%;
+top: 8.33%;
+bottom: 71.67%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+transform: rotate(-180deg);
+
+
+/* Frame 1686551571 */
+
+box-sizing: border-box;
+
+width: 504px;
+height: 320px;
+
+background: linear-gradient(180deg, #041B16 0%, #031713 100%);
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Frame 1686551575 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+position: absolute;
+width: 446px;
+height: 270px;
+left: 30px;
+top: 30px;
+
+
+
+/* Frame 1686551574 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 30px;
+
+width: 446px;
+height: 216px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1686551571 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+width: 444px;
+height: 186px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 60px;
+height: 60px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* image 15 */
+
+width: 50px;
+height: 50px;
+
+background: url(image.png);
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1686551570 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+width: 444px;
+height: 106px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* BambooAI */
+
+width: 444px;
+height: 42px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 42px;
+/* identical to box height, or 140% */
+
+background: linear-gradient(180deg, #FFFFFF 11.38%, #CCCCCC 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* AI-powered data analysis assistant for natural language interactions */
+
+width: 444px;
+height: 52px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 26px;
+/* or 144% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 32 */
+
+width: 444px;
+height: 0px;
+
+border: 1px solid #1D2B28;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1686551573 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 192px;
+
+width: 446px;
+height: 34px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1686551572 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 197px;
+height: 34px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 117px;
+height: 34px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Data Analysis */
+
+width: 89px;
+height: 17px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height, or 120% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 20px;
+gap: 10px;
+
+width: 70px;
+height: 34px;
+
+background: linear-gradient(270deg, rgba(7, 242, 88, 0.1) 0%, rgba(7, 242, 88, 0.06) 100%);
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Free */
+
+width: 30px;
+height: 17px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height, or 120% */
+
+color: #07F258;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 34px;
+height: 34px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* vuesax/linear/export */
+
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* vuesax/linear/export */
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 0px;
+top: 0px;
+
+
+
+/* export */
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 54.17%;
+right: 11.67%;
+top: 11.67%;
+bottom: 54.17%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 71.67%;
+right: 8.33%;
+top: 8.33%;
+bottom: 71.67%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+transform: rotate(-180deg);
+
+
+/* Frame 1686551581 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 28px;
+
+width: 1568px;
+height: 320px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1686551560 */
+
+box-sizing: border-box;
+
+width: 504px;
+height: 320px;
+
+background: linear-gradient(180deg, #041B16 0%, #031713 100%);
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1686551575 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+position: absolute;
+width: 446px;
+height: 270px;
+left: 30px;
+top: 30px;
+
+
+
+/* Frame 1686551574 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 30px;
+
+width: 446px;
+height: 216px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1686551571 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+width: 446px;
+height: 186px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 60px;
+height: 60px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* image 16 */
+
+width: 50px;
+height: 50px;
+
+background: url(image.png);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1686551570 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+width: 441px;
+height: 106px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* ChemCrow */
+
+width: 168px;
+height: 42px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 42px;
+/* identical to box height, or 140% */
+
+background: linear-gradient(180deg, #FFFFFF 11.38%, #CCCCCC 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* AI-powered chemistry assistant for synthesis, discovery, and design */
+
+width: 441px;
+height: 52px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 26px;
+/* or 144% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 32 */
+
+width: 444px;
+height: 0px;
+
+border: 1px solid #1D2B28;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1686551573 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 192px;
+
+width: 446px;
+height: 34px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1686551572 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 163px;
+height: 34px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 83px;
+height: 34px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Science */
+
+width: 55px;
+height: 17px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height, or 120% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 20px;
+gap: 10px;
+
+width: 70px;
+height: 34px;
+
+background: linear-gradient(270deg, rgba(7, 242, 88, 0.1) 0%, rgba(7, 242, 88, 0.06) 100%);
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Free */
+
+width: 30px;
+height: 17px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height, or 120% */
+
+color: #07F258;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 34px;
+height: 34px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* vuesax/linear/export */
+
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* vuesax/linear/export */
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 0px;
+top: 0px;
+
+
+
+/* export */
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 54.17%;
+right: 11.67%;
+top: 11.67%;
+bottom: 54.17%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 71.67%;
+right: 8.33%;
+top: 8.33%;
+bottom: 71.67%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+transform: rotate(-180deg);
+
+
+/* Frame 1686551570 */
+
+box-sizing: border-box;
+
+width: 504px;
+height: 320px;
+
+background: linear-gradient(180deg, #041B16 0%, #031713 100%);
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1686551575 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+position: absolute;
+width: 446px;
+height: 270px;
+left: 30px;
+top: 30px;
+
+
+
+/* Frame 1686551574 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 30px;
+
+width: 446px;
+height: 216px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1686551571 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+width: 446px;
+height: 186px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 60px;
+height: 60px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* image 17 */
+
+width: 50px;
+height: 50px;
+
+background: url(image.png);
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1686551570 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+width: 434px;
+height: 106px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* XAgent */
+
+width: 434px;
+height: 42px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 42px;
+/* identical to box height, or 140% */
+
+background: linear-gradient(180deg, #FFFFFF 11.38%, #CCCCCC 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Autonomous AI agent for solving complex tasks */
+
+width: 434px;
+height: 52px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 26px;
+/* or 144% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 32 */
+
+width: 444px;
+height: 0px;
+
+border: 1px solid #1D2B28;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1686551573 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 192px;
+
+width: 446px;
+height: 34px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1686551572 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 220px;
+height: 34px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 140px;
+height: 34px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* General Purpose */
+
+width: 112px;
+height: 17px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height, or 120% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 20px;
+gap: 10px;
+
+width: 70px;
+height: 34px;
+
+background: linear-gradient(270deg, rgba(7, 242, 88, 0.1) 0%, rgba(7, 242, 88, 0.06) 100%);
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Free */
+
+width: 30px;
+height: 17px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height, or 120% */
+
+color: #07F258;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 34px;
+height: 34px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* vuesax/linear/export */
+
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* vuesax/linear/export */
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 0px;
+top: 0px;
+
+
+
+/* export */
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 54.17%;
+right: 11.67%;
+top: 11.67%;
+bottom: 54.17%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 71.67%;
+right: 8.33%;
+top: 8.33%;
+bottom: 71.67%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+transform: rotate(-180deg);
+
+
+/* Frame 1686551571 */
+
+box-sizing: border-box;
+
+width: 504px;
+height: 320px;
+
+background: linear-gradient(180deg, #041B16 0%, #031713 100%);
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Frame 1686551575 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+position: absolute;
+width: 446px;
+height: 270px;
+left: 30px;
+top: 30px;
+
+
+
+/* Frame 1686551574 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 30px;
+
+width: 446px;
+height: 216px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1686551571 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+width: 444px;
+height: 186px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 60px;
+height: 60px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* image 18 */
+
+width: 50px;
+height: 50px;
+
+background: url(image.png);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1686551570 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+width: 444px;
+height: 106px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Blackbox AI */
+
+width: 444px;
+height: 42px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 42px;
+/* identical to box height, or 140% */
+
+background: linear-gradient(180deg, #FFFFFF 11.38%, #CCCCCC 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* AI-powered coding assistant for faster, smarter development */
+
+width: 444px;
+height: 52px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 26px;
+/* or 144% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Vector 32 */
+
+width: 444px;
+height: 0px;
+
+border: 1px solid #1D2B28;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1686551573 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 192px;
+
+width: 446px;
+height: 34px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1686551572 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 158px;
+height: 34px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 78px;
+height: 34px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Coding */
+
+width: 50px;
+height: 17px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height, or 120% */
+
+color: #CCCCCC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 20px;
+gap: 10px;
+
+width: 70px;
+height: 34px;
+
+background: linear-gradient(270deg, rgba(7, 242, 88, 0.1) 0%, rgba(7, 242, 88, 0.06) 100%);
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Free */
+
+width: 30px;
+height: 17px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height, or 120% */
+
+color: #07F258;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 34px;
+height: 34px;
+
+background: #041B16;
+backdrop-filter: blur(7px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* vuesax/linear/export */
+
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* vuesax/linear/export */
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 0px;
+top: 0px;
+
+
+
+/* export */
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 54.17%;
+right: 11.67%;
+top: 11.67%;
+bottom: 54.17%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 71.67%;
+right: 8.33%;
+top: 8.33%;
+bottom: 71.67%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1px solid #CCCCCC;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+transform: rotate(-180deg);
+
+
+/* Fill Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 13px 24px;
+gap: 10px;
+
+width: 128px;
+height: 49px;
+
+background: linear-gradient(270deg, rgba(7, 242, 88, 0.1) 0%, rgba(7, 242, 88, 0.06) 100%);
+border-radius: 94px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* View More */
+
+width: 80px;
+height: 23px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height, or 140% */
+
+/* White Global */
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;

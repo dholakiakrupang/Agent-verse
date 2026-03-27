@@ -1,0 +1,66 @@
+.logo-thumbnail {
+  position: relative;
+  width: 1200px;
+  height: 900px;
+  background: #07F258;
+  overflow: hidden;
+  /* To make it responsive and scalable, we can use CSS transform scale */
+  transform-origin: top left;
+}
+
+.logo-frame-15 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 30px;
+  position: absolute;
+  width: 816px;
+  height: 170px;
+  left: calc(50% - 816px/2);
+  top: calc(50% - 170px/2);
+}
+
+.logo-frame-9 {
+  width: 182.36px;
+  height: 170px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  position: relative;
+}
+
+/* Base style for all vectors to apply absolute positioning */
+.vector-node {
+  position: absolute;
+}
+
+/* Icon Leaves / Petals */
+.subtract-1 { width: 90.43px; height: 79.57px; left: 43.4px; top: 90.43px; background: #003700; }
+.vector-19-1 { width: 90.43px; height: 79.57px; left: 43.4px; top: 90.43px; background: #000000; }
+.vector-20-1 { width: 32.55px; height: 27.13px; left: 72.34px; top: 118.22px; background: #000000; }
+
+.subtract-2 { width: 90.43px; height: 79.57px; left: 43.4px; top: 0px; background: #003700; transform: matrix(1, 0, 0, -1, 0, 0); }
+.vector-19-2 { width: 90.43px; height: 79.57px; left: 43.4px; top: 0px; background: #000000; transform: matrix(1, 0, 0, -1, 0, 0); }
+.vector-20-2 { width: 32.55px; height: 27.13px; left: 72.34px; top: 24.65px; background: #000000; transform: matrix(1, 0, 0, -1, 0, 0); }
+
+.subtract-3 { width: 90.43px; height: 79.57px; left: 98.18px; top: 39.79px; background: #003700; transform: matrix(0, 1, 1, 0, 0, 0); }
+.vector-19-3 { width: 90.43px; height: 79.57px; left: 98.18px; top: 39.79px; background: #000000; transform: matrix(0, 1, 1, 0, 0, 0); }
+.vector-20-3 { width: 32.55px; height: 27.13px; left: 125.98px; top: 68.72px; background: #000000; transform: matrix(0, 1, 1, 0, 0, 0); }
+
+.subtract-4 { width: 90.43px; height: 79.57px; left: 0px; top: 39.79px; background: #003700; transform: rotate(90deg); }
+.vector-19-4 { width: 90.43px; height: 79.57px; left: 0px; top: 39.79px; background: #000000; transform: rotate(90deg); }
+.vector-20-4 { width: 32.55px; height: 27.13px; left: 24.65px; top: 68.72px; background: #000000; transform: rotate(90deg); }
+
+/* Agentverse Text Container */
+.agentverse-text {
+  width: 604.8px;
+  height: 68.87px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  position: relative;
+}
+
+/* Agentverse Letters as Rectangles (from Figma CSS) */
+.char-e-end { width: 42.85px; height: 66.95px; left: 561.95px; top: 1.05px; background: #003700; } /* Adjusted coordinates to be relative to the 604px container. The original CSS had left: 774.31px which is absolute to the thumbnail, 774.31 - (816-604)/2 - left offset = exact relative positioning. Oh, wait, Frame 15 absolute position left is (1200-816)/2 = 192px. If letter absolute left is 774.31px, relative to text container which starts at 192 (frame) + 182 (icon) + 30 (gap) = 404px. So 774.31 - 404 = 370.31px. Let me just use absolute relative positioning logic. */
