@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+﻿import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useTheme } from '../context/ThemeContext';
 import { AGENTS } from '../data/agents';
@@ -11,7 +11,7 @@ const DetailLinkItem = ({ label, url, primary = false, textMuted }) => {
   const [hovered, setHovered] = useState(false);
   return (
     <div
-      className="ad-link-item"
+      className="agd-link-item"
       title={url}
       onClick={() => window.open(url, '_blank', 'noopener,noreferrer')}
       onMouseEnter={() => setHovered(true)}
@@ -43,13 +43,13 @@ const DetailLinkItem = ({ label, url, primary = false, textMuted }) => {
  *   1. Intro  2. Key Features  3. Getting Started  4. Why Choose
  */
 function AutoFormatContent({ text, agent, textColor, contentText }) {
-  // ── Parse raw text into typed blocks ───────────────────────────
+  // â”€â”€ Parse raw text into typed blocks â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   const allLines = text.split('\n').map(l => l.trim());
 
-  const isBullet    = l => /^[-*•]\s/.test(l);
+  const isBullet    = l => /^[-*â€¢]\s/.test(l);
   const isNumbered  = l => /^\d+[.)]\s/.test(l);
   const isHeading   = l => /^#{1,3}\s/.test(l) || (l.endsWith(':') && l.length < 70 && !l.includes('.'));
-  const stripPrefix = l => l.replace(/^[-*•]\s*/, '').replace(/^\d+[.)]\s*/, '').replace(/^#{1,3}\s*/, '').replace(/:$/, '').trim();
+  const stripPrefix = l => l.replace(/^[-*â€¢]\s*/, '').replace(/^\d+[.)]\s*/, '').replace(/^#{1,3}\s*/, '').replace(/:$/, '').trim();
 
   // Group into logical paragraphs (split on blank lines)
   const paragraphs = [];
@@ -68,19 +68,19 @@ function AutoFormatContent({ text, agent, textColor, contentText }) {
     return { type: 'prose', lines };
   });
 
-  // ── Slot content into 4 named sections ─────────────────────────
-  // Section 1: Intro — first prose paragraph
+  // â”€â”€ Slot content into 4 named sections â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  // Section 1: Intro â€” first prose paragraph
   const introBlock = classified.find(b => b.type === 'prose');
 
-  // Section 2: Key Features — all bullet blocks
+  // Section 2: Key Features â€” all bullet blocks
   const bulletBlocks = classified.filter(b => b.type === 'bullets');
   const allBullets = bulletBlocks.flatMap(b => b.lines.map(stripPrefix));
 
-  // Section 3: Getting Started — numbered blocks or prose after bullets
+  // Section 3: Getting Started â€” numbered blocks or prose after bullets
   const numberedBlocks = classified.filter(b => b.type === 'numbered');
   const steps = numberedBlocks.flatMap(b => b.lines.map(stripPrefix));
 
-  // Section 4: Why Choose — remaining prose paragraphs after intro
+  // Section 4: Why Choose â€” remaining prose paragraphs after intro
   const proseBlocks = classified.filter(b => b.type === 'prose' && b !== introBlock);
 
   // Fallback text if user didn't provide content for a section
@@ -89,7 +89,7 @@ function AutoFormatContent({ text, agent, textColor, contentText }) {
 
   const features = allBullets.length > 0 ? allBullets : [
     `Intuitive ${agent.cat} interface optimized for productivity`,
-    `Autonomous execution — set it up once and let it run`,
+    `Autonomous execution â€” set it up once and let it run`,
     'Seamless integrations with your existing tools',
     `Smart context-awareness tailored for ${agent.cat.toLowerCase()} tasks`,
   ];
@@ -110,17 +110,17 @@ function AutoFormatContent({ text, agent, textColor, contentText }) {
         'Trusted by teams of all sizes across industries',
       ];
 
-  // ── Render ───────────────────────────────────────────────────────
+  // â”€â”€ Render â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   return (
     <>
       {/* 1. Intro */}
-      <div className="ad-content-section">
+      <div className="agd-content-section">
         <h2 style={{ color: textColor }}>{agent.name}: Your {agent.cat} AI Companion</h2>
         <p style={{ color: contentText }}>{introText}</p>
       </div>
 
       {/* 2. Key Features */}
-      <div className="ad-content-section">
+      <div className="agd-content-section">
         <h2 style={{ color: textColor }}>Key Features</h2>
         {features.map((f, i) => {
           // If feature has a colon, split into title + description
@@ -144,7 +144,7 @@ function AutoFormatContent({ text, agent, textColor, contentText }) {
       </div>
 
       {/* 3. Getting Started */}
-      <div className="ad-content-section">
+      <div className="agd-content-section">
         <h2 style={{ color: textColor }}>Getting Started</h2>
         {gettingStartedSteps.map((step, i) => {
           const colonIdx = step.indexOf(':');
@@ -161,15 +161,15 @@ function AutoFormatContent({ text, agent, textColor, contentText }) {
       </div>
 
       {/* 4. Why Choose */}
-      <div className="ad-content-section">
+      <div className="agd-content-section">
         <h2 style={{ color: textColor }}>Why Choose {agent.name}?</h2>
-        <ul className="ad-bullet-list">
+        <ul className="agd-bullet-list">
           {whyChoosePoints.map((pt, i) => {
             const colonIdx = pt.indexOf(':');
             const hasLabel = colonIdx > 0 && colonIdx < 50;
             return (
-              <li key={i} className="ad-bullet-item">
-                <div className="ad-bullet-dot" />
+              <li key={i} className="agd-bullet-item">
+                <div className="agd-bullet-dot" />
                 <div style={{ color: contentText }}>
                   {hasLabel && <strong style={{ color: textColor }}>{pt.slice(0, colonIdx).trim()}: </strong>}
                   {hasLabel ? pt.slice(colonIdx + 1).trim() : pt}
@@ -220,13 +220,13 @@ export default function AgentDetails() {
   return (
     <div className="animate-fade-in" style={{ background: bg, minHeight: '100vh', width: '100%', paddingBottom: 0, fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
       <style>{`
-        /* ═══════════════════════════════════════════
-           AGENT DETAILS — Responsive Styles
-           ═══════════════════════════════════════════ */
+        /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+           AGENT DETAILS â€” Responsive Styles
+           â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 
-        .ad-spacer { height: 50px; }
+        .agd-spacer { height: 50px; }
 
-        .ad-main {
+        .agd-main {
           max-width: 1568px;
           margin: 0 auto;
           padding: 0 176px;
@@ -234,7 +234,7 @@ export default function AgentDetails() {
         }
 
         /* Breadcrumb */
-        .ad-breadcrumb {
+        .agd-breadcrumb {
           display: flex;
           gap: 8px;
           align-items: center;
@@ -243,11 +243,11 @@ export default function AgentDetails() {
           font-weight: 400;
           line-height: 22px;
         }
-        .ad-breadcrumb span { cursor: pointer; color: #999999; }
-        .ad-breadcrumb .active { color: ${dark ? '#07F258' : '#297F58'}; cursor: default; }
+        .agd-breadcrumb span { cursor: pointer; color: #999999; }
+        .agd-breadcrumb .active { color: ${dark ? '#07F258' : '#297F58'}; cursor: default; }
 
         /* Hero Card */
-        .ad-hero {
+        .agd-hero {
           box-sizing: border-box;
           border-radius: 20px;
           padding: 40px;
@@ -258,13 +258,13 @@ export default function AgentDetails() {
         }
 
         /* Agent info header */
-        .ad-agent-header {
+        .agd-agent-header {
           display: flex;
           align-items: center;
           gap: 24px;
           margin-bottom: 24px;
         }
-        .ad-logo-box {
+        .agd-logo-box {
           width: 80px;
           height: 80px;
           border-radius: 16px;
@@ -277,22 +277,22 @@ export default function AgentDetails() {
           padding: 10px;
           flex-shrink: 0;
         }
-        .ad-logo-box img {
+        .agd-logo-box img {
           width: 100%;
           height: 100%;
           object-fit: contain;
         }
-        .ad-agent-name {
+        .agd-agent-name {
           font-size: 2.4rem;
           font-weight: 800;
           margin: 0;
           line-height: 1.1;
         }
-        .ad-agent-sub {
+        .agd-agent-sub {
           font-size: 0.95rem;
           margin-top: 8px;
         }
-        .ad-agent-desc {
+        .agd-agent-desc {
           font-size: 1.05rem;
           line-height: 1.8;
           margin-bottom: 3rem;
@@ -300,7 +300,7 @@ export default function AgentDetails() {
         }
 
         /* Visit Button */
-        .ad-visit-btn {
+        .agd-visit-btn {
           box-sizing: border-box;
           display: flex;
           align-items: center;
@@ -320,12 +320,12 @@ export default function AgentDetails() {
                       filter 0.2s ease,
                       opacity 0.2s;
         }
-        .ad-visit-btn:hover {
+        .agd-visit-btn:hover {
           transform: translateY(-2px);
           filter: drop-shadow(0 0 10px rgba(7,242,88,0.4));
           opacity: 0.92;
         }
-        .ad-visit-btn::after {
+        .agd-visit-btn::after {
           content: '';
           position: absolute;
           inset: 0;
@@ -342,13 +342,13 @@ export default function AgentDetails() {
         }
 
         /* Links grid */
-        .ad-links-grid {
+        .agd-links-grid {
           display: grid;
           grid-template-columns: 1fr 1fr;
           gap: 1rem;
           margin-bottom: 3rem;
         }
-        .ad-link-item {
+        .agd-link-item {
           display: flex;
           align-items: center;
           gap: 8px;
@@ -357,12 +357,12 @@ export default function AgentDetails() {
         }
 
         /* Details pills */
-        .ad-details-pills {
+        .agd-details-pills {
           display: flex;
           gap: 12px;
           flex-wrap: wrap;
         }
-        .ad-pill {
+        .agd-pill {
           display: flex;
           align-items: center;
           justify-content: center;
@@ -375,7 +375,7 @@ export default function AgentDetails() {
         }
 
         /* Screenshot */
-        .ad-screenshot {
+        .agd-screenshot {
           width: 100%;
           border-radius: 24px;
           overflow: hidden;
@@ -388,7 +388,7 @@ export default function AgentDetails() {
           justify-content: center;
           border-top: 1px solid ${dark ? 'rgba(255,255,255,0.05)' : '#E5E7EB'};
         }
-        .ad-screenshot img {
+        .agd-screenshot img {
           width: 100%;
           height: auto;
           display: block;
@@ -396,7 +396,7 @@ export default function AgentDetails() {
         }
 
         /* Content sections */
-        .ad-content {
+        .agd-content {
           display: flex;
           flex-direction: column;
           align-items: flex-start;
@@ -405,28 +405,28 @@ export default function AgentDetails() {
           max-width: 1000px;
           width: 100%;
         }
-        .ad-content-section {
+        .agd-content-section {
           display: flex;
           flex-direction: column;
           gap: 24px;
           width: 100%;
         }
-        .ad-content h2 {
+        .agd-content h2 {
           font-size: 2rem;
           font-weight: 700;
           margin: 0;
         }
-        .ad-content h3 {
+        .agd-content h3 {
           font-size: 1.25rem;
           font-weight: 600;
           margin: 0 0 0.75rem 0;
         }
-        .ad-content p, .ad-content li {
+        .agd-content p, .agd-content li {
           font-size: 1.05rem;
           line-height: 1.8;
           margin: 0;
         }
-        .ad-content ul {
+        .agd-content ul {
           list-style: none;
           margin: 0;
           padding: 0;
@@ -434,7 +434,7 @@ export default function AgentDetails() {
           flex-direction: column;
           gap: 0.5rem;
         }
-        .ad-bullet-list {
+        .agd-bullet-list {
           list-style: none;
           padding: 0;
           margin: 0;
@@ -442,11 +442,11 @@ export default function AgentDetails() {
           flex-direction: column;
           gap: 1rem;
         }
-        .ad-bullet-item {
+        .agd-bullet-item {
           display: flex;
           gap: 10px;
         }
-        .ad-bullet-dot {
+        .agd-bullet-dot {
           width: 6px;
           height: 6px;
           border-radius: 50%;
@@ -456,171 +456,171 @@ export default function AgentDetails() {
         }
 
         /* Related agents */
-        .ad-related-section {
+        .agd-related-section {
           padding-bottom: 4rem;
         }
-        .ad-related-title {
+        .agd-related-title {
           font-size: 2rem;
           font-weight: 700;
           margin-bottom: 2.5rem;
           letter-spacing: -0.02em;
         }
-        .ad-related-grid {
+        .agd-related-grid {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
           gap: 30px;
         }
 
-        /* ═══════════════════════════════════════════
-           TABLET — max-width 1200
-           ═══════════════════════════════════════════ */
+        /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+           TABLET â€” max-width 1200
+           â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
         @media (max-width: 1200px) {
-          .ad-main {
+          .agd-main {
             padding: 0 60px;
           }
         }
 
-        /* ═══════════════════════════════════════════
-           TABLET — max-width 1024
-           ═══════════════════════════════════════════ */
+        /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+           TABLET â€” max-width 1024
+           â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
         @media (max-width: 1024px) {
-          .ad-main {
+          .agd-main {
             padding: 0 40px;
           }
-          .ad-hero {
+          .agd-hero {
             grid-template-columns: 1fr;
             gap: 2rem;
             padding: 32px;
           }
-          .ad-agent-name {
+          .agd-agent-name {
             font-size: 2rem;
           }
-          .ad-related-grid {
+          .agd-related-grid {
             grid-template-columns: repeat(2, 1fr);
             gap: 20px;
           }
-          .ad-content h2 {
+          .agd-content h2 {
             font-size: 1.6rem;
           }
-          .ad-content {
+          .agd-content {
             gap: 40px;
             margin-bottom: 4rem;
           }
         }
 
-        /* ═══════════════════════════════════════════
-           MOBILE — max-width 768
-           ═══════════════════════════════════════════ */
+        /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+           MOBILE â€” max-width 768
+           â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
         @media (max-width: 768px) {
-          .ad-spacer { height: 20px; }
-          .ad-main {
+          .agd-spacer { height: 20px; }
+          .agd-main {
             padding: 0 16px;
           }
-          .ad-breadcrumb {
+          .agd-breadcrumb {
             font-size: 13px;
             margin-bottom: 16px;
             flex-wrap: wrap;
           }
-          .ad-hero {
+          .agd-hero {
             grid-template-columns: 1fr;
             gap: 1.5rem;
             padding: 20px;
             border-radius: 16px;
             margin-bottom: 2rem;
           }
-          .ad-agent-header {
+          .agd-agent-header {
             gap: 14px;
             margin-bottom: 16px;
           }
-          .ad-logo-box {
+          .agd-logo-box {
             width: 56px;
             height: 56px;
             border-radius: 12px;
             padding: 8px;
           }
-          .ad-agent-name {
+          .agd-agent-name {
             font-size: 1.5rem;
           }
-          .ad-agent-sub {
+          .agd-agent-sub {
             font-size: 0.82rem;
           }
-          .ad-agent-desc {
+          .agd-agent-desc {
             font-size: 0.9rem;
             line-height: 1.7;
             margin-bottom: 1.5rem;
           }
-          .ad-visit-btn {
+          .agd-visit-btn {
             padding: 11px 20px;
             font-size: 0.9rem;
           }
-          .ad-links-grid {
+          .agd-links-grid {
             grid-template-columns: 1fr;
             gap: 0.75rem;
             margin-bottom: 2rem;
           }
-          .ad-screenshot {
+          .agd-screenshot {
             border-radius: 16px;
             margin-bottom: 2.5rem;
           }
-          .ad-content {
+          .agd-content {
             gap: 36px;
             margin-bottom: 3rem;
           }
-          .ad-content h2 {
+          .agd-content h2 {
             font-size: 1.4rem;
           }
-          .ad-content h3 {
+          .agd-content h3 {
             font-size: 1.05rem;
           }
-          .ad-content p, .ad-content li {
+          .agd-content p, .agd-content li {
             font-size: 0.9rem;
             line-height: 1.7;
           }
-          .ad-related-section {
+          .agd-related-section {
             padding-bottom: 2.5rem;
           }
-          .ad-related-title {
+          .agd-related-title {
             font-size: 1.4rem;
             margin-bottom: 1.5rem;
           }
-          .ad-related-grid {
+          .agd-related-grid {
             grid-template-columns: 1fr;
             gap: 14px;
           }
-          .ad-pill {
+          .agd-pill {
             padding: 6px 14px;
             font-size: 0.78rem;
           }
         }
 
-        /* ═══════════════════════════════════════════
-           SMALL MOBILE — max-width 400
-           ═══════════════════════════════════════════ */
+        /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+           SMALL MOBILE â€” max-width 400
+           â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
         @media (max-width: 400px) {
-          .ad-main {
+          .agd-main {
             padding: 0 12px;
           }
-          .ad-hero {
+          .agd-hero {
             padding: 16px;
           }
-          .ad-agent-name {
+          .agd-agent-name {
             font-size: 1.3rem;
           }
-          .ad-agent-desc {
+          .agd-agent-desc {
             font-size: 0.85rem;
           }
-          .ad-content h2 {
+          .agd-content h2 {
             font-size: 1.25rem;
           }
         }
       `}</style>
 
-      <div className="ad-spacer" />
+      <div className="agd-spacer" />
 
-      <main className="ad-main">
+      <main className="agd-main">
         
         {/* Breadcrumb */}
-        <div className="ad-breadcrumb">
+        <div className="agd-breadcrumb">
           <span onClick={() => navigate('/')}>Home</span>
           <span>&gt;</span>
           <span onClick={() => navigate('/?category=' + encodeURIComponent(agent.cat))}>{agent.cat}</span>
@@ -629,7 +629,7 @@ export default function AgentDetails() {
         </div>
 
         {/* Hero Card */}
-        <div className="ad-hero" style={{
+        <div className="agd-hero" style={{
           background: dark ? 'linear-gradient(180deg, #041B16 0%, #031713 100%)' : '#FFFFFF',
           border: cardBorder, 
           boxShadow: dark ? '0 20px 40px rgba(0,0,0,0.2)' : 'none',
@@ -637,21 +637,21 @@ export default function AgentDetails() {
           
           {/* Left: Info */}
           <div style={{ display: 'flex', flexDirection: 'column' }}>
-            <div className="ad-agent-header">
-              <div className="ad-logo-box">
+            <div className="agd-agent-header">
+              <div className="agd-logo-box">
                 {agent.logo && <img src={agent.logo} alt={agent.name} />}
               </div>
               <div>
-                <h1 className="ad-agent-name" style={{ color: textColor }}>{agent.name}</h1>
-                <div className="ad-agent-sub" style={{ color: textMuted }}>Build and deploy robust AI solutions for {agent.cat}</div>
+                <h1 className="agd-agent-name" style={{ color: textColor }}>{agent.name}</h1>
+                <div className="agd-agent-sub" style={{ color: textMuted }}>Build and deploy robust AI solutions for {agent.cat}</div>
               </div>
             </div>
             
-            <p className="ad-agent-desc" style={{ color: dark ? '#E2E8F0' : '#111827' }}>
+            <p className="agd-agent-desc" style={{ color: dark ? '#E2E8F0' : '#111827' }}>
               {agent.desc} It features robust capabilities designed specifically for {agent.cat}, empowering users to automate workflows and rapidly deploy intelligent solutions.
             </p>
             
-            <button className="ad-visit-btn" onClick={() => window.open(agent.url, '_blank', 'noopener,noreferrer')} style={{
+            <button className="agd-visit-btn" onClick={() => window.open(agent.url, '_blank', 'noopener,noreferrer')} style={{
               background: dark ? 'linear-gradient(270deg, rgba(7, 242, 88, 0.1) 0%, rgba(7, 242, 88, 0.06) 100%)' : '#ECFDF3',
               border: dark ? 'none' : '1px solid #D1FADF',
               color: dark ? '#07F258' : '#027A48',
@@ -663,7 +663,7 @@ export default function AgentDetails() {
           {/* Right: Links & Details */}
           <div>
             <h3 style={{ fontSize: '1.1rem', fontWeight: 700, color: textColor, marginBottom: '1.2rem' }}>Links</h3>
-            <div className="ad-links-grid">
+            <div className="agd-links-grid">
               <DetailLinkItem label="Website" url={agent.url} textMuted={textMuted} />
               {agent.links && agent.links.length > 0 ? (
                 agent.links.map((link, idx) => (
@@ -677,7 +677,7 @@ export default function AgentDetails() {
             </div>
 
             <h3 style={{ fontSize: '1.1rem', fontWeight: 700, color: textColor, marginBottom: '1.2rem' }}>Details</h3>
-            <div className="ad-details-pills">
+            <div className="agd-details-pills">
               {!dark && agent.tag?.toLowerCase() === 'free' ? (
                 <svg width="70" height="34" viewBox="0 0 70 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M17 0.5H53C62.1127 0.5 69.5 7.8873 69.5 17C69.5 26.1127 62.1127 33.5 53 33.5H17C7.8873 33.5 0.5 26.1127 0.5 17C0.5 7.8873 7.8873 0.5 17 0.5Z" fill="url(#paint0_linear_40_3960)"/>
@@ -695,13 +695,13 @@ export default function AgentDetails() {
                   </defs>
                 </svg>
               ) : (
-                <span className="ad-pill" style={{
+                <span className="agd-pill" style={{
                   background: dark ? 'linear-gradient(270deg, rgba(7, 242, 88, 0.1) 0%, rgba(7, 242, 88, 0.06) 100%)' : '#ECFDF3',
                   border: dark ? 'none' : '1px solid #D1FADF',
                   color: dark ? '#07F258' : '#027A48',
                 }}>{agent.tag}</span>
               )}
-              <span className="ad-pill" style={{
+              <span className="agd-pill" style={{
                 background: 'rgba(66, 199, 255, 0.08)',
                 border: '1px solid #42C7FF',
                 color: '#42C7FF',
@@ -711,7 +711,7 @@ export default function AgentDetails() {
         </div>
 
         {/* Screenshot / Preview */}
-        <div className="ad-screenshot" style={{ border: cardBorder }}>
+        <div className="agd-screenshot" style={{ border: cardBorder }}>
           {agent.isCustom && agent.screenshot ? (
             <img src={agent.screenshot} alt={`${agent.name} Screenshot`} style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover' }} />
           ) : (
@@ -734,16 +734,16 @@ export default function AgentDetails() {
         </div>
 
         {/* Extended Details Content */}
-        <div className="ad-content">
+        <div className="agd-content">
 
           {agent.isCustom && agent.longDesc ? (
-            /* ── Auto-formatted user description ── */
+            /* â”€â”€ Auto-formatted user description â”€â”€ */
             <AutoFormatContent text={agent.longDesc} agent={agent} textColor={textColor} contentText={contentText} />
           ) : (
-            /* ── Template-generated content for built-in agents ── */
+            /* â”€â”€ Template-generated content for built-in agents â”€â”€ */
             <>
               {/* Intro Section */}
-              <div className="ad-content-section">
+              <div className="agd-content-section">
                 <h2 style={{ color: textColor }}>{agent.name}: Transform Your {agent.cat} Workflow</h2>
                 <p style={{ color: contentText }}>
                   {agent.name} is an innovative platform offering powerful AI capabilities tailored for {agent.cat.toLowerCase()}. Combining a seamless interface with robust technology, {agent.name} is transforming the landscape of how professionals approach tasks in this domain, enabling faster execution and smarter outcomes.
@@ -751,7 +751,7 @@ export default function AgentDetails() {
               </div>
 
               {/* Key Features */}
-              <div className="ad-content-section">
+              <div className="agd-content-section">
                 <h2 style={{ color: textColor }}>Key Features</h2>
                 <div>
                   <h3 style={{ color: textColor }}>{agent.name} Workspace</h3>
@@ -778,7 +778,7 @@ export default function AgentDetails() {
               </div>
 
               {/* Getting Started */}
-              <div className="ad-content-section">
+              <div className="agd-content-section">
                 <h2 style={{ color: textColor }}>Getting Started</h2>
                 {[
                   { title: `Set Up ${agent.name}`, desc: `Follow the standard onboarding documentation to connect your accounts and initialize the primary workspace.` },
@@ -794,7 +794,7 @@ export default function AgentDetails() {
               </div>
 
               {/* Platform Offerings */}
-              <div className="ad-content-section">
+              <div className="agd-content-section">
                 <h2 style={{ color: textColor }}>Platform Offerings</h2>
                 {[
                   { title: 'Templates & Blueprints', desc: `Plug-and-play configurations designed to streamline the adoption of AI in ${agent.cat.toLowerCase()}. Eliminate repetitive setup tasks and concentrate on high-level strategy.` },
@@ -809,17 +809,17 @@ export default function AgentDetails() {
               </div>
 
               {/* Why Choose */}
-              <div className="ad-content-section">
+              <div className="agd-content-section">
                 <h2 style={{ color: textColor }}>Why Choose {agent.name}?</h2>
-                <ul className="ad-bullet-list">
+                <ul className="agd-bullet-list">
                   {[
                     { label: 'Intuitive Design:', text: 'Simplify your operations with an easy-to-use interface.' },
                     { label: 'Powerful Backend:', text: 'Leverage robust AI models that ensure uninterrupted and accurate operations.' },
                     { label: 'Domain Specificity:', text: `Highly tuned solutions explicitly built for ${agent.cat.toLowerCase()} use cases.` },
                     { label: 'Continuous Updates:', text: 'Benefit from rapid product iterations and a thriving ecosystem of users.' },
                   ].map(item => (
-                    <li key={item.label} className="ad-bullet-item">
-                      <div className="ad-bullet-dot" />
+                    <li key={item.label} className="agd-bullet-item">
+                      <div className="agd-bullet-dot" />
                       <div style={{ color: contentText }}><strong style={{ color: textColor }}>{item.label}</strong> {item.text}</div>
                     </li>
                   ))}
@@ -836,11 +836,11 @@ export default function AgentDetails() {
         </div>
 
         {/* Similar Agents Grid */}
-        <section className="ad-related-section">
-          <h2 className="ad-related-title" style={{ color: textColor }}>
+        <section className="agd-related-section">
+          <h2 className="agd-related-title" style={{ color: textColor }}>
             Discover Similar Agents
           </h2>
-          <div className="ad-related-grid">
+          <div className="agd-related-grid">
             {relatedAgents.map(a => (
               <AgentCard key={a.id} agent={a} onClick={() => {
                 navigate('/agent/' + a.id);
@@ -856,3 +856,4 @@ export default function AgentDetails() {
     </div>
   );
 }
+

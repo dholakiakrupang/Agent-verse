@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo, useRef } from 'react';
+﻿import { useState, useEffect, useMemo, useRef } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useTheme } from '../context/ThemeContext';
 
@@ -7,7 +7,7 @@ import { getAllAgents } from '../utils/agentStore';
 import AgentCard from '../components/AgentCard';
 import Footer from '../components/Footer';
 
-// ── SVG Icon Imports ──────────────────────────────────────────────────────────
+// â”€â”€ SVG Icon Imports â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 import IconAll from '../assets/all.svg';
 import IconCoding from '../assets/code.svg';
 import IconAIAgent from '../assets/ai_agent.svg';
@@ -28,7 +28,7 @@ import IconScience from '../assets/science.svg';
 import IconHR from '../assets/hr.svg';
 import IconOthers from '../assets/others.svg';
 
-// ── Data ──────────────────────────────────────────────────────────────────────
+// â”€â”€ Data â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 const CATEGORIES = [
   { label: 'All',                   icon: IconAll               },
@@ -52,13 +52,13 @@ const CATEGORIES = [
   { label: 'Others',                icon: IconOthers            },
 ];
 
-// ── Typewriter placeholder ────────────────────────────────────────
+// â”€â”€ Typewriter placeholder â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const PLACEHOLDERS = [
   'Search for coding AI agents...',
   'Find the best productivity tools...',
   'Discover AI for data analysis...',
   'Explore research AI agents...',
-  'Your AI guide awaits – ask anything!',
+  'Your AI guide awaits â€“ ask anything!',
 ];
 
 export default function Landing() {
@@ -123,7 +123,7 @@ export default function Landing() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  // Cards only filter by category — search doesn't affect the grid
+  // Cards only filter by category â€” search doesn't affect the grid
   const filtered = useMemo(() => {
     return allAgents.filter(a => activeCat === 'All' || a.cat === activeCat);
   }, [allAgents, activeCat]);
@@ -163,11 +163,11 @@ export default function Landing() {
     <div className="landing-page-container" style={{ minHeight: '100vh', background: bg, fontFamily: "'Plus Jakarta Sans', 'Inter', sans-serif" }}>
       <style>
         {`
-          /* ═══════════════════════════════════════════
-             DESKTOP — pixel-perfect from Figma
-             ═══════════════════════════════════════════ */
+          /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+             DESKTOP â€” pixel-perfect from Figma
+             â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 
-          /* ── HERO ───────────────────────────── */
+          /* â”€â”€ HERO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
           .responsive-hero {
             display: flex;
             flex-direction: column;
@@ -176,8 +176,8 @@ export default function Landing() {
             text-align: center;
           }
 
-          /* Announcement pill — Figma: 454×54, 18px, letter-spacing 1px */
-          .announcement-pill {
+          /* Announcement pill â€” Figma: 454Ã—54, 18px, letter-spacing 1px */
+          .hero-notice-pill {
             display: inline-flex;
             align-items: center;
             justify-content: center;
@@ -231,7 +231,7 @@ export default function Landing() {
             margin: 0;
           }
 
-          /* Hero content wrapper — Figma: 864×414, gap 32px */
+          /* Hero content wrapper â€” Figma: 864Ã—414, gap 32px */
           .hero-content {
             display: flex;
             flex-direction: column;
@@ -241,7 +241,7 @@ export default function Landing() {
             max-width: 90vw;
           }
 
-          /* Text block — Figma: gap 24px */
+          /* Text block â€” Figma: gap 24px */
           .hero-text-block {
             display: flex;
             flex-direction: column;
@@ -281,7 +281,7 @@ export default function Landing() {
             color: ${dark ? '#CCCCCC' : '#9CA3AF'};
           }
 
-          /* ── CATEGORIES ────────────────────── */
+          /* â”€â”€ CATEGORIES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
           /* Container */
           .cat-section {
             background: ${dark ? '#031713' : 'transparent'};
@@ -371,7 +371,7 @@ export default function Landing() {
             background: rgba(255,255,255,0.04);
           }
 
-          /* ── CARDS GRID ────────────────────── */
+          /* â”€â”€ CARDS GRID â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
           /* Figma: 3-col, 176px side padding, 30px gap */
           .responsive-grid-container {
             padding: 40px 176px 60px;
@@ -407,7 +407,7 @@ export default function Landing() {
             background: rgba(7,242,88,0.15);
           }
 
-          /* ── Search Autocomplete Dropdown ── */
+          /* â”€â”€ Search Autocomplete Dropdown â”€â”€ */
           .search-dropdown {
             position: absolute;
             top: calc(100% + 8px);
@@ -470,9 +470,9 @@ export default function Landing() {
             font-family: 'Plus Jakarta Sans', sans-serif;
           }
           .search-dropdown-arrow { flex-shrink: 0; color: ${dark ? 'rgba(255,255,255,0.25)' : '#9CA3AF'}; }
-          /* ═══════════════════════════════════════════
-             TABLET — max-width 1024
-             ═══════════════════════════════════════════ */
+          /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+             TABLET â€” max-width 1024
+             â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
           @media (max-width: 1200px) {
             .responsive-grid-container {
               padding: 32px 60px 48px;
@@ -511,14 +511,14 @@ export default function Landing() {
             }
           }
 
-          /* ═══════════════════════════════════════════
-             MOBILE — max-width 768
-             ═══════════════════════════════════════════ */
+          /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+             MOBILE â€” max-width 768
+             â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
           @media (max-width: 768px) {
             .responsive-hero {
               padding: 28px 20px 24px;
             }
-            .announcement-pill {
+            .hero-notice-pill {
               height: 40px;
               padding: 8px 16px;
               font-size: 12px;
@@ -592,9 +592,9 @@ export default function Landing() {
             }
           }
 
-          /* ═══════════════════════════════════════════
-             SMALL MOBILE — max-width 400
-             ═══════════════════════════════════════════ */
+          /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+             SMALL MOBILE â€” max-width 400
+             â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
           @media (max-width: 400px) {
             .responsive-hero {
               padding: 20px 12px 16px;
@@ -607,7 +607,7 @@ export default function Landing() {
               font-size: 13px;
               line-height: 22px;
             }
-            .announcement-pill {
+            .hero-notice-pill {
               font-size: 11px;
               padding: 6px 12px;
               height: 36px;
@@ -623,11 +623,11 @@ export default function Landing() {
               height: 24px;
             }
           }
-          /* ═══════════════════════════════════════════
+          /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
              ANIMATIONS & MICRO-INTERACTIONS
-             ═══════════════════════════════════════════ */
+             â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 
-          /* ── Keyframes ─────────────────────────────── */
+          /* â”€â”€ Keyframes â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
           @keyframes fadeInUp {
             from { opacity: 0; transform: translateY(28px); }
             to   { opacity: 1; transform: translateY(0); }
@@ -666,7 +666,7 @@ export default function Landing() {
             to   { transform: rotate(360deg); }
           }
 
-          /* ── Hero entrance animations (staggered) ── */
+          /* â”€â”€ Hero entrance animations (staggered) â”€â”€ */
           .hero-pill-animate {
             animation: fadeInDown 0.6s cubic-bezier(0.22,1,0.36,1) both;
             animation-delay: 0.05s;
@@ -684,13 +684,13 @@ export default function Landing() {
             animation-delay: 0.44s;
           }
 
-          /* ── Search bar glow on focus ───────────── */
+          /* â”€â”€ Search bar glow on focus â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
           .search-bar-wrap:focus-within {
             border-color: rgba(255,255,255,0.45);
             box-shadow: 0 0 0 3px rgba(255,255,255,0.18);
           }
 
-          /* ── Category pill active pop (fires once on selection) ─── */
+          /* â”€â”€ Category pill active pop (fires once on selection) â”€â”€â”€ */
           .cat-btn.active { /* active state styling only, no animation here */ }
 
           /* Staggered form & card animations */
@@ -716,7 +716,7 @@ export default function Landing() {
             overflow: hidden;
           }
 
-          /* ── Floating ambient orbs ──────────────── */
+          /* â”€â”€ Floating ambient orbs â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
           .landing-orb {
             position: absolute;
             border-radius: 50%;
@@ -740,15 +740,15 @@ export default function Landing() {
         `}
       </style>
 
-      {/* ── HERO ─────────────────────────────────────────────────────────── */}
+      {/* â”€â”€ HERO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <section className="responsive-hero" style={{ background: bg, position: 'relative', zIndex: 2 }}>
         <div className="hero-content">
 
           {/* Text block with 24px gap */}
           <div className="hero-text-block">
             {/* Announcement pill */}
-            <div className="announcement-pill hero-pill-animate">
-              🔥 &nbsp;Added 38 New AI Agents Just Last Week!
+            <div className="hero-notice-pill hero-pill-animate">
+              ðŸ”¥ &nbsp;Added 38 New AI Agents Just Last Week!
             </div>
 
             {/* Heading */}
@@ -762,7 +762,7 @@ export default function Landing() {
             </p>
           </div>
 
-          {/* Search bar — 600×58 */}
+          {/* Search bar â€” 600Ã—58 */}
           <div ref={searchWrapRef} style={{ position: 'relative', width: '600px', maxWidth: '90vw' }} className="hero-search-animate">
             <div className="search-bar-wrap">
               <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -827,7 +827,7 @@ export default function Landing() {
                       navigate('/agent/' + a.id);
                     }}
                   >
-                    {/* Logo — left */}
+                    {/* Logo â€” left */}
                     <div style={{
                       width: 32, height: 32, borderRadius: 8, flexShrink: 0,
                       background: dark ? '#0a2218' : '#F3F4F6',
@@ -839,7 +839,7 @@ export default function Landing() {
                       }
                     </div>
 
-                    {/* Name — takes remaining space */}
+                    {/* Name â€” takes remaining space */}
                     <span style={{
                       flex: 1, minWidth: 0,
                       overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap',
@@ -873,7 +873,7 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* ── CATEGORIES ────────────────────────────────────────────────────── */}
+      {/* â”€â”€ CATEGORIES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <div className="cat-section" style={{ position: 'relative', zIndex: 1 }}>
         <div className="cat-inner">
 
@@ -919,7 +919,7 @@ export default function Landing() {
         </div>
       </div>
 
-      {/* ── CARDS GRID ────────────────────────────────────────────────────── */}
+      {/* â”€â”€ CARDS GRID â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <main ref={gridRef} className="responsive-grid-container" style={{ background: bg, scrollMarginTop: '104px' }}>
         {filtered.length === 0 ? (
           <div style={{ textAlign: 'center', color: '#4A7A64', padding: '80px 0', fontSize: '18px', fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
@@ -959,8 +959,9 @@ export default function Landing() {
         )}
       </main>
 
-      {/* ── FOOTER ────────────────────────────────────────────────────────── */}
+      {/* â”€â”€ FOOTER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <Footer />
     </div>
   );
 }
+
