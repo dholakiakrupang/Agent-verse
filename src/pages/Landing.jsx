@@ -58,7 +58,7 @@ const PLACEHOLDERS = [
   'Find the best productivity tools...',
   'Discover AI for data analysis...',
   'Explore research AI agents...',
-  'Your AI guide awaits â€“ ask anything!',
+  'Your AI guide awaits ask anything!',
 ];
 
 export default function Landing() {
@@ -733,7 +733,7 @@ export default function Landing() {
           <div className="hero-text-block">
             {/* Announcement pill */}
             <div className="hero-notice-pill hero-pill-animate">
-               &nbsp;Added 38 New AI Agents Just Last Week!
+               &nbsp;🔥 Added 38 New AI Agents Just Last Week!
             </div>
 
             {/* Heading */}
