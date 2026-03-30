@@ -24,15 +24,15 @@ export default function SubmitAgent() {
   const [form, setForm] = useState({
     name: '',
     url: '',
-    category: 'General Purpose',
-    tag: 'Free',
+    category: '',
+    tag: '',
     description: '',
     longDesc: '',
     links: [{ title: '', url: '' }],
   });
   const [logoFile, setLogoFile] = useState(null);      // { preview, base64 }
   const [screenshot, setScreenshot] = useState(null);  // { preview, base64 }
-  const [error, setError] = useState({ field: '', message: '' }); // one error at a time
+  const [errors, setErrors] = useState({}); // Stores all field errors
   const [submitting, setSubmitting] = useState(false);
 
   const fieldRefs = {
@@ -64,47 +64,61 @@ export default function SubmitAgent() {
     setScreenshot(data);
   };
 
-  // ── One-by-one validation ─────────────────────────────────────
+  // ── Simultaneous validation ─────────────────────────────────────
   const SHORT_DESC_LIMIT = 75;
   const validate = () => {
-    if (!form.name.trim()) return { field: 'name', message: 'Agent name is required.' };
-    if (!form.url.trim()) return { field: 'url', message: 'Website URL is required.' };
-    try { new URL(form.url); } catch {
-      return { field: 'url', message: 'Please enter a valid URL (e.g. https://example.com).' };
+    const newErrors = {};
+
+    if (!form.name.trim()) newErrors.name = 'Agent name is required.';
+    
+    if (!form.url.trim()) newErrors.url = 'Website URL is required.';
+    else {
+      try { new URL(form.url); } catch {
+        newErrors.url = 'Please enter a valid URL (e.g. https://example.com).';
+      }
     }
-    if (!form.description.trim()) return { field: 'description', message: 'Short description is required.' };
-    if (form.description.trim().length > SHORT_DESC_LIMIT) return { field: 'description', message: `Short description must be ${SHORT_DESC_LIMIT} characters or less.` };
-    if (!form.longDesc.trim()) return { field: 'longDesc', message: 'Detailed description is required.' };
+
+    if (!form.category) newErrors.category = 'Please select a category.';
+    if (!form.tag) newErrors.tag = 'Please select a pricing option.';
+    
+    if (!form.description.trim()) newErrors.description = 'Short description is required.';
+    else if (form.description.trim().length > SHORT_DESC_LIMIT) newErrors.description = `Short description must be ${SHORT_DESC_LIMIT} characters or less.`;
+    
+    if (!form.longDesc.trim()) newErrors.longDesc = 'Detailed description is required.';
     
     // Validate custom links if they are partially filled
-    for (let i = 0; i < form.links.length; i++) {
-      const link = form.links[i];
+    form.links.forEach((link, i) => {
       if (link.title.trim() && !link.url.trim()) {
-        return { field: `link_url_${i}`, message: 'URL is required for this link.' };
+        newErrors[`link_url_${i}`] = 'URL is required for this link.';
       }
       if (!link.title.trim() && link.url.trim()) {
-        return { field: `link_title_${i}`, message: 'Title is required for this URL.' };
+        newErrors[`link_title_${i}`] = 'Title is required for this URL.';
       }
       if (link.url.trim()) {
         try { new URL(link.url); } catch {
-          return { field: `link_url_${i}`, message: 'Please enter a valid URL.' };
+          newErrors[`link_url_${i}`] = 'Please enter a valid URL.';
         }
       }
-    }
-    return null;
+    });
+
+    return newErrors;
   };
 
   // ── Submit ────────────────────────────────────────────────────
   const handleSubmit = (e) => {
     e.preventDefault();
-    const err = validate();
-    if (err) {
-      setError(err);
-      const el = fieldRefs[err.field]?.current;
+    const newErrors = validate();
+    
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+      // Scroll to the first field with an error
+      const firstErrorField = Object.keys(newErrors)[0];
+      const el = fieldRefs[firstErrorField]?.current;
       if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
       return;
     }
-    setError({ field: '', message: '' });
+
+    setErrors({});
     setSubmitting(true);
 
     saveCustomAgent({
@@ -138,7 +152,7 @@ export default function SubmitAgent() {
   const getInputStyle = (field, extra = {}) => ({
     width: '100%',
     background: inputBg,
-    border: `1px solid ${error.field === field ? borderError : borderNormal}`,
+    border: `1px solid ${errors[field] ? borderError : borderNormal}`,
     borderRadius: '95px',
     padding: '0 24px',
     height: '58px',
@@ -158,9 +172,9 @@ export default function SubmitAgent() {
   );
 
   const ErrorMsg = ({ field }) =>
-    error.field === field ? (
+    errors[field] ? (
       <div style={{ fontSize: '13px', color: '#FF6B6B', paddingLeft: 14, marginTop: 2, fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
-        ⚠ {error.message}
+        ⚠ {errors[field]}
       </div>
     ) : null;
 
@@ -238,10 +252,10 @@ export default function SubmitAgent() {
                     type="text"
                     placeholder="e.g. SuperBot AI"
                     value={form.name}
-                    onChange={e => { setForm({ ...form, name: e.target.value }); if (error.field === 'name') setError({}); }}
+                    onChange={e => { setForm({ ...form, name: e.target.value }); if (errors.name) setErrors({...errors, name: null}); }}
                     style={getInputStyle('name')}
                     onFocus={e => e.target.style.borderColor = borderFocus}
-                    onBlur={e => e.target.style.borderColor = error.field === 'name' ? borderError : borderNormal}
+                    onBlur={e => e.target.style.borderColor = errors.name ? borderError : borderNormal}
                   />
                   <ErrorMsg field="name" />
                 </div>
@@ -252,10 +266,10 @@ export default function SubmitAgent() {
                     type="text"
                     placeholder="https://youragent.com"
                     value={form.url}
-                    onChange={e => { setForm({ ...form, url: e.target.value }); if (error.field === 'url') setError({}); }}
+                    onChange={e => { setForm({ ...form, url: e.target.value }); if (errors.url) setErrors({...errors, url: null}); }}
                     style={getInputStyle('url')}
                     onFocus={e => e.target.style.borderColor = borderFocus}
-                    onBlur={e => e.target.style.borderColor = error.field === 'url' ? borderError : borderNormal}
+                    onBlur={e => e.target.style.borderColor = errors.url ? borderError : borderNormal}
                   />
                   <ErrorMsg field="url" />
                 </div>
@@ -269,15 +283,17 @@ export default function SubmitAgent() {
                     <select
                       className="sa-select"
                       value={form.category}
-                      onChange={e => setForm({ ...form, category: e.target.value })}
+                      onChange={e => { setForm({ ...form, category: e.target.value }); if (errors.category) setErrors({...errors, category: null}); }}
                       style={getInputStyle('category')}
                       onFocus={e => e.target.style.borderColor = borderFocus}
-                      onBlur={e => e.target.style.borderColor = borderNormal}
+                      onBlur={e => e.target.style.borderColor = errors.category ? borderError : borderNormal}
                     >
+                      <option value="" disabled>Select a category</option>
                       {ALL_CATEGORIES.map(c => <option key={c} value={c}>{c}</option>)}
                     </select>
                     <svg style={{ position: 'absolute', right: 20, top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none' }} width="14" height="8" viewBox="0 0 14 8" fill="none"><path d="M1 1L7 7L13 1" stroke={dark ? "rgba(255,255,255,0.7)" : "#111827"} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
                   </div>
+                  <ErrorMsg field="category" />
                 </div>
 
                 <div className="sa-field">
@@ -286,15 +302,17 @@ export default function SubmitAgent() {
                     <select
                       className="sa-select"
                       value={form.tag}
-                      onChange={e => setForm({ ...form, tag: e.target.value })}
+                      onChange={e => { setForm({ ...form, tag: e.target.value }); if (errors.tag) setErrors({...errors, tag: null}); }}
                       style={getInputStyle('tag')}
                       onFocus={e => e.target.style.borderColor = borderFocus}
-                      onBlur={e => e.target.style.borderColor = borderNormal}
+                      onBlur={e => e.target.style.borderColor = errors.tag ? borderError : borderNormal}
                     >
+                      <option value="" disabled>Select pricing</option>
                       {PRICING_TAGS.map(t => <option key={t} value={t}>{t}</option>)}
                     </select>
                     <svg style={{ position: 'absolute', right: 20, top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none' }} width="14" height="8" viewBox="0 0 14 8" fill="none"><path d="M1 1L7 7L13 1" stroke={dark ? "rgba(255,255,255,0.7)" : "#111827"} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
                   </div>
+                  <ErrorMsg field="tag" />
                 </div>
               </div>
 
@@ -310,10 +328,10 @@ export default function SubmitAgent() {
                   maxLength={75}
                   placeholder="One-liner: what this agent does and who it's for..."
                   value={form.description}
-                  onChange={e => { setForm({ ...form, description: e.target.value }); if (error.field === 'description') setError({}); }}
+                  onChange={e => { setForm({ ...form, description: e.target.value }); if (errors.description) setErrors({...errors, description: null}); }}
                   style={{ ...getInputStyle('description', { borderRadius: '20px', height: 'auto', padding: '16px 24px' }) }}
                   onFocus={e => e.target.style.borderColor = borderFocus}
-                  onBlur={e => e.target.style.borderColor = error.field === 'description' ? borderError : borderNormal}
+                  onBlur={e => e.target.style.borderColor = errors.description ? borderError : borderNormal}
                 />
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                   <ErrorMsg field="description" />
@@ -332,12 +350,12 @@ export default function SubmitAgent() {
                 <textarea
                   className="sa-textarea"
                   rows={10}
-                  placeholder={`Describe your agent in detail. For example:\n\n${form.name || 'Your Agent'} is an AI-powered platform that helps teams...\n\nKey features include:\n- Feature 1\n- Feature 2\n\nGetting started is easy. Simply...`}
+                  placeholder={`Describe your agent in detail. For example:\n\n\${form.name || 'Your Agent'} is an AI-powered platform that helps teams...\n\nKey features include:\n- Feature 1\n- Feature 2\n\nGetting started is easy. Simply...`}
                   value={form.longDesc}
-                  onChange={e => { setForm({ ...form, longDesc: e.target.value }); if (error.field === 'longDesc') setError({}); }}
+                  onChange={e => { setForm({ ...form, longDesc: e.target.value }); if (errors.longDesc) setErrors({...errors, longDesc: null}); }}
                   style={{ ...getInputStyle('longDesc', { borderRadius: '20px', height: 'auto', padding: '16px 24px', lineHeight: '1.7' }) }}
                   onFocus={e => e.target.style.borderColor = borderFocus}
-                  onBlur={e => e.target.style.borderColor = error.field === 'longDesc' ? borderError : borderNormal}
+                  onBlur={e => e.target.style.borderColor = errors.longDesc ? borderError : borderNormal}
                 />
                 <ErrorMsg field="longDesc" />
               </div>
@@ -401,11 +419,11 @@ export default function SubmitAgent() {
                             const newLinks = [...form.links];
                             newLinks[idx].title = e.target.value;
                             setForm({ ...form, links: newLinks });
-                            if (error.field === `link_title_${idx}`) setError({});
+                            if (errors[`link_title_${idx}`]) setErrors({...errors, [`link_title_${idx}`]: null});
                           }}
                           style={getInputStyle(`link_title_${idx}`, { height: '52px', borderRadius: '16px' })}
                           onFocus={e => e.target.style.borderColor = borderFocus}
-                          onBlur={e => e.target.style.borderColor = error.field === `link_title_${idx}` ? borderError : borderNormal}
+                          onBlur={e => e.target.style.borderColor = errors[`link_title_${idx}`] ? borderError : borderNormal}
                         />
                         <ErrorMsg field={`link_title_${idx}`} />
                       </div>
@@ -419,11 +437,11 @@ export default function SubmitAgent() {
                               const newLinks = [...form.links];
                               newLinks[idx].url = e.target.value;
                               setForm({ ...form, links: newLinks });
-                              if (error.field === `link_url_${idx}`) setError({});
+                              if (errors[`link_url_${idx}`]) setErrors({...errors, [`link_url_${idx}`]: null});
                             }}
                             style={{ ...getInputStyle(`link_url_${idx}`, { height: '52px', borderRadius: '16px' }), flex: 1 }}
                             onFocus={e => e.target.style.borderColor = borderFocus}
-                            onBlur={e => e.target.style.borderColor = error.field === `link_url_${idx}` ? borderError : borderNormal}
+                            onBlur={e => e.target.style.borderColor = errors[`link_url_${idx}`] ? borderError : borderNormal}
                           />
                           {form.links.length > 1 && (
                             <button

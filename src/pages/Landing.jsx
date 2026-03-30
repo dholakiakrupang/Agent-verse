@@ -73,7 +73,7 @@ export default function Landing() {
 
   const [search, setSearch] = useState('');
   const [activeCat, setActiveCat] = useState('All');
-  const [currentPage, setCurrentPage] = useState(1);
+  const [visibleCount, setVisibleCount] = useState(12);
   const [isExpandedCategories, setIsExpandedCategories] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
@@ -106,8 +106,8 @@ export default function Landing() {
       const match = CATEGORIES.find(c => c.label === cat);
       if (match) {
         setActiveCat(match.label);
-        setSearch('');       // clear search when arriving from a URL category link
-        setCurrentPage(1);   // reset pagination
+        setSearch('');
+        setVisibleCount(12);
       }
     } else {
       setActiveCat('All');
@@ -133,16 +133,9 @@ export default function Landing() {
 
   const categoriesToDisplay = isMobile && !isExpandedCategories ? CATEGORIES.slice(0, 7) : CATEGORIES;
 
-
-  const ITEMS_PER_PAGE = 12;
-  const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE);
-
-  const paginatedAgents = useMemo(() => {
-    return filtered.slice(
-      (currentPage - 1) * ITEMS_PER_PAGE,
-      currentPage * ITEMS_PER_PAGE
-    );
-  }, [filtered, currentPage]);
+  const visibleAgents = useMemo(() => {
+    return filtered.slice(0, visibleCount);
+  }, [filtered, visibleCount]);
 
   const bg = dark ? '#031713' : '#FFFFFF';
 
@@ -435,46 +428,6 @@ export default function Landing() {
             }
           }
 
-          /* ── Pagination UI ── */
-          .pagination-wrap {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            margin-top: 60px;
-            flex-wrap: wrap;
-          }
-          .page-btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 44px;
-            height: 44px;
-            border-radius: 12px;
-            border: 1px solid ${dark ? 'rgba(136, 136, 136, 0.2)' : '#E5E7EB'};
-            background: transparent;
-            color: ${dark ? '#888888' : '#4B5563'};
-            font-size: 1rem;
-            font-weight: 600;
-            font-family: 'Inter', sans-serif;
-            cursor: pointer;
-            transition: all 0.2s ease;
-          }
-          .page-btn:hover:not(:disabled) {
-            border-color: ${dark ? '#07F258' : '#166534'};
-            color: ${dark ? '#07F258' : '#166534'};
-            background: ${dark ? 'rgba(7, 242, 88, 0.05)' : '#F0FDF4'};
-          }
-          .page-btn.active {
-            background: ${dark ? '#07F258' : '#12B76A'};
-            color: ${dark ? '#031713' : '#FFFFFF'};
-            border-color: ${dark ? '#07F258' : '#12B76A'};
-          }
-          .page-btn:disabled {
-            opacity: 0.3;
-            cursor: not-allowed;
-          }
-
           /* ═══════════════════════════════════════════
              MOBILE — max-width 768
              ═══════════════════════════════════════════ */
@@ -738,11 +691,6 @@ export default function Landing() {
               value={search}
               onChange={e => {
                 setSearch(e.target.value);
-                if (e.target.value) {
-                  // when user types, reset to All so search runs across all agents
-                  setActiveCat('All');
-                  setCurrentPage(1);
-                }
               }}
             />
           </div>
@@ -763,10 +711,9 @@ export default function Landing() {
                   className={`cat-btn${active ? ' active' : ''} cat-pill-stagger`}
                   style={{ animationDelay: `${idx * 0.04}s` }}
                   onClick={() => {
-                    if (active) return; // no toggle — stay on selected category
                     setActiveCat(label);
                     setSearch('');
-                    setCurrentPage(1);
+                    setVisibleCount(12);
                   }}
                 >
                   <img src={icon} alt={label} className="cat-btn-icon" />
@@ -806,14 +753,14 @@ export default function Landing() {
         ) : (
           <>
             <div className="responsive-grid">
-              {paginatedAgents.map((a, idx) => {
+              {visibleAgents.map((a, idx) => {
                 return (
                   <div
-                    key={`${currentPage}-${a.id}`} // Force re-render/animation on page change
+                    key={`agent-${a.id}`} 
                     className="card-reveal-animate"
                     style={{ 
                       height: '100%',
-                      animationDelay: `${(idx % ITEMS_PER_PAGE) * 0.05}s` 
+                      animationDelay: `${(idx % 12) * 0.05}s` 
                     }}
                   >
                     <AgentCard agent={a} onClick={() => navigate('/agent/' + a.id)} />
@@ -822,58 +769,14 @@ export default function Landing() {
               })}
             </div>
 
-            {/* Pagination Controls */}
-            {totalPages > 1 && (
-              <div className="pagination-wrap">
+            {/* View More Controls */}
+            {visibleCount < filtered.length && (
+              <div className="view-more-wrap">
                 <button 
-                  className="page-btn" 
-                  disabled={currentPage === 1}
-                  onClick={() => { 
-                    setCurrentPage(prev => prev - 1); 
-                    gridRef.current?.scrollIntoView({ behavior: 'smooth' }); 
-                  }}
+                  className="view-more-btn" 
+                  onClick={() => setVisibleCount(prev => prev + 12)}
                 >
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
-                </button>
-                
-                {Array.from({ length: totalPages }).map((_, i) => {
-                  const pageNum = i + 1;
-                  // Simple responsive pagination: show first, last, current, and adjacent
-                  if (
-                    totalPages > 5 && 
-                    pageNum !== 1 && 
-                    pageNum !== totalPages && 
-                    Math.abs(pageNum - currentPage) > 1
-                  ) {
-                    if (pageNum === 2 || pageNum === totalPages - 1) {
-                      return <span key={pageNum} style={{ color: '#888' }}>...</span>;
-                    }
-                    return null;
-                  }
-
-                  return (
-                    <button
-                      key={pageNum}
-                      className={`page-btn ${pageNum === currentPage ? 'active' : ''}`}
-                      onClick={() => { 
-                        setCurrentPage(pageNum); 
-                        gridRef.current?.scrollIntoView({ behavior: 'smooth' }); 
-                      }}
-                    >
-                      {pageNum}
-                    </button>
-                  );
-                })}
-
-                <button 
-                  className="page-btn" 
-                  disabled={currentPage === totalPages}
-                  onClick={() => { 
-                    setCurrentPage(prev => prev + 1); 
-                    gridRef.current?.scrollIntoView({ behavior: 'smooth' }); 
-                  }}
-                >
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                  View More
                 </button>
               </div>
             )}
