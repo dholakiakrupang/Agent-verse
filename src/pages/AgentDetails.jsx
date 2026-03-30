@@ -43,7 +43,7 @@ const DetailLinkItem = ({ label, url, primary = false, textMuted }) => {
  *   1. Intro  2. Key Features  3. Getting Started  4. Why Choose
  */
 function AutoFormatContent({ text, agent, textColor, contentText }) {
-  // â”€â”€ Parse raw text into typed blocks â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  // ── Parse raw text into typed blocks ───────────────────────────
   const allLines = text.split('\n').map(l => l.trim());
 
   const isBullet    = l => /^[-*â€¢]\s/.test(l);
@@ -68,7 +68,7 @@ function AutoFormatContent({ text, agent, textColor, contentText }) {
     return { type: 'prose', lines };
   });
 
-  // â”€â”€ Slot content into 4 named sections â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  // ── Slot content into 4 named sections ─────────────────────────
   // Section 1: Intro â€” first prose paragraph
   const introBlock = classified.find(b => b.type === 'prose');
 
@@ -110,7 +110,7 @@ function AutoFormatContent({ text, agent, textColor, contentText }) {
         'Trusted by teams of all sizes across industries',
       ];
 
-  // â”€â”€ Render â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  // ── Render ───────────────────────────────────────────────────────
   return (
     <>
       {/* 1. Intro */}
@@ -220,9 +220,9 @@ export default function AgentDetails() {
   return (
     <div className="animate-fade-in" style={{ background: bg, minHeight: '100vh', width: '100%', paddingBottom: 0, fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
       <style>{`
-        /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+        /* ═══════════════════════════════════════════
            AGENT DETAILS â€” Responsive Styles
-           â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+           ═══════════════════════════════════════════ */
 
         .agd-spacer { height: 50px; }
 
@@ -471,18 +471,18 @@ export default function AgentDetails() {
           gap: 30px;
         }
 
-        /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+        /* ═══════════════════════════════════════════
            TABLET â€” max-width 1200
-           â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+           ═══════════════════════════════════════════ */
         @media (max-width: 1200px) {
           .agd-main {
             padding: 0 60px;
           }
         }
 
-        /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+        /* ═══════════════════════════════════════════
            TABLET â€” max-width 1024
-           â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+           ═══════════════════════════════════════════ */
         @media (max-width: 1024px) {
           .agd-main {
             padding: 0 40px;
@@ -508,9 +508,9 @@ export default function AgentDetails() {
           }
         }
 
-        /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+        /* ═══════════════════════════════════════════
            MOBILE â€” max-width 768
-           â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+           ═══════════════════════════════════════════ */
         @media (max-width: 768px) {
           .agd-spacer { height: 20px; }
           .agd-main {
@@ -593,9 +593,9 @@ export default function AgentDetails() {
           }
         }
 
-        /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+        /* ═══════════════════════════════════════════
            SMALL MOBILE â€” max-width 400
-           â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+           ═══════════════════════════════════════════ */
         @media (max-width: 400px) {
           .agd-main {
             padding: 0 12px;
@@ -737,10 +737,10 @@ export default function AgentDetails() {
         <div className="agd-content">
 
           {agent.isCustom && agent.longDesc ? (
-            /* â”€â”€ Auto-formatted user description â”€â”€ */
+            /* ── Auto-formatted user description ── */
             <AutoFormatContent text={agent.longDesc} agent={agent} textColor={textColor} contentText={contentText} />
           ) : (
-            /* â”€â”€ Template-generated content for built-in agents â”€â”€ */
+            /* ── Template-generated content for built-in agents ── */
             <>
               {/* Intro Section */}
               <div className="agd-content-section">
