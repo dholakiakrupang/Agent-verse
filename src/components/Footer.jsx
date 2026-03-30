@@ -1,7 +1,25 @@
 import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { useTheme } from '../context/ThemeContext';
 import Logo from './Logo';
+
+const linkStyle = {
+  fontSize: '0.9rem', color: '#CCCCCC', marginBottom: '1rem',
+  cursor: 'pointer', transition: 'color 0.15s',
+  fontFamily: "'Plus Jakarta Sans', sans-serif",
+};
+
+const LinkItem = ({ label }) => (
+  <Link
+    to={'/?category=' + encodeURIComponent(label)}
+    onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+    style={{ ...linkStyle, textDecoration: 'none', display: 'block' }}
+    onMouseEnter={e => e.target.style.color = '#07F258'}
+    onMouseLeave={e => e.target.style.color = '#CCCCCC'}
+  >
+    {label}
+  </Link>
+);
 
 export default function Footer() {
   const navigate = useNavigate();
@@ -21,33 +39,11 @@ export default function Footer() {
 
   const textColor = dark ? '#FFFFFF' : '#0B1F18';
 
-  const linkStyle = {
-    fontSize: '0.9rem', color: '#CCCCCC', marginBottom: '1rem',
-    cursor: 'pointer', transition: 'color 0.15s',
-    fontFamily: "'Plus Jakarta Sans', sans-serif",
-  };
-
-  const handleLinkClick = (label) => {
-    navigate('/?category=' + encodeURIComponent(label));
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
-  const LinkItem = ({ label }) => (
-    <div
-      onClick={() => handleLinkClick(label)}
-      style={linkStyle}
-      onMouseEnter={e => e.target.style.color = '#07F258'}
-      onMouseLeave={e => e.target.style.color = '#CCCCCC'}
-    >
-      {label}
-    </div>
-  );
-
   const allLinks = [
     'Coding', 'AI Agent Builders', 'Productivity', 'Personal Assistant',
     'General Purpose', 'Content Creation', 'Research', 'Digital Workers',
     'Business Intelligence', 'Sales', 'Marketing', 'Finance',
-    'Design', 'Data Analysis', 'Customer Service', 'Science', 'HR', 'Other',
+    'Design', 'Data Analysis', 'Customer Service', 'Science', 'HR', 'Others',
   ];
 
   // ── MOBILE FOOTER ──────────────────────────────────────────────────────
@@ -218,7 +214,7 @@ export default function Footer() {
     <footer style={{
       borderTop: dark ? '1px solid #0D1F18' : '1px solid #D8EDE4',
       background: dark ? '#031713' : '#EEF9F4',
-      padding: '5rem 176px 2rem',
+      padding: '5rem 8% 2rem',
       display: 'flex', flexDirection: 'column',
       alignItems: 'center', width: '100%', boxSizing: 'border-box',
     }}>
@@ -261,7 +257,7 @@ export default function Footer() {
 
         {/* Column 4 */}
         <div style={{ paddingTop: '3.1rem' }}>
-          {['Design', 'Data Analysis', 'Customer Service', 'Science', 'HR', 'Other'].map(l => (
+          {['Design', 'Data Analysis', 'Customer Service', 'Science', 'HR', 'Others'].map(l => (
             <LinkItem key={l} label={l} />
           ))}
         </div>
