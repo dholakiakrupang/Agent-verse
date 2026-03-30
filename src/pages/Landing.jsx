@@ -78,6 +78,9 @@ export default function Landing() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
   const gridRef = useRef(null);
+  const searchWrapRef = useRef(null);
+  const [showSuggestions, setShowSuggestions] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(-1);
 
   const [typedText, setTypedText] = useState('');
   const [phIndex, setPhIndex] = useState(0);
@@ -120,18 +123,35 @@ export default function Landing() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  // Performance optimization: only recompute filtered array if dependencies change
+  // Cards only filter by category — search doesn't affect the grid
   const filtered = useMemo(() => {
-    return allAgents.filter(a => {
-      const matchCat = activeCat === 'All' || a.cat === activeCat;
-      if (!matchCat) return false;
-      if (!search.trim()) return true;
-      const q = search.toLowerCase().trim();
-      return a.name.toLowerCase().includes(q); // search by name only
-    });
-  }, [allAgents, activeCat, search]);
+    return allAgents.filter(a => activeCat === 'All' || a.cat === activeCat);
+  }, [allAgents, activeCat]);
 
   const categoriesToDisplay = isMobile && !isExpandedCategories ? CATEGORIES.slice(0, 7) : CATEGORIES;
+
+  // Dropdown suggestions: name-only strict match, respects active category
+  const suggestions = useMemo(() => {
+    if (!search.trim()) return [];
+    const q = search.toLowerCase().trim();
+    return allAgents
+      .filter(a => {
+        const matchCat = activeCat === 'All' || a.cat === activeCat;
+        return matchCat && a.name.toLowerCase().includes(q);
+      })
+      .slice(0, 8);
+  }, [allAgents, search, activeCat]);
+
+  // Close suggestions when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (searchWrapRef.current && !searchWrapRef.current.contains(e.target)) {
+        setShowSuggestions(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
 
   const visibleAgents = useMemo(() => {
     return filtered.slice(0, visibleCount);
@@ -387,6 +407,69 @@ export default function Landing() {
             background: rgba(7,242,88,0.15);
           }
 
+          /* ── Search Autocomplete Dropdown ── */
+          .search-dropdown {
+            position: absolute;
+            top: calc(100% + 8px);
+            left: 0;
+            right: 0;
+            background: ${dark ? '#031713' : '#FFFFFF'};
+            border: 1px solid ${dark ? 'rgba(7,242,88,0.2)' : '#E5E7EB'};
+            border-radius: 16px;
+            overflow: hidden;
+            z-index: 1000;
+            box-shadow: 0 8px 32px rgba(0,0,0,${dark ? '0.4' : '0.12'});
+            max-height: 360px;
+            overflow-y: auto;
+            text-align: left;
+          }
+          .search-dropdown-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 11px 16px;
+            cursor: pointer;
+            transition: background 0.15s;
+            border-bottom: 1px solid ${dark ? 'rgba(255,255,255,0.04)' : '#F3F4F6'};
+            min-height: 48px;
+            text-align: left;
+            width: 100%;
+            box-sizing: border-box;
+          }
+          .search-dropdown-item:last-child { border-bottom: none; }
+          .search-dropdown-item:hover, .search-dropdown-item.active { background: ${dark ? 'rgba(7,242,88,0.07)' : '#F0FDF4'}; }
+          .search-dropdown-logo {
+            width: 28px; height: 28px; border-radius: 6px;
+            background: ${dark ? '#0a2218' : '#F3F4F6'};
+            display: flex; align-items: center; justify-content: center;
+            flex-shrink: 0; overflow: hidden;
+          }
+          .search-dropdown-logo img { width: 100%; height: 100%; object-fit: contain; padding: 3px; box-sizing: border-box; }
+          .search-dropdown-name {
+            font-weight: 600;
+            font-size: 14px;
+            color: ${dark ? '#FFFFFF' : '#111827'};
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            flex: 1;
+            min-width: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            line-height: 1.3;
+            text-align: left;
+          }
+          .search-dropdown-cat {
+            font-size: 11px;
+            font-weight: 500;
+            color: ${dark ? 'rgba(7,242,88,0.8)' : '#297F58'};
+            background: ${dark ? 'rgba(7,242,88,0.1)' : '#D1FAE5'};
+            padding: 2px 8px;
+            border-radius: 20px;
+            flex-shrink: 0;
+            white-space: nowrap;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+          }
+          .search-dropdown-arrow { flex-shrink: 0; color: ${dark ? 'rgba(255,255,255,0.25)' : '#9CA3AF'}; }
           /* ═══════════════════════════════════════════
              TABLET — max-width 1024
              ═══════════════════════════════════════════ */
@@ -658,7 +741,7 @@ export default function Landing() {
       </style>
 
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
-      <section className="responsive-hero" style={{ background: bg, position: 'relative' }}>
+      <section className="responsive-hero" style={{ background: bg, position: 'relative', zIndex: 2 }}>
         <div className="hero-content">
 
           {/* Text block with 24px gap */}
@@ -680,26 +763,118 @@ export default function Landing() {
           </div>
 
           {/* Search bar — 600×58 */}
-          <div className="search-bar-wrap hero-search-animate">
-            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="10.0833" cy="10.0833" r="7.33333" stroke="#CCCCCC" strokeWidth="1.375"/>
-              <path d="M18.3333 18.3333L15.5833 15.5833" stroke="#CCCCCC" strokeWidth="1.375" strokeLinecap="round"/>
-            </svg>
-          <input
-              type="text"
-              placeholder={search ? '' : typedText}
-              value={search}
-              onChange={e => {
-                setSearch(e.target.value);
-              }}
-            />
+          <div ref={searchWrapRef} style={{ position: 'relative', width: '600px', maxWidth: '90vw' }} className="hero-search-animate">
+            <div className="search-bar-wrap">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="10.0833" cy="10.0833" r="7.33333" stroke="#CCCCCC" strokeWidth="1.375"/>
+                <path d="M18.3333 18.3333L15.5833 15.5833" stroke="#CCCCCC" strokeWidth="1.375" strokeLinecap="round"/>
+              </svg>
+            <input
+                type="text"
+                placeholder={search ? '' : typedText}
+                value={search}
+                onChange={e => {
+                  setSearch(e.target.value);
+                  setShowSuggestions(true);
+                  setActiveIndex(-1);
+                }}
+                onFocus={() => search && setShowSuggestions(true)}
+                onKeyDown={e => {
+                  if (!showSuggestions || suggestions.length === 0) return;
+                  if (e.key === 'ArrowDown') {
+                    e.preventDefault();
+                    setActiveIndex(prev => Math.min(prev + 1, suggestions.length - 1));
+                  } else if (e.key === 'ArrowUp') {
+                    e.preventDefault();
+                    setActiveIndex(prev => Math.max(prev - 1, -1));
+                  } else if (e.key === 'Enter' && activeIndex >= 0) {
+                    e.preventDefault();
+                    const selected = suggestions[activeIndex];
+                    setShowSuggestions(false);
+                    setSearch('');
+                    setActiveIndex(-1);
+                    navigate('/agent/' + selected.id);
+                  } else if (e.key === 'Escape') {
+                    setShowSuggestions(false);
+                    setActiveIndex(-1);
+                  }
+                }}
+              />
+              {search && (
+                <svg
+                  width="18" height="18" viewBox="0 0 24 24" fill="none"
+                  style={{ cursor: 'pointer', flexShrink: 0, opacity: 0.5 }}
+                  onClick={() => { setSearch(''); setShowSuggestions(false); }}
+                >
+                  <line x1="18" y1="6" x2="6" y2="18" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+                  <line x1="6" y1="6" x2="18" y2="18" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+                </svg>
+              )}
+            </div>
+
+            {/* Autocomplete Dropdown */}
+            {showSuggestions && suggestions.length > 0 && (
+              <div className="search-dropdown">
+                {suggestions.map((a, idx) => (
+                  <div
+                    key={a.id}
+                    className={`search-dropdown-item${idx === activeIndex ? ' active' : ''}`}
+                    onMouseEnter={() => setActiveIndex(idx)}
+                    onMouseDown={() => {
+                      setShowSuggestions(false);
+                      setSearch('');
+                      setActiveIndex(-1);
+                      navigate('/agent/' + a.id);
+                    }}
+                  >
+                    {/* Logo — left */}
+                    <div style={{
+                      width: 32, height: 32, borderRadius: 8, flexShrink: 0,
+                      background: dark ? '#0a2218' : '#F3F4F6',
+                      display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden'
+                    }}>
+                      {a.logo
+                        ? <img src={a.logo} alt={a.name} style={{ width: '100%', height: '100%', objectFit: 'contain', padding: 3, boxSizing: 'border-box' }} />
+                        : <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="4" fill={dark ? 'rgba(7,242,88,0.2)' : '#D1FAE5'}/><path d="M8 12h8M12 8v8" stroke={dark ? '#07F258' : '#297F58'} strokeWidth="2" strokeLinecap="round"/></svg>
+                      }
+                    </div>
+
+                    {/* Name — takes remaining space */}
+                    <span style={{
+                      flex: 1, minWidth: 0,
+                      overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap',
+                      fontWeight: 600, fontSize: 14,
+                      color: dark ? '#FFFFFF' : '#111827',
+                      fontFamily: "'Plus Jakarta Sans', sans-serif",
+                      lineHeight: '1.3',
+                      textAlign: 'left',
+                    }}>{a.name}</span>
+
+                    {/* Category badge */}
+                    <span style={{
+                      flexShrink: 0, whiteSpace: 'nowrap',
+                      fontSize: 11, fontWeight: 500,
+                      color: dark ? 'rgba(7,242,88,0.9)' : '#297F58',
+                      background: dark ? 'rgba(7,242,88,0.12)' : '#D1FAE5',
+                      padding: '2px 8px', borderRadius: 20,
+                      fontFamily: "'Plus Jakarta Sans', sans-serif",
+                    }}>{a.cat}</span>
+
+                    {/* Arrow */}
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" style={{ flexShrink: 0, color: dark ? 'rgba(255,255,255,0.25)' : '#9CA3AF' }}>
+                      <polyline points="9 18 15 12 9 6" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
 
         </div>
       </section>
 
       {/* ── CATEGORIES ────────────────────────────────────────────────────── */}
-      <div className="cat-section">
+      <div className="cat-section" style={{ position: 'relative', zIndex: 1 }}>
         <div className="cat-inner">
 
           <div className="cat-pills-wrap">
