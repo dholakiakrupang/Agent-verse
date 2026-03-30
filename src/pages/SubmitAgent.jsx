@@ -71,9 +71,11 @@ export default function SubmitAgent() {
 
     if (!form.name.trim()) newErrors.name = 'Agent name is required.';
     
+    const urlPattern = /^(https?:\/\/)?([\w-]+\.)+[\w-]{2,}(\/.*)?$/i;
+
     if (!form.url.trim()) newErrors.url = 'Website URL is required.';
     else {
-      try { new URL(form.url); } catch {
+      if (!urlPattern.test(form.url.trim())) {
         newErrors.url = 'Please enter a valid URL (e.g. https://example.com).';
       }
     }
@@ -95,7 +97,7 @@ export default function SubmitAgent() {
         newErrors[`link_title_${i}`] = 'Title is required for this URL.';
       }
       if (link.url.trim()) {
-        try { new URL(link.url); } catch {
+        if (!urlPattern.test(link.url.trim())) {
           newErrors[`link_url_${i}`] = 'Please enter a valid URL.';
         }
       }
