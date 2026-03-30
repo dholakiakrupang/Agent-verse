@@ -144,7 +144,7 @@ export default function Landing() {
     );
   }, [filtered, currentPage]);
 
-  const bg = dark ? '#031713' : '#F7FDFB';
+  const bg = dark ? '#031713' : '#FFFFFF';
 
   return (
     <div className="landing-page-container" style={{ minHeight: '100vh', background: bg, fontFamily: "'Plus Jakarta Sans', 'Inter', sans-serif" }}>
@@ -177,14 +177,14 @@ export default function Landing() {
             font-size: 18px;
             line-height: 28px;
             letter-spacing: 1px;
-            color: #FFFFFF;
-            background: linear-gradient(0deg, rgba(255,255,255,0.1) -10.19%, rgba(255,255,255,0.02) 100%);
+            color: ${dark ? '#FFFFFF' : '#D97706'};
+            background: ${dark ? 'linear-gradient(0deg, rgba(255,255,255,0.1) -10.19%, rgba(255,255,255,0.02) 100%)' : '#FFF7ED'};
             backdrop-filter: blur(7px);
-            border: none;
+            border: ${dark ? 'none' : '1px solid #FFEDD5'};
             box-sizing: border-box;
           }
 
-          /* Heading — Figma: 80px/112px bold 700, 864px wide, gradient text */
+          /* Heading */
           .responsive-h1 {
             width: 864px;
             max-width: 100%;
@@ -193,14 +193,15 @@ export default function Landing() {
             font-size: 80px;
             line-height: 112px;
             text-align: center;
-            background: linear-gradient(180deg, #FFFFFF 11.38%, #CCCCCC 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            background: ${dark ? 'linear-gradient(180deg, #FFFFFF 11.38%, #CCCCCC 100%)' : 'none'};
+            -webkit-background-clip: ${dark ? 'text' : 'border-box'};
+            -webkit-text-fill-color: ${dark ? 'transparent' : 'initial'};
+            background-clip: ${dark ? 'text' : 'border-box'};
+            color: ${dark ? 'transparent' : '#111827'};
             margin: 0;
           }
 
-          /* Subtitle — Figma: 24px/40px 500, 715px wide, gradient text */
+          /* Subtitle */
           .responsive-p {
             width: 715px;
             max-width: 100%;
@@ -209,10 +210,11 @@ export default function Landing() {
             font-size: 24px;
             line-height: 40px;
             text-align: center;
-            background: linear-gradient(180deg, #FFFFFF 17.5%, #CCCCCC 91.87%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            background: ${dark ? 'linear-gradient(180deg, #FFFFFF 17.5%, #CCCCCC 91.87%)' : 'none'};
+            -webkit-background-clip: ${dark ? 'text' : 'border-box'};
+            -webkit-text-fill-color: ${dark ? 'transparent' : 'initial'};
+            background-clip: ${dark ? 'text' : 'border-box'};
+            color: ${dark ? 'transparent' : '#4B5563'};
             margin: 0;
           }
 
@@ -235,7 +237,7 @@ export default function Landing() {
             width: 100%;
           }
 
-          /* Search bar — Figma: 600×58, radius 95px */
+          /* Search bar */
           .search-bar-wrap {
             display: flex;
             align-items: center;
@@ -245,8 +247,8 @@ export default function Landing() {
             height: 58px;
             padding: 0 18px;
             border-radius: 95px;
-            background: #031713;
-            border: 1px solid rgba(255, 255, 255, 0.15);
+            background: ${dark ? '#031713' : '#FFFFFF'};
+            border: 1px solid ${dark ? 'rgba(255, 255, 255, 0.15)' : '#E5E7EB'};
             box-sizing: border-box;
             transition: border-color 0.25s ease, box-shadow 0.25s ease;
           }
@@ -255,7 +257,7 @@ export default function Landing() {
             background: transparent;
             border: none;
             outline: none;
-            color: #FFFFFF;
+            color: ${dark ? '#FFFFFF' : '#111827'};
             font-family: 'Plus Jakarta Sans', sans-serif;
             font-weight: 500;
             font-size: 16px;
@@ -263,18 +265,18 @@ export default function Landing() {
             caret-color: #07F258;
           }
           .search-bar-wrap input::placeholder {
-            color: #CCCCCC;
+            color: ${dark ? '#CCCCCC' : '#9CA3AF'};
           }
 
           /* ── CATEGORIES ────────────────────── */
-          /* Container — Figma: 1920 wide, 236px tall, bg #031713 */
+          /* Container */
           .cat-section {
-            background: #031713;
+            background: ${dark ? '#031713' : 'transparent'};
             padding: 18px 0;
             width: 100%;
           }
 
-          /* Inner — Figma: 1580px centered, gap 18px between rows */
+          /* Inner */
           .cat-inner {
             display: flex;
             flex-direction: column;
@@ -285,7 +287,7 @@ export default function Landing() {
             padding: 0 20px;
           }
 
-          /* Pills wrap — Figma: gap 14px */
+          /* Pills wrap */
           .cat-pills-wrap {
             display: flex;
             flex-wrap: wrap;
@@ -293,7 +295,7 @@ export default function Landing() {
             justify-content: center;
           }
 
-          /* Each pill — Figma: height 54px, padding 12px 14px, gap 10px, radius 100px */
+          /* Each pill */
           .cat-btn {
             display: inline-flex;
             align-items: center;
@@ -302,22 +304,22 @@ export default function Landing() {
             gap: 10px;
             height: 54px;
             border-radius: 100px;
-            background: #041B16;
+            background: ${dark ? '#041B16' : '#FFFFFF'};
             backdrop-filter: blur(7.44681px);
-            border: none;
+            border: ${dark ? '1px solid rgba(255, 255, 255, 0.15)' : '1px solid #E5E7EB'};
             cursor: pointer;
             font-family: 'Plus Jakarta Sans', sans-serif;
             font-weight: 500;
             font-size: 20px;
             line-height: 28px;
-            color: #CCCCCC;
+            color: ${dark ? '#CCCCCC' : '#4B5563'};
             white-space: nowrap;
             transition: all 0.17s;
             box-sizing: border-box;
           }
           .cat-btn:hover { opacity: 0.85; }
 
-          /* Icon circle inside pill — Figma: 36.17px, rounded */
+          /* Icon circle inside pill */
           .cat-btn-icon {
             width: 36px;
             height: 36px;
@@ -328,12 +330,13 @@ export default function Landing() {
 
           /* Active pill state */
           .cat-btn.active {
-            background: #07F258;
-            color: #031713;
+            background: ${dark ? '#07F258' : '#F0FDF4'};
+            color: ${dark ? '#031713' : '#166534'};
             font-weight: 700;
+            border-color: ${dark ? 'transparent' : '#BBF7D0'};
           }
           .cat-btn.active .cat-btn-icon {
-            filter: brightness(0.3);
+            filter: ${dark ? 'brightness(0.3)' : 'none'};
           }
 
           /* View All button */
@@ -343,8 +346,8 @@ export default function Landing() {
             padding: 14px;
             border-radius: 12px;
             background: transparent;
-            border: 1px solid rgba(255,255,255,0.12);
-            color: #FFFFFF;
+            border: 1px solid ${dark ? 'rgba(255,255,255,0.12)' : '#E5E7EB'};
+            color: ${dark ? '#FFFFFF' : '#111827'};
             font-family: 'Plus Jakarta Sans', sans-serif;
             font-size: 14px;
             font-weight: 600;
@@ -378,9 +381,9 @@ export default function Landing() {
           .view-more-btn {
             padding: 13px 40px;
             border-radius: 94px;
-            border: 1px solid #07F258;
-            background: rgba(7,242,88,0.07);
-            color: #07F258;
+            border: 1px solid ${dark ? '#07F258' : '#D1FADF'};
+            background: ${dark ? 'rgba(7,242,88,0.07)' : '#ECFDF3'};
+            color: ${dark ? '#07F258' : '#027A48'};
             font-family: 'Plus Jakarta Sans', sans-serif;
             font-size: 16px;
             font-weight: 600;
@@ -448,9 +451,9 @@ export default function Landing() {
             width: 44px;
             height: 44px;
             border-radius: 12px;
-            border: 1px solid rgba(136, 136, 136, 0.2);
+            border: 1px solid ${dark ? 'rgba(136, 136, 136, 0.2)' : '#E5E7EB'};
             background: transparent;
-            color: #888888;
+            color: ${dark ? '#888888' : '#4B5563'};
             font-size: 1rem;
             font-weight: 600;
             font-family: 'Inter', sans-serif;
@@ -458,14 +461,14 @@ export default function Landing() {
             transition: all 0.2s ease;
           }
           .page-btn:hover:not(:disabled) {
-            border-color: #07F258;
-            color: #07F258;
-            background: rgba(7, 242, 88, 0.05);
+            border-color: ${dark ? '#07F258' : '#166534'};
+            color: ${dark ? '#07F258' : '#166534'};
+            background: ${dark ? 'rgba(7, 242, 88, 0.05)' : '#F0FDF4'};
           }
           .page-btn.active {
-            background: #07F258;
-            color: #031713;
-            border-color: #07F258;
+            background: ${dark ? '#07F258' : '#12B76A'};
+            color: ${dark ? '#031713' : '#FFFFFF'};
+            border-color: ${dark ? '#07F258' : '#12B76A'};
           }
           .page-btn:disabled {
             opacity: 0.3;

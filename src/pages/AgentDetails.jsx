@@ -17,7 +17,7 @@ const DetailLinkItem = ({ label, url, primary = false, textMuted }) => {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       style={{
-        color: primary || hovered ? '#07F258' : textMuted,
+        color: primary || hovered ? (textMuted === '#A0C0B0' ? '#07F258' : '#297F58') : textMuted,
         cursor: 'pointer',
         display: 'flex',
         alignItems: 'center',
@@ -182,7 +182,7 @@ function AutoFormatContent({ text, agent, textColor, contentText }) {
           <strong style={{ color: textColor }}>Explore More:</strong>{' '}
           Visit the{' '}
           <span
-            style={{ color: '#07F258', cursor: 'pointer' }}
+            style={{ color: textColor === '#FFFFFF' ? '#07F258' : '#297F58', cursor: 'pointer' }}
             onClick={() => window.open(agent.url, '_blank')}
           >
             Official Website
@@ -210,7 +210,7 @@ export default function AgentDetails() {
   // Show only agents from the same category
   const relatedAgents = allAgents.filter(a => a.id !== agent.id && a.cat === agent.cat).slice(0, 3);
 
-  const bg = dark ? '#031713' : '#F7FDFB';
+  const bg = dark ? '#031713' : '#FFFFFF';
   const textColor = dark ? '#FFFFFF' : '#0B1F18';
   const textMuted = dark ? '#A0C0B0' : '#4E7362';
   const contentText = dark ? '#E2E8F0' : '#4E7362';
@@ -243,7 +243,7 @@ export default function AgentDetails() {
           line-height: 22px;
         }
         .ad-breadcrumb span { cursor: pointer; color: #999999; }
-        .ad-breadcrumb .active { color: #07F258; cursor: default; }
+        .ad-breadcrumb .active { color: ${dark ? '#07F258' : '#297F58'}; cursor: default; }
 
         /* Hero Card */
         .ad-hero {
@@ -267,8 +267,8 @@ export default function AgentDetails() {
           width: 80px;
           height: 80px;
           border-radius: 16px;
-          background: #020E0B;
-          border: 1px solid rgba(255,255,255,0.1);
+          background: ${dark ? '#020E0B' : '#FFFFFF'};
+          border: 1px solid ${dark ? 'rgba(255,255,255,0.1)' : '#E5E7EB'};
           display: flex;
           align-items: center;
           justify-content: center;
@@ -379,13 +379,13 @@ export default function AgentDetails() {
           border-radius: 24px;
           overflow: hidden;
           margin-bottom: 4rem;
-          background: #020E0B;
+          background: ${dark ? '#020E0B' : '#F9FAFB'};
           min-height: 200px;
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          border-top: 1px solid rgba(255,255,255,0.05);
+          border-top: 1px solid ${dark ? 'rgba(255,255,255,0.05)' : '#E5E7EB'};
         }
         .ad-screenshot img {
           width: 100%;
@@ -449,7 +449,7 @@ export default function AgentDetails() {
           width: 6px;
           height: 6px;
           border-radius: 50%;
-          background: #07F258;
+          background: ${dark ? '#07F258' : '#297F58'};
           margin-top: 10px;
           flex-shrink: 0;
         }
@@ -631,7 +631,7 @@ export default function AgentDetails() {
         <div className="ad-hero" style={{
           background: dark ? 'linear-gradient(180deg, #041B16 0%, #031713 100%)' : '#FFFFFF',
           border: cardBorder, 
-          boxShadow: '0 20px 40px rgba(0,0,0,0.2)',
+          boxShadow: dark ? '0 20px 40px rgba(0,0,0,0.2)' : 'none',
         }}>
           
           {/* Left: Info */}
@@ -646,13 +646,14 @@ export default function AgentDetails() {
               </div>
             </div>
             
-            <p className="ad-agent-desc" style={{ color: '#E2E8F0' }}>
+            <p className="ad-agent-desc" style={{ color: dark ? '#E2E8F0' : '#111827' }}>
               {agent.desc} It features robust capabilities designed specifically for {agent.cat}, empowering users to automate workflows and rapidly deploy intelligent solutions.
             </p>
             
             <button className="ad-visit-btn" onClick={() => window.open(agent.url, '_blank', 'noopener,noreferrer')} style={{
-              background: dark ? 'linear-gradient(270deg, rgba(7, 242, 88, 0.1) 0%, rgba(7, 242, 88, 0.06) 100%)' : 'rgba(7, 242, 88, 0.1)',
-              color: '#07F258',
+              background: dark ? 'linear-gradient(270deg, rgba(7, 242, 88, 0.1) 0%, rgba(7, 242, 88, 0.06) 100%)' : '#ECFDF3',
+              border: dark ? 'none' : '1px solid #D1FADF',
+              color: dark ? '#07F258' : '#027A48',
             }}>
               <span>Visit {agent.name}</span> <ArrowRight size={16} />
             </button>
@@ -676,10 +677,29 @@ export default function AgentDetails() {
 
             <h3 style={{ fontSize: '1.1rem', fontWeight: 700, color: textColor, marginBottom: '1.2rem' }}>Details</h3>
             <div className="ad-details-pills">
-              <span className="ad-pill" style={{
-                background: dark ? 'linear-gradient(270deg, rgba(7, 242, 88, 0.1) 0%, rgba(7, 242, 88, 0.06) 100%)' : 'rgba(7, 242, 88, 0.1)',
-                color: '#07F258',
-              }}>{agent.tag}</span>
+              {!dark && agent.tag?.toLowerCase() === 'free' ? (
+                <svg width="70" height="34" viewBox="0 0 70 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17 0.5H53C62.1127 0.5 69.5 7.8873 69.5 17C69.5 26.1127 62.1127 33.5 53 33.5H17C7.8873 33.5 0.5 26.1127 0.5 17C0.5 7.8873 7.8873 0.5 17 0.5Z" fill="url(#paint0_linear_40_3960)"/>
+                  <path d="M17 0.5H53C62.1127 0.5 69.5 7.8873 69.5 17C69.5 26.1127 62.1127 33.5 53 33.5H17C7.8873 33.5 0.5 26.1127 0.5 17C0.5 7.8873 7.8873 0.5 17 0.5Z" stroke="url(#paint1_linear_40_3960)"/>
+                  <path d="M21.162 22.5V12.07H27.77V13.33H22.534V16.704H27.28V17.964H22.534V22.5H21.162ZM28.7463 22.5V14.954H30.0203V16.34L29.8803 16.144C30.0576 15.7147 30.3283 15.3973 30.6923 15.192C31.0563 14.9773 31.4996 14.87 32.0223 14.87H32.4843V16.102H31.8263C31.2943 16.102 30.8649 16.27 30.5383 16.606C30.2116 16.9327 30.0483 17.3993 30.0483 18.006V22.5H28.7463ZM37.1128 22.668C36.3848 22.668 35.7361 22.4953 35.1668 22.15C34.5975 21.8047 34.1495 21.3333 33.8228 20.736C33.4961 20.1293 33.3328 19.4527 33.3328 18.706C33.3328 17.95 33.4915 17.278 33.8088 16.69C34.1355 16.102 34.5741 15.64 35.1248 15.304C35.6848 14.9587 36.3101 14.786 37.0008 14.786C37.5608 14.786 38.0555 14.8887 38.4848 15.094C38.9235 15.29 39.2921 15.5607 39.5908 15.906C39.8988 16.242 40.1321 16.6293 40.2908 17.068C40.4588 17.4973 40.5428 17.9453 40.5428 18.412C40.5428 18.5147 40.5335 18.6313 40.5148 18.762C40.5055 18.8833 40.4915 19 40.4728 19.112H34.2848V17.992H39.7168L39.1008 18.496C39.1848 18.0107 39.1381 17.5767 38.9608 17.194C38.7835 16.8113 38.5221 16.508 38.1768 16.284C37.8315 16.06 37.4395 15.948 37.0008 15.948C36.5621 15.948 36.1608 16.06 35.7968 16.284C35.4328 16.508 35.1481 16.83 34.9428 17.25C34.7468 17.6607 34.6675 18.1507 34.7048 18.72C34.6675 19.2707 34.7515 19.756 34.9568 20.176C35.1715 20.5867 35.4701 20.9087 35.8528 21.142C36.2448 21.366 36.6695 21.478 37.1268 21.478C37.6308 21.478 38.0555 21.3613 38.4008 21.128C38.7461 20.8947 39.0261 20.596 39.2408 20.232L40.3328 20.792C40.1835 21.1373 39.9501 21.4547 39.6328 21.744C39.3248 22.024 38.9561 22.248 38.5268 22.416C38.1068 22.584 37.6355 22.668 37.1128 22.668ZM45.7124 22.668C44.9844 22.668 44.3358 22.4953 43.7664 22.15C43.1971 21.8047 42.7491 21.3333 42.4224 20.736C42.0958 20.1293 41.9324 19.4527 41.9324 18.706C41.9324 17.95 42.0911 17.278 42.4084 16.69C42.7351 16.102 43.1738 15.64 43.7244 15.304C44.2844 14.9587 44.9098 14.786 45.6004 14.786C46.1604 14.786 46.6551 14.8887 47.0844 15.094C47.5231 15.29 47.8918 15.5607 48.1904 15.906C48.4984 16.242 48.7318 16.6293 48.8904 17.068C49.0584 17.4973 49.1424 17.9453 49.1424 18.412C49.1424 18.5147 49.1331 18.6313 49.1144 18.762C49.1051 18.8833 49.0911 19 49.0724 19.112H42.8844V17.992H48.3164L47.7004 18.496C47.7844 18.0107 47.7378 17.5767 47.5604 17.194C47.3831 16.8113 47.1218 16.508 46.7764 16.284C46.4311 16.06 46.0391 15.948 45.6004 15.948C45.1618 15.948 44.7604 16.06 44.3964 16.284C44.0324 16.508 43.7478 16.83 43.5424 17.25C43.3464 17.6607 43.2671 18.1507 43.3044 18.72C43.2671 19.2707 43.3511 19.756 43.5564 20.176C43.7711 20.5867 44.0698 20.9087 44.4524 21.142C44.8444 21.366 45.2691 21.478 45.7264 21.478C46.2304 21.478 46.6551 21.3613 47.0004 21.128C47.3458 20.8947 47.6258 20.596 47.8404 20.232L48.9324 20.792C48.7831 21.1373 48.5498 21.4547 48.2324 21.744C47.9244 22.024 47.5558 22.248 47.1264 22.416C46.7064 22.584 46.2351 22.668 45.7124 22.668Z" fill="#017649"/>
+                  <defs>
+                  <linearGradient id="paint0_linear_40_3960" x1="70" y1="17" x2="0" y2="17" gradientUnits="userSpaceOnUse">
+                  <stop stopColor="#017649" stopOpacity="0.06"/>
+                  <stop offset="1" stopColor="#017649" stopOpacity="0.06"/>
+                  </linearGradient>
+                  <linearGradient id="paint1_linear_40_3960" x1="70" y1="17" x2="0" y2="17" gradientUnits="userSpaceOnUse">
+                  <stop stopColor="#017649" stopOpacity="0.2"/>
+                  <stop offset="1" stopColor="#017649" stopOpacity="0.5"/>
+                  </linearGradient>
+                  </defs>
+                </svg>
+              ) : (
+                <span className="ad-pill" style={{
+                  background: dark ? 'linear-gradient(270deg, rgba(7, 242, 88, 0.1) 0%, rgba(7, 242, 88, 0.06) 100%)' : '#ECFDF3',
+                  border: dark ? 'none' : '1px solid #D1FADF',
+                  color: dark ? '#07F258' : '#027A48',
+                }}>{agent.tag}</span>
+              )}
               <span className="ad-pill" style={{
                 background: 'rgba(66, 199, 255, 0.08)',
                 border: '1px solid #42C7FF',
@@ -807,7 +827,7 @@ export default function AgentDetails() {
                   {agent.name} is reshaping how we work by equipping you with tools to delegate complex {agent.cat.toLowerCase()} tasks to intelligent systems seamlessly. Start building your automated solutions today!
                 </p>
                 <p style={{ color: contentText }}>
-                  <strong style={{ color: textColor }}>Explore More:</strong> Visit the <span style={{ color: '#07F258', cursor: 'pointer' }} onClick={() => window.open(agent.url, '_blank')}>Official Website</span> for deeper documentation.
+                  <strong style={{ color: textColor }}>Explore More:</strong> Visit the <span style={{ color: dark ? '#07F258' : '#297F58', cursor: 'pointer' }} onClick={() => window.open(agent.url, '_blank')}>Official Website</span> for deeper documentation.
                 </p>
               </div>
             </>

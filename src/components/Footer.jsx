@@ -3,19 +3,18 @@ import { useNavigate, Link } from 'react-router-dom';
 import { useTheme } from '../context/ThemeContext';
 import Logo from './Logo';
 
-const linkStyle = {
-  fontSize: '0.9rem', color: '#CCCCCC', marginBottom: '1rem',
-  cursor: 'pointer', transition: 'color 0.15s',
-  fontFamily: "'Plus Jakarta Sans', sans-serif",
-};
-
-const LinkItem = ({ label }) => (
+const LinkItem = ({ label, dark }) => (
   <Link
     to={'/?category=' + encodeURIComponent(label)}
     onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-    style={{ ...linkStyle, textDecoration: 'none', display: 'block' }}
-    onMouseEnter={e => e.target.style.color = '#07F258'}
-    onMouseLeave={e => e.target.style.color = '#CCCCCC'}
+    style={{
+      fontSize: '0.9rem', color: dark ? '#CCCCCC' : '#4B5563', marginBottom: '1rem',
+      cursor: 'pointer', transition: 'color 0.15s',
+      fontFamily: "'Plus Jakarta Sans', sans-serif",
+      textDecoration: 'none', display: 'block'
+    }}
+    onMouseEnter={e => e.target.style.color = dark ? '#07F258' : '#166534'}
+    onMouseLeave={e => e.target.style.color = dark ? '#CCCCCC' : '#4B5563'}
   >
     {label}
   </Link>
@@ -50,8 +49,8 @@ export default function Footer() {
   if (isMobile) {
     return (
       <footer style={{
-        borderTop: dark ? '1px solid #0D1F18' : '1px solid #D8EDE4',
-        background: dark ? '#031713' : '#EEF9F4',
+        borderTop: dark ? '1px solid #0D1F18' : '1px solid #E5E7EB',
+        background: dark ? '#031713' : '#FFFFFF',
         padding: '2.5rem 16px 1.5rem',
         width: '100%', boxSizing: 'border-box',
       }}>
@@ -60,7 +59,7 @@ export default function Footer() {
           <Logo style={{ height: '32px', width: 'auto', marginBottom: '1rem' }} />
           <div style={{
             fontFamily: "'Plus Jakarta Sans', sans-serif",
-            fontWeight: 500, fontSize: '14px', lineHeight: '24px', color: '#CCCCCC',
+            fontWeight: 500, fontSize: '14px', lineHeight: '24px', color: dark ? '#CCCCCC' : '#4B5563',
           }}>
             Discover the best AI agents from across the internet.
           </div>
@@ -81,7 +80,7 @@ export default function Footer() {
             Unleash Your AI Assistant
           </div>
           <div style={{
-            fontSize: '0.85rem', color: '#CCCCCC', lineHeight: 1.7,
+            fontSize: '0.85rem', color: dark ? '#CCCCCC' : '#4B5563', lineHeight: 1.7,
             marginBottom: '1.25rem', fontFamily: "'Plus Jakarta Sans', sans-serif",
           }}>
             Empower your ideas with an intelligent AI agent designed to provide instant answers, streamline tasks, and deliver personalized support.
@@ -110,16 +109,16 @@ export default function Footer() {
             Explore Agents
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0 1.5rem' }}>
-            {allLinks.map(l => <LinkItem key={l} label={l} />)}
+            {allLinks.map(l => <LinkItem key={l} label={l} dark={dark} />)}
           </div>
         </div>
 
         {/* Copyright */}
         <div style={{
-          fontSize: '0.8rem', color: '#666666',
+          fontSize: '0.8rem', color: dark ? '#666666' : '#9CA3AF',
           fontFamily: "'Plus Jakarta Sans', sans-serif",
           textAlign: 'center', paddingTop: '1rem',
-          borderTop: dark ? '1px solid #0D1F18' : '1px solid #D8EDE4',
+          borderTop: dark ? '1px solid #0D1F18' : '1px solid #E5E7EB',
         }}>
           © 2025 Agentverse. All rights reserved.
         </div>
@@ -131,8 +130,8 @@ export default function Footer() {
   if (isTablet) {
     return (
       <footer style={{
-        borderTop: dark ? '1px solid #0D1F18' : '1px solid #D8EDE4',
-        background: dark ? '#031713' : '#EEF9F4',
+        borderTop: dark ? '1px solid #0D1F18' : '1px solid #E5E7EB',
+        background: dark ? '#031713' : '#FFFFFF',
         padding: '3rem 40px 2rem',
         display: 'flex', flexDirection: 'column',
         alignItems: 'center', width: '100%', boxSizing: 'border-box',
@@ -147,7 +146,7 @@ export default function Footer() {
             <Logo style={{ height: '32px', width: 'auto', marginBottom: '1.2rem' }} />
             <div style={{
               fontFamily: "'Plus Jakarta Sans', sans-serif",
-              fontWeight: 500, fontSize: '14px', lineHeight: '24px', color: '#CCCCCC',
+              fontWeight: 500, fontSize: '14px', lineHeight: '24px', color: dark ? '#CCCCCC' : '#4B5563',
               marginBottom: '1.5rem',
             }}>
               Discover the best AI agents from across the internet.
@@ -159,7 +158,7 @@ export default function Footer() {
               Unleash Your AI Assistant
             </div>
             <div style={{
-              fontSize: '0.85rem', color: '#CCCCCC', lineHeight: 1.7,
+              fontSize: '0.85rem', color: dark ? '#CCCCCC' : '#4B5563', lineHeight: 1.7,
               marginBottom: '1.25rem', fontFamily: "'Plus Jakarta Sans', sans-serif",
             }}>
               Empower your ideas with an intelligent AI agent. Submit your AI agent now!
@@ -187,20 +186,20 @@ export default function Footer() {
             }}>
               Explore Agents
             </div>
-            {allLinks.slice(0, 9).map(l => <LinkItem key={l} label={l} />)}
+            {allLinks.slice(0, 9).map(l => <LinkItem key={l} label={l} dark={dark} />)}
           </div>
 
           {/* Links col 2 */}
           <div style={{ paddingTop: '2.7rem' }}>
-            {allLinks.slice(9).map(l => <LinkItem key={l} label={l} />)}
+            {allLinks.slice(9).map(l => <LinkItem key={l} label={l} dark={dark} />)}
           </div>
         </div>
 
         <div style={{
-          fontSize: '0.85rem', color: '#999999',
+          fontSize: '0.85rem', color: dark ? '#999999' : '#9CA3AF',
           fontFamily: "'Plus Jakarta Sans', sans-serif",
           width: '100%', textAlign: 'center',
-          borderTop: dark ? '1px solid #0D1F18' : '1px solid #D8EDE4',
+          borderTop: dark ? '1px solid #0D1F18' : '1px solid #E5E7EB',
           paddingTop: '1.5rem',
         }}>
           © 2025 Agentverse. All rights reserved.
@@ -212,8 +211,8 @@ export default function Footer() {
   // ── DESKTOP FOOTER ─────────────────────────────────────────────────────
   return (
     <footer style={{
-      borderTop: dark ? '1px solid #0D1F18' : '1px solid #D8EDE4',
-      background: dark ? '#031713' : '#EEF9F4',
+      borderTop: dark ? '1px solid #0D1F18' : '1px solid #E5E7EB',
+      background: dark ? '#031713' : '#FFFFFF',
       padding: '5rem 8% 2rem',
       display: 'flex', flexDirection: 'column',
       alignItems: 'center', width: '100%', boxSizing: 'border-box',
@@ -229,7 +228,7 @@ export default function Footer() {
           <Logo style={{ height: '36px', width: 'auto', marginBottom: '1.5rem' }} />
           <div style={{
             fontFamily: "'Plus Jakarta Sans', sans-serif",
-            fontWeight: 500, fontSize: '16px', lineHeight: '26px', color: '#CCCCCC',
+            fontWeight: 500, fontSize: '16px', lineHeight: '26px', color: dark ? '#CCCCCC' : '#4B5563',
           }}>
             Discover the best AI agents from across the internet.
           </div>
@@ -244,21 +243,21 @@ export default function Footer() {
             Explore Agents
           </div>
           {['Coding', 'AI Agent Builders', 'Productivity', 'Personal Assistant', 'General Purpose', 'Content Creation'].map(l => (
-            <LinkItem key={l} label={l} />
+            <LinkItem key={l} label={l} dark={dark} />
           ))}
         </div>
 
         {/* Column 3 */}
         <div style={{ paddingTop: '3.1rem' }}>
           {['Research', 'Digital Workers', 'Business Intelligence', 'Sales', 'Marketing', 'Finance'].map(l => (
-            <LinkItem key={l} label={l} />
+            <LinkItem key={l} label={l} dark={dark} />
           ))}
         </div>
 
         {/* Column 4 */}
         <div style={{ paddingTop: '3.1rem' }}>
           {['Design', 'Data Analysis', 'Customer Service', 'Science', 'HR', 'Others'].map(l => (
-            <LinkItem key={l} label={l} />
+            <LinkItem key={l} label={l} dark={dark} />
           ))}
         </div>
 
@@ -271,7 +270,7 @@ export default function Footer() {
             Unleash Your AI Assistant
           </div>
           <div style={{
-            fontSize: '0.95rem', color: '#CCCCCC', lineHeight: 1.8,
+            fontSize: '0.95rem', color: dark ? '#CCCCCC' : '#4B5563', lineHeight: 1.8,
             marginBottom: '2rem', fontFamily: "'Plus Jakarta Sans', sans-serif",
           }}>
             Empower your ideas with an intelligent AI agent designed to provide instant answers, streamline tasks, and deliver personalized support. Submit your AI agent now and let innovation take the lead!

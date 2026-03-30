@@ -65,7 +65,7 @@ export default function SubmitAgent() {
   };
 
   // ── One-by-one validation ─────────────────────────────────────
-  const SHORT_DESC_LIMIT = 200;
+  const SHORT_DESC_LIMIT = 75;
   const validate = () => {
     if (!form.name.trim()) return { field: 'name', message: 'Agent name is required.' };
     if (!form.url.trim()) return { field: 'url', message: 'Website URL is required.' };
@@ -127,12 +127,12 @@ export default function SubmitAgent() {
   };
 
   // ── Theme tokens ──────────────────────────────────────────────
-  const bg           = dark ? '#031713' : '#F7FDFB';
-  const textColor    = dark ? '#FFFFFF' : '#0B1F18';
-  const textMuted    = dark ? '#CCCCCC' : '#4E7362';
-  const inputBg      = dark ? '#031814' : '#F0F9F5';
-  const borderNormal = dark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)';
-  const borderFocus  = dark ? 'rgba(7,242,88,0.5)'   : 'rgba(0,100,50,0.4)';
+  const bg           = dark ? '#031713' : '#FFFFFF';
+  const textColor    = dark ? '#FFFFFF' : '#111827';
+  const textMuted    = dark ? '#CCCCCC' : '#4B5563';
+  const inputBg      = dark ? '#031814' : '#FFFFFF';
+  const borderNormal = dark ? 'rgba(255,255,255,0.1)' : '#E5E7EB';
+  const borderFocus  = dark ? 'rgba(7,242,88,0.5)'   : '#BBF7D0';
   const borderError  = 'rgba(255,80,80,0.8)';
 
   const getInputStyle = (field, extra = {}) => ({
@@ -167,7 +167,7 @@ export default function SubmitAgent() {
   return (
     <div style={{ background: bg, minHeight: '100vh', width: '100%', display: 'flex', flexDirection: 'column', fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
       <style>{`
-        .sa-spacer { height: 80px; }
+        .sa-spacer { height: 32px; }
         .sa-main { flex:1; display:flex; justify-content:center; padding: 2rem 8% 6rem; box-sizing:border-box; }
         .sa-wrapper { display:flex; flex-direction:column; gap:40px; width:100%; max-width:900px; }
         .sa-card { border-radius:20px; padding:40px; box-sizing:border-box; }
@@ -226,7 +226,7 @@ export default function SubmitAgent() {
           <div className="sa-card" style={{
             background: dark ? 'linear-gradient(180deg,#041B16 0%,#031713 100%)' : '#FFFFFF',
             border: dark ? '1px solid rgba(255,255,255,0.06)' : '1px solid rgba(0,0,0,0.08)',
-            boxShadow: '0 20px 60px rgba(0,0,0,0.15)',
+            boxShadow: dark ? '0 20px 60px rgba(0,0,0,0.15)' : 'none',
           }}>
             <form className="sa-form" onSubmit={handleSubmit} noValidate>
 
@@ -276,7 +276,7 @@ export default function SubmitAgent() {
                     >
                       {ALL_CATEGORIES.map(c => <option key={c} value={c}>{c}</option>)}
                     </select>
-                    <svg style={{ position: 'absolute', right: 20, top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none' }} width="14" height="8" viewBox="0 0 14 8"><path d="M1 1L7 7L13 1" stroke={textMuted} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                    <svg style={{ position: 'absolute', right: 20, top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none' }} width="14" height="8" viewBox="0 0 14 8" fill="none"><path d="M1 1L7 7L13 1" stroke={dark ? "rgba(255,255,255,0.7)" : "#111827"} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
                   </div>
                 </div>
 
@@ -293,7 +293,7 @@ export default function SubmitAgent() {
                     >
                       {PRICING_TAGS.map(t => <option key={t} value={t}>{t}</option>)}
                     </select>
-                    <svg style={{ position: 'absolute', right: 20, top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none' }} width="14" height="8" viewBox="0 0 14 8"><path d="M1 1L7 7L13 1" stroke={textMuted} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                    <svg style={{ position: 'absolute', right: 20, top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none' }} width="14" height="8" viewBox="0 0 14 8" fill="none"><path d="M1 1L7 7L13 1" stroke={dark ? "rgba(255,255,255,0.7)" : "#111827"} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
                   </div>
                 </div>
               </div>
@@ -302,12 +302,12 @@ export default function SubmitAgent() {
               <div className="sa-field" ref={fieldRefs.description}>
                 {label('Short Description', true)}
                 <p style={{ margin: 0, fontSize: 13, color: dark ? 'rgba(255,255,255,0.4)' : 'rgba(0,0,0,0.4)', fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
-                  Shown on the agent card. Max 200 characters.
+                  Shown on the agent card. Max 75 characters.
                 </p>
                 <textarea
                   className="sa-textarea"
-                  rows={3}
-                  maxLength={200}
+                  rows={2}
+                  maxLength={75}
                   placeholder="One-liner: what this agent does and who it's for..."
                   value={form.description}
                   onChange={e => { setForm({ ...form, description: e.target.value }); if (error.field === 'description') setError({}); }}
@@ -317,8 +317,8 @@ export default function SubmitAgent() {
                 />
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                   <ErrorMsg field="description" />
-                  <span style={{ fontSize: 12, marginLeft: 'auto', paddingRight: 4, color: form.description.length > 180 ? '#FF6B6B' : (dark ? 'rgba(255,255,255,0.35)' : 'rgba(0,0,0,0.35)'), fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
-                    {form.description.length}/200
+                  <span style={{ fontSize: 12, marginLeft: 'auto', paddingRight: 4, color: form.description.length > 60 ? '#FF6B6B' : (dark ? 'rgba(255,255,255,0.35)' : 'rgba(0,0,0,0.35)'), fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+                    {form.description.length}/75
                   </span>
                 </div>
               </div>
@@ -443,7 +443,7 @@ export default function SubmitAgent() {
                   <button
                     type="button"
                     onClick={() => setForm({ ...form, links: [...form.links, { title: '', url: '' }] })}
-                    style={{ background: 'transparent', border: `1px dashed ${borderNormal}`, borderRadius: '16px', padding: '14px', color: '#07F258', fontWeight: 600, cursor: 'pointer', fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+                    style={{ background: 'transparent', border: `1px dashed ${borderNormal}`, borderRadius: '16px', padding: '14px', color: dark ? '#07F258' : '#058E38', fontWeight: 600, cursor: 'pointer', fontFamily: "'Plus Jakarta Sans', sans-serif" }}
                   >
                     + Add Another Link
                   </button>
@@ -459,9 +459,9 @@ export default function SubmitAgent() {
                   style={{
                     background: dark
                       ? submitting ? 'rgba(7,242,88,0.05)' : 'linear-gradient(135deg,rgba(7,242,88,0.15) 0%,rgba(7,242,88,0.08) 100%)'
-                      : submitting ? '#04B845' : '#07F258',
-                    border: dark ? '1px solid rgba(7,242,88,0.3)' : 'none',
-                    color: dark ? '#07F258' : '#031713',
+                      : submitting ? '#D1FADF' : '#ECFDF3',
+                    border: dark ? '1px solid rgba(7,242,88,0.3)' : '1px solid #D1FADF',
+                    color: dark ? '#07F258' : '#027A48',
                     opacity: submitting ? 0.7 : 1,
                     cursor: submitting ? 'wait' : 'pointer',
                   }}
