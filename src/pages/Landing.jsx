@@ -1,8 +1,9 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo, useRef } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useTheme } from '../context/ThemeContext';
 
 import { AGENTS } from '../data/agents';
+import { getAllAgents } from '../utils/agentStore';
 import AgentCard from '../components/AgentCard';
 import Footer from '../components/Footer';
 
@@ -66,11 +67,17 @@ export default function Landing() {
   const [searchParams] = useSearchParams();
   const dark = theme === 'dark';
 
+  // Merge static + localStorage-submitted agents (refresh on mount)
+  const [allAgents, setAllAgents] = useState(() => getAllAgents(AGENTS));
+  useEffect(() => { setAllAgents(getAllAgents(AGENTS)); }, []);
+
   const [search, setSearch] = useState('');
   const [activeCat, setActiveCat] = useState('All');
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
   const [isExpandedCategories, setIsExpandedCategories] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  const gridRef = useRef(null);
 
   const [typedText, setTypedText] = useState('');
   const [phIndex, setPhIndex] = useState(0);
@@ -99,8 +106,11 @@ export default function Landing() {
       const match = CATEGORIES.find(c => c.label === cat);
       if (match) {
         setActiveCat(match.label);
-        setIsExpanded(false);
+        setSearch('');       // clear search when arriving from a URL category link
+        setCurrentPage(1);   // reset pagination
       }
+    } else {
+      setActiveCat('All');
     }
   }, [searchParams]);
 
@@ -110,14 +120,29 @@ export default function Landing() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  const filtered = AGENTS.filter(a => {
-    const matchCat = activeCat === 'All' || a.cat === activeCat;
-    const q = search.toLowerCase();
-    return matchCat && (a.name.toLowerCase().includes(q) || a.desc.toLowerCase().includes(q));
-  });
+  // Performance optimization: only recompute filtered array if dependencies change
+  const filtered = useMemo(() => {
+    return allAgents.filter(a => {
+      const matchCat = activeCat === 'All' || a.cat === activeCat;
+      if (!matchCat) return false;
+      if (!search.trim()) return true;
+      const q = search.toLowerCase().trim();
+      return a.name.toLowerCase().includes(q); // search by name only
+    });
+  }, [allAgents, activeCat, search]);
 
   const categoriesToDisplay = isMobile && !isExpandedCategories ? CATEGORIES.slice(0, 7) : CATEGORIES;
 
+
+  const ITEMS_PER_PAGE = 12;
+  const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE);
+
+  const paginatedAgents = useMemo(() => {
+    return filtered.slice(
+      (currentPage - 1) * ITEMS_PER_PAGE,
+      currentPage * ITEMS_PER_PAGE
+    );
+  }, [filtered, currentPage]);
 
   const bg = dark ? '#031713' : '#F7FDFB';
 
@@ -401,6 +426,50 @@ export default function Landing() {
               width: 32px;
               height: 32px;
             }
+            .responsive-grid {
+              grid-template-columns: repeat(2, 1fr);
+              gap: 24px;
+            }
+          }
+
+          /* ── Pagination UI ── */
+          .pagination-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 60px;
+            flex-wrap: wrap;
+          }
+          .page-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            border: 1px solid rgba(136, 136, 136, 0.2);
+            background: transparent;
+            color: #888888;
+            font-size: 1rem;
+            font-weight: 600;
+            font-family: 'Inter', sans-serif;
+            cursor: pointer;
+            transition: all 0.2s ease;
+          }
+          .page-btn:hover:not(:disabled) {
+            border-color: #07F258;
+            color: #07F258;
+            background: rgba(7, 242, 88, 0.05);
+          }
+          .page-btn.active {
+            background: #07F258;
+            color: #031713;
+            border-color: #07F258;
+          }
+          .page-btn:disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
           }
 
           /* ═══════════════════════════════════════════
@@ -541,12 +610,6 @@ export default function Landing() {
             0%   { background-position: -200% center; }
             100% { background-position: 200% center; }
           }
-          @keyframes pillPop {
-            0%   { transform: scale(1); }
-            40%  { transform: scale(0.93); }
-            70%  { transform: scale(1.06); }
-            100% { transform: scale(1); }
-          }
           @keyframes cardReveal {
             from { opacity: 0; transform: translateY(36px) scale(0.97); }
             to   { opacity: 1; transform: translateY(0) scale(1); }
@@ -588,33 +651,17 @@ export default function Landing() {
             box-shadow: 0 0 0 3px rgba(255,255,255,0.18);
           }
 
-          /* ── Category pill active pop ───────────── */
-          .cat-btn.active {
-            animation: pillPop 0.3s cubic-bezier(0.34,1.56,0.64,1);
-          }
+          /* ── Category pill active pop (fires once on selection) ─── */
+          .cat-btn.active { /* active state styling only, no animation here */ }
 
-          /* Staggered pill entrance */
+          /* Staggered form & card animations */
           .cat-pill-stagger {
             animation: scaleIn 0.45s cubic-bezier(0.34,1.56,0.64,1) both;
           }
-
-
-          /* ── View More / View All — shimmer pulse ── */
-          .view-more-btn {
-            background-size: 200% auto;
-            position: relative;
-            overflow: hidden;
+          .card-reveal-animate {
+            animation: cardReveal 0.4s cubic-bezier(0.22,1,0.36,1) forwards;
           }
-          .view-more-btn::after {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(90deg, transparent 0%, rgba(7,242,88,0.12) 50%, transparent 100%);
-            background-size: 200% auto;
-            animation: shimmer 2.2s linear infinite;
-            border-radius: 94px;
-            pointer-events: none;
-          }
+
           .view-all-cat-btn::after {
             content: '';
             position: absolute;
@@ -682,11 +729,18 @@ export default function Landing() {
               <circle cx="10.0833" cy="10.0833" r="7.33333" stroke="#CCCCCC" strokeWidth="1.375"/>
               <path d="M18.3333 18.3333L15.5833 15.5833" stroke="#CCCCCC" strokeWidth="1.375" strokeLinecap="round"/>
             </svg>
-            <input
+          <input
               type="text"
               placeholder={search ? '' : typedText}
               value={search}
-              onChange={e => setSearch(e.target.value)}
+              onChange={e => {
+                setSearch(e.target.value);
+                if (e.target.value) {
+                  // when user types, reset to All so search runs across all agents
+                  setActiveCat('All');
+                  setCurrentPage(1);
+                }
+              }}
             />
           </div>
 
@@ -705,13 +759,14 @@ export default function Landing() {
                   key={label}
                   className={`cat-btn${active ? ' active' : ''} cat-pill-stagger`}
                   style={{ animationDelay: `${idx * 0.04}s` }}
-                  onClick={() => { setActiveCat(active ? 'All' : label); setIsExpanded(false); }}
+                  onClick={() => {
+                    if (active) return; // no toggle — stay on selected category
+                    setActiveCat(label);
+                    setSearch('');
+                    setCurrentPage(1);
+                  }}
                 >
-                  <img
-                    src={icon}
-                    alt={label}
-                    className="cat-btn-icon"
-                  />
+                  <img src={icon} alt={label} className="cat-btn-icon" />
                   {label}
                 </button>
               );
@@ -740,7 +795,7 @@ export default function Landing() {
       </div>
 
       {/* ── CARDS GRID ────────────────────────────────────────────────────── */}
-      <main className="responsive-grid-container" style={{ background: bg }}>
+      <main ref={gridRef} className="responsive-grid-container" style={{ background: bg, scrollMarginTop: '104px' }}>
         {filtered.length === 0 ? (
           <div style={{ textAlign: 'center', color: '#4A7A64', padding: '80px 0', fontSize: '18px', fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
             No AI agents found.
@@ -748,23 +803,74 @@ export default function Landing() {
         ) : (
           <>
             <div className="responsive-grid">
-              {(isExpanded ? filtered : filtered.slice(0, 12)).map((a, idx) => (
-                <div
-                  key={a.id}
-                  style={{ height: '100%' }}
-                >
-                  <AgentCard agent={a} onClick={() => navigate('/agent/' + a.id)} />
-                </div>
-              ))}
+              {paginatedAgents.map((a, idx) => {
+                return (
+                  <div
+                    key={`${currentPage}-${a.id}`} // Force re-render/animation on page change
+                    className="card-reveal-animate"
+                    style={{ 
+                      height: '100%',
+                      animationDelay: `${(idx % ITEMS_PER_PAGE) * 0.05}s` 
+                    }}
+                  >
+                    <AgentCard agent={a} onClick={() => navigate('/agent/' + a.id)} />
+                  </div>
+                );
+              })}
             </div>
 
-            {filtered.length > 12 && (
-              <div className="view-more-wrap">
-                <button
-                  className="view-more-btn"
-                  onClick={() => setIsExpanded(!isExpanded)}
+            {/* Pagination Controls */}
+            {totalPages > 1 && (
+              <div className="pagination-wrap">
+                <button 
+                  className="page-btn" 
+                  disabled={currentPage === 1}
+                  onClick={() => { 
+                    setCurrentPage(prev => prev - 1); 
+                    gridRef.current?.scrollIntoView({ behavior: 'smooth' }); 
+                  }}
                 >
-                  {isExpanded ? 'View Less' : 'View More'}
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                </button>
+                
+                {Array.from({ length: totalPages }).map((_, i) => {
+                  const pageNum = i + 1;
+                  // Simple responsive pagination: show first, last, current, and adjacent
+                  if (
+                    totalPages > 5 && 
+                    pageNum !== 1 && 
+                    pageNum !== totalPages && 
+                    Math.abs(pageNum - currentPage) > 1
+                  ) {
+                    if (pageNum === 2 || pageNum === totalPages - 1) {
+                      return <span key={pageNum} style={{ color: '#888' }}>...</span>;
+                    }
+                    return null;
+                  }
+
+                  return (
+                    <button
+                      key={pageNum}
+                      className={`page-btn ${pageNum === currentPage ? 'active' : ''}`}
+                      onClick={() => { 
+                        setCurrentPage(pageNum); 
+                        gridRef.current?.scrollIntoView({ behavior: 'smooth' }); 
+                      }}
+                    >
+                      {pageNum}
+                    </button>
+                  );
+                })}
+
+                <button 
+                  className="page-btn" 
+                  disabled={currentPage === totalPages}
+                  onClick={() => { 
+                    setCurrentPage(prev => prev + 1); 
+                    gridRef.current?.scrollIntoView({ behavior: 'smooth' }); 
+                  }}
+                >
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
                 </button>
               </div>
             )}

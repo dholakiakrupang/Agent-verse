@@ -9,6 +9,7 @@ import SubmitAgent from './pages/SubmitAgent';
 
 // Components
 import Navbar from './components/Navbar';
+import ErrorBoundary from './components/ErrorBoundary';
 
 function NotFound() {
   const { theme } = useTheme();
@@ -32,13 +33,15 @@ function App() {
         <div className="app-layout">
           <Navbar />
           <main className="main-content">
-            <Routes>
-              <Route path="/" element={<Landing />} />
-              <Route path="/category" element={<Navigate to="/?category=All" replace />} />
-              <Route path="/agent/:id" element={<AgentDetails />} />
-              <Route path="/submit" element={<SubmitAgent />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
+            <ErrorBoundary>
+              <Routes>
+                <Route path="/" element={<Landing />} />
+                <Route path="/category" element={<Navigate to="/?category=All" replace />} />
+                <Route path="/agent/:id" element={<AgentDetails />} />
+                <Route path="/submit" element={<SubmitAgent />} />
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </ErrorBoundary>
           </main>
 {/* Footer removed because SVGs contain their own footers */}
         </div>

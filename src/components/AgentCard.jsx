@@ -25,55 +25,74 @@ export default function AgentCard({ agent, onClick }) {
           ? 'inset 0 0 0 1px rgba(255,255,255,0.5)'
           : 'inset 0 0 0 1px rgba(255,255,255,0.18)',
         cursor: 'pointer',
-        padding: isMobile ? '20px 18px 16px' : '30px 30px 22px',
+        padding: isMobile ? '20px' : '28px',
         display: 'flex',
         flexDirection: 'column',
-        gap: isMobile ? '10px' : '14px',
         transition: 'background 0.18s, box-shadow 0.18s',
-        height: '100%',
+        height: isMobile ? 'auto' : '320px',
+        minHeight: isMobile ? '280px' : '320px',
         boxSizing: 'border-box',
       }}
     >
-      {/* Logo box */}
-      <div style={{
-        width: isMobile ? '48px' : '60px',
-        height: isMobile ? '48px' : '60px',
-        borderRadius: isMobile ? '8px' : '10px',
-        background: '#041B16',
-        boxShadow: 'inset 0 0 0 1px rgba(255,255,255,0.14)',
-        display: 'flex', alignItems: 'center', justifyContent: 'center',
-        fontSize: isMobile ? '1.5rem' : '1.9rem',
-        flexShrink: 0, overflow: 'hidden',
-      }}>
-        {agent.logo ? (
-          <img src={agent.logo} alt={agent.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-        ) : (
-          agent.emoji
-        )}
-      </div>
+      {/* Top Flex Wrapper to push footer down */}
+      <div style={{ flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
+        
+        {/* Logo box */}
+        <div style={{
+          width: isMobile ? '48px' : '60px',
+          height: isMobile ? '48px' : '60px',
+          borderRadius: isMobile ? '8px' : '10px',
+          background: '#041B16',
+          boxShadow: 'inset 0 0 0 1px rgba(255,255,255,0.14)',
+          display: 'flex', alignItems: 'center', justifyContent: 'center',
+          fontSize: isMobile ? '1.5rem' : '1.9rem',
+          flexShrink: 0, overflow: 'hidden',
+          marginBottom: isMobile ? '16px' : '24px'
+        }}>
+          {agent.logo ? (
+            <img src={agent.logo} alt={agent.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+          ) : (
+            agent.emoji
+          )}
+        </div>
 
-      {/* Agent name */}
-      <div style={{
-        fontWeight: 800,
-        fontSize: isMobile ? '1.3rem' : '1.65rem',
-        lineHeight: 1.1,
-        background: 'linear-gradient(180deg, #FFFFFF 0%, #CCCCCC 100%)',
-        WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
-        backgroundClip: 'text',
-      }}>
-        {agent.name}
-      </div>
+        {/* Agent name */}
+        <div style={{
+          fontFamily: "'Plus Jakarta Sans', sans-serif",
+          fontWeight: 700,
+          fontSize: isMobile ? '20px' : '24px',
+          lineHeight: isMobile ? '28px' : '32px',
+          marginBottom: isMobile ? '8px' : '12px',
+          background: 'linear-gradient(180deg, #FFFFFF 0%, #CCCCCC 100%)',
+          WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
+          backgroundClip: 'text',
+        }}>
+          {agent.name}
+        </div>
 
-      {/* Description */}
-      <div style={{
-        fontSize: isMobile ? '0.78rem' : '0.8rem',
-        color: '#CCCCCC', lineHeight: 1.65, flexGrow: 1,
-      }}>
-        {agent.desc}
+        {/* Description — clamped to exactly 2 lines as per Figma layout */}
+        <div style={{
+          fontFamily: "'Plus Jakarta Sans', sans-serif",
+          fontSize: isMobile ? '14px' : '15px',
+          color: '#CCCCCC', 
+          lineHeight: isMobile ? '22px' : '24px',
+          display: '-webkit-box',
+          WebkitLineClamp: 2,
+          WebkitBoxOrient: 'vertical',
+          overflow: 'hidden',
+        }}>
+          {agent.desc}
+        </div>
+
       </div>
 
       {/* Divider */}
-      <div style={{ height: '1px', background: '#1D2B28' }} />
+      <div style={{ 
+        height: '1px', 
+        background: '#1D2B28', 
+        marginTop: isMobile ? '20px' : '24px', 
+        marginBottom: isMobile ? '16px' : '20px' 
+      }} />
 
       {/* Bottom row */}
       <div style={{
@@ -81,12 +100,14 @@ export default function AgentCard({ agent, onClick }) {
       }}>
         {/* Category pill */}
         <span style={{
-          padding: isMobile ? '4px 11px' : '5px 14px',
+          padding: isMobile ? '4px 11px' : '6px 14px',
           borderRadius: '999px',
           background: '#041B16',
           boxShadow: 'inset 0 0 0 1px rgba(255,255,255,0.2)',
           color: '#CCCCCC',
-          fontSize: isMobile ? '0.68rem' : '0.72rem',
+          fontFamily: "'Plus Jakarta Sans', sans-serif",
+          fontSize: isMobile ? '11px' : '12px',
+          fontWeight: 500,
           whiteSpace: 'nowrap',
         }}>
           {agent.cat}
@@ -94,13 +115,15 @@ export default function AgentCard({ agent, onClick }) {
 
         {/* Free badge */}
         <span style={{
-          padding: isMobile ? '4px 11px' : '5px 14px',
+          padding: isMobile ? '4px 11px' : '6px 14px',
           borderRadius: '999px',
           background: 'linear-gradient(270deg, rgba(7,242,88,0.06) 0%, rgba(7,242,88,0.10) 100%)',
           boxShadow: 'inset 0 0 0 1px rgba(7,242,88,0.35)',
           color: '#07F258',
-          fontSize: isMobile ? '0.68rem' : '0.72rem',
-          fontWeight: 600, whiteSpace: 'nowrap',
+          fontFamily: "'Plus Jakarta Sans', sans-serif",
+          fontSize: isMobile ? '11px' : '12px',
+          fontWeight: 600, 
+          whiteSpace: 'nowrap',
         }}>
           {agent.tag}
         </span>
@@ -114,8 +137,8 @@ export default function AgentCard({ agent, onClick }) {
             if (agent.url) window.open(agent.url, '_blank', 'noopener,noreferrer');
           }}
           style={{
-            width: isMobile ? '30px' : '34px',
-            height: isMobile ? '30px' : '34px',
+            width: isMobile ? '30px' : '36px',
+            height: isMobile ? '30px' : '36px',
             borderRadius: '50%',
             background: '#041B16',
             boxShadow: 'inset 0 0 0 1px rgba(255,255,255,0.18)',
@@ -123,7 +146,7 @@ export default function AgentCard({ agent, onClick }) {
             flexShrink: 0,
             cursor: 'pointer',
           }}>
-          <ExternalLink size={isMobile ? 11 : 13} color="#CCCCCC" />
+          <ExternalLink size={isMobile ? 14 : 16} color="#CCCCCC" />
         </div>
       </div>
     </div>

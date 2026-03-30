@@ -1,10 +1,198 @@
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useTheme } from '../context/ThemeContext';
 import { AGENTS } from '../data/agents';
+import { getAllAgents } from '../utils/agentStore';
 import Footer from '../components/Footer';
 import AgentCard from '../components/AgentCard';
 import { ArrowUpRight, ArrowRight } from 'lucide-react';
+
+const DetailLinkItem = ({ label, url, primary = false, textMuted }) => {
+  const [hovered, setHovered] = useState(false);
+  return (
+    <div
+      className="ad-link-item"
+      title={url}
+      onClick={() => window.open(url, '_blank', 'noopener,noreferrer')}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      style={{
+        color: primary || hovered ? '#07F258' : textMuted,
+        cursor: 'pointer',
+        display: 'flex',
+        alignItems: 'center',
+        gap: '8px',
+        transition: 'color 0.2s',
+      }}
+    >
+      <div style={{
+        display: 'flex', alignItems: 'center', justifyContent: 'center',
+        transform: hovered ? 'translate(2px, -2px)' : 'translate(0,0)',
+        transition: 'transform 0.2s cubic-bezier(0.34,1.56,0.64,1)',
+      }}>
+        <ArrowUpRight size={14} />
+      </div>
+      {label}
+    </div>
+  );
+};
+
+/**
+ * Intelligently parses the user's longDesc and renders it
+ * in the exact same 4-section template format used by built-in agents:
+ *   1. Intro  2. Key Features  3. Getting Started  4. Why Choose
+ */
+function AutoFormatContent({ text, agent, textColor, contentText }) {
+  // ── Parse raw text into typed blocks ───────────────────────────
+  const allLines = text.split('\n').map(l => l.trim());
+
+  const isBullet    = l => /^[-*•]\s/.test(l);
+  const isNumbered  = l => /^\d+[.)]\s/.test(l);
+  const isHeading   = l => /^#{1,3}\s/.test(l) || (l.endsWith(':') && l.length < 70 && !l.includes('.'));
+  const stripPrefix = l => l.replace(/^[-*•]\s*/, '').replace(/^\d+[.)]\s*/, '').replace(/^#{1,3}\s*/, '').replace(/:$/, '').trim();
+
+  // Group into logical paragraphs (split on blank lines)
+  const paragraphs = [];
+  let cur = [];
+  for (const line of allLines) {
+    if (!line) { if (cur.length) { paragraphs.push(cur); cur = []; } }
+    else cur.push(line);
+  }
+  if (cur.length) paragraphs.push(cur);
+
+  // Classify each paragraph
+  const classified = paragraphs.map(lines => {
+    if (lines.every(isBullet))   return { type: 'bullets',  lines };
+    if (lines.every(isNumbered)) return { type: 'numbered', lines };
+    if (lines.length === 1 && isHeading(lines[0])) return { type: 'heading', lines };
+    return { type: 'prose', lines };
+  });
+
+  // ── Slot content into 4 named sections ─────────────────────────
+  // Section 1: Intro — first prose paragraph
+  const introBlock = classified.find(b => b.type === 'prose');
+
+  // Section 2: Key Features — all bullet blocks
+  const bulletBlocks = classified.filter(b => b.type === 'bullets');
+  const allBullets = bulletBlocks.flatMap(b => b.lines.map(stripPrefix));
+
+  // Section 3: Getting Started — numbered blocks or prose after bullets
+  const numberedBlocks = classified.filter(b => b.type === 'numbered');
+  const steps = numberedBlocks.flatMap(b => b.lines.map(stripPrefix));
+
+  // Section 4: Why Choose — remaining prose paragraphs after intro
+  const proseBlocks = classified.filter(b => b.type === 'prose' && b !== introBlock);
+
+  // Fallback text if user didn't provide content for a section
+  const introText = introBlock?.lines.join(' ')
+    || `${agent.name} is a powerful AI agent built for ${agent.cat.toLowerCase()}, designed to help you work smarter and achieve more in less time.`;
+
+  const features = allBullets.length > 0 ? allBullets : [
+    `Intuitive ${agent.cat} interface optimized for productivity`,
+    `Autonomous execution — set it up once and let it run`,
+    'Seamless integrations with your existing tools',
+    `Smart context-awareness tailored for ${agent.cat.toLowerCase()} tasks`,
+  ];
+
+  const gettingStartedSteps = steps.length > 0 ? steps : [
+    `Visit ${agent.name} and create your account`,
+    'Connect your tools and configure your preferences',
+    'Define your goals and let the AI agent take action',
+    'Review outputs, refine settings, and optimize results',
+  ];
+
+  const whyChoosePoints = proseBlocks.length > 0
+    ? proseBlocks.flatMap(b => b.lines)
+    : [
+        `Purpose-built for ${agent.cat.toLowerCase()} workflows`,
+        'Saves time by automating repetitive tasks intelligently',
+        'Continuously improving with community and developer updates',
+        'Trusted by teams of all sizes across industries',
+      ];
+
+  // ── Render ───────────────────────────────────────────────────────
+  return (
+    <>
+      {/* 1. Intro */}
+      <div className="ad-content-section">
+        <h2 style={{ color: textColor }}>{agent.name}: Your {agent.cat} AI Companion</h2>
+        <p style={{ color: contentText }}>{introText}</p>
+      </div>
+
+      {/* 2. Key Features */}
+      <div className="ad-content-section">
+        <h2 style={{ color: textColor }}>Key Features</h2>
+        {features.map((f, i) => {
+          // If feature has a colon, split into title + description
+          const colonIdx = f.indexOf(':');
+          if (colonIdx > 0 && colonIdx < 50) {
+            const ftitle = f.slice(0, colonIdx).trim();
+            const fdesc  = f.slice(colonIdx + 1).trim();
+            return (
+              <div key={i}>
+                <h3 style={{ color: textColor }}>{ftitle}</h3>
+                {fdesc && <p style={{ color: contentText }}>{fdesc}</p>}
+              </div>
+            );
+          }
+          return (
+            <div key={i}>
+              <h3 style={{ color: textColor }}>{f}</h3>
+            </div>
+          );
+        })}
+      </div>
+
+      {/* 3. Getting Started */}
+      <div className="ad-content-section">
+        <h2 style={{ color: textColor }}>Getting Started</h2>
+        {gettingStartedSteps.map((step, i) => {
+          const colonIdx = step.indexOf(':');
+          const hasTitle = colonIdx > 0 && colonIdx < 60;
+          const stitle = hasTitle ? step.slice(0, colonIdx).trim() : `Step ${i + 1}`;
+          const sdesc  = hasTitle ? step.slice(colonIdx + 1).trim() : step;
+          return (
+            <div key={i}>
+              <h3 style={{ color: textColor, marginBottom: '0.5rem' }}>{stitle}</h3>
+              {sdesc && <p style={{ color: contentText }}>{sdesc}</p>}
+            </div>
+          );
+        })}
+      </div>
+
+      {/* 4. Why Choose */}
+      <div className="ad-content-section">
+        <h2 style={{ color: textColor }}>Why Choose {agent.name}?</h2>
+        <ul className="ad-bullet-list">
+          {whyChoosePoints.map((pt, i) => {
+            const colonIdx = pt.indexOf(':');
+            const hasLabel = colonIdx > 0 && colonIdx < 50;
+            return (
+              <li key={i} className="ad-bullet-item">
+                <div className="ad-bullet-dot" />
+                <div style={{ color: contentText }}>
+                  {hasLabel && <strong style={{ color: textColor }}>{pt.slice(0, colonIdx).trim()}: </strong>}
+                  {hasLabel ? pt.slice(colonIdx + 1).trim() : pt}
+                </div>
+              </li>
+            );
+          })}
+        </ul>
+        <p style={{ color: contentText, marginTop: '1rem' }}>
+          <strong style={{ color: textColor }}>Explore More:</strong>{' '}
+          Visit the{' '}
+          <span
+            style={{ color: '#07F258', cursor: 'pointer' }}
+            onClick={() => window.open(agent.url, '_blank')}
+          >
+            Official Website
+          </span>{' '}
+          to get started today.
+        </p>
+      </div>
+    </>
+  );
+}
 
 export default function AgentDetails() {
   const { id } = useParams();
@@ -17,9 +205,10 @@ export default function AgentDetails() {
   }, [id]);
   
   const agentId = parseInt(id) || 1;
-  const agent = AGENTS.find(a => a.id === agentId) || AGENTS[0];
+  const allAgents = getAllAgents(AGENTS);
+  const agent = allAgents.find(a => a.id === agentId) || AGENTS[0];
   // Show only agents from the same category
-  const relatedAgents = AGENTS.filter(a => a.id !== agent.id && a.cat === agent.cat).slice(0, 3);
+  const relatedAgents = allAgents.filter(a => a.id !== agent.id && a.cat === agent.cat).slice(0, 3);
 
   const bg = dark ? '#031713' : '#F7FDFB';
   const textColor = dark ? '#FFFFFF' : '#0B1F18';
@@ -473,18 +662,16 @@ export default function AgentDetails() {
           <div>
             <h3 style={{ fontSize: '1.1rem', fontWeight: 700, color: textColor, marginBottom: '1.2rem' }}>Links</h3>
             <div className="ad-links-grid">
-              <div
-                className="ad-link-item"
-                style={{ color: '#07F258', cursor: 'pointer' }}
-                onClick={() => window.open(agent.url, '_blank', 'noopener,noreferrer')}
-              >
-                <ArrowUpRight size={14} /> Website
-              </div>
-              {['GitHub', 'Twitter', 'Discord', 'LinkedIn'].map(link => (
-                <div key={link} className="ad-link-item" style={{ color: textMuted }}>
-                  <ArrowUpRight size={14} /> {link}
-                </div>
-              ))}
+              <DetailLinkItem label="Website" url={agent.url} textMuted={textMuted} />
+              {agent.links && agent.links.length > 0 ? (
+                agent.links.map((link, idx) => (
+                  <DetailLinkItem key={idx} label={link.title} url={link.url} textMuted={textMuted} />
+                ))
+              ) : (
+                ['GitHub', 'Twitter', 'Discord', 'LinkedIn'].map(link => (
+                  <DetailLinkItem key={link} label={link} url="#" textMuted={textMuted} />
+                ))
+              )}
             </div>
 
             <h3 style={{ fontSize: '1.1rem', fontWeight: 700, color: textColor, marginBottom: '1.2rem' }}>Details</h3>
@@ -504,114 +691,127 @@ export default function AgentDetails() {
 
         {/* Screenshot / Preview */}
         <div className="ad-screenshot" style={{ border: cardBorder }}>
-          <img 
-            src={`https://image.thum.io/get/width/1280/crop/800/noanimate/${agent.url}`}
-            alt={`${agent.name} Dashboard`}
-            loading="lazy"
-            onError={(e) => {
-               e.target.style.display = 'none';
-               if (e.target.nextSibling) e.target.nextSibling.style.display = 'flex';
-            }}
-          />
-          <div style={{ display: 'none', padding: '4rem 2rem', color: contentText, alignItems: 'center', justifyContent: 'center', gap: '10px', flexDirection: 'column', width: '100%', textAlign: 'center' }}>
-            <div style={{ fontSize: '1.2rem', color: textColor }}>[ Agent Screenshot ]</div>
-            <div style={{ fontSize: '0.9rem', color: contentText, opacity: 0.8 }}>Screenshot could not be loaded for this agent.</div>
-          </div>
+          {agent.isCustom && agent.screenshot ? (
+            <img src={agent.screenshot} alt={`${agent.name} Screenshot`} style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover' }} />
+          ) : (
+            <>
+              <img
+                src={`https://image.thum.io/get/width/1280/crop/800/noanimate/${agent.url}`}
+                alt={`${agent.name} Dashboard`}
+                loading="lazy"
+                onError={(e) => {
+                   e.target.style.display = 'none';
+                   if (e.target.nextSibling) e.target.nextSibling.style.display = 'flex';
+                }}
+              />
+              <div style={{ display: 'none', padding: '4rem 2rem', color: contentText, alignItems: 'center', justifyContent: 'center', gap: '10px', flexDirection: 'column', width: '100%', textAlign: 'center' }}>
+                <div style={{ fontSize: '1.2rem', color: textColor }}>[ Agent Screenshot ]</div>
+                <div style={{ fontSize: '0.9rem', color: contentText, opacity: 0.8 }}>Screenshot could not be loaded for this agent.</div>
+              </div>
+            </>
+          )}
         </div>
 
         {/* Extended Details Content */}
         <div className="ad-content">
-          
-          {/* Intro Section */}
-          <div className="ad-content-section">
-            <h2 style={{ color: textColor }}>{agent.name}: Transform Your {agent.cat} Workflow</h2>
-            <p style={{ color: contentText }}>
-              {agent.name} is an innovative platform offering powerful AI capabilities tailored for {agent.cat.toLowerCase()}. Combining a seamless interface with robust technology, {agent.name} is transforming the landscape of how professionals approach tasks in this domain, enabling faster execution and smarter outcomes.
-            </p>
-          </div>
 
-          {/* Key Features */}
-          <div className="ad-content-section">
-            <h2 style={{ color: textColor }}>Key Features</h2>
-            <div>
-              <h3 style={{ color: textColor }}>{agent.name} Workspace</h3>
-              <p style={{ color: contentText }}>
-                Experience an intuitive, streamlined interface designed to maximize your productivity. Effortlessly set up custom environments, integrations, and workflows specific to {agent.cat.toLowerCase()}. This user-friendly visual approach caters to both beginners and seasoned experts.
-              </p>
-            </div>
-            <div>
-              <h3 style={{ color: textColor }}>Autonomous Execution Engine</h3>
-              <p style={{ color: contentText }}>
-                The powerhouse of {agent.name} ensures seamless operation. Once configured, your AI workflows can run continuously and can be triggered by external sources, guaranteeing smooth and uninterrupted automation.
-              </p>
-            </div>
-            <div>
-              <h3 style={{ color: textColor }}>Versatile Applications</h3>
-              <p style={{ color: contentText, marginBottom: '1rem' }}>
-                {agent.name}'s adaptability enables diverse use cases, including:
-              </p>
-              <ul>
-                <li style={{ color: contentText }}><strong style={{ color: textColor }}>Intelligent Process Automation:</strong> Identifies and responds to triggers autonomously, eliminating repetitive manual work.</li>
-                <li style={{ color: contentText }}><strong style={{ color: textColor }}>Context-Aware Generation:</strong> Processes complex inputs to deliver highly optimized outputs perfectly suited for {agent.cat.toLowerCase()}.</li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Getting Started */}
-          <div className="ad-content-section">
-            <h2 style={{ color: textColor }}>Getting Started</h2>
-            {[
-              { title: `Set Up ${agent.name}`, desc: `Follow the standard onboarding documentation to connect your accounts and initialize the primary workspace.` },
-              { title: 'Design Your Custom Workflow', desc: `Determine your core objectives for ${agent.cat.toLowerCase()} and configure the AI parameters to align with your specific needs.` },
-              { title: 'Deploy & Monitor', desc: `Launch your configuration and let the AI handle the execution over time.` },
-              { title: 'Optimize for Success', desc: `Keep track of your AI's performance via the dashboard, make necessary adjustments, and optimize for improved results.` },
-            ].map(item => (
-              <div key={item.title}>
-                <h3 style={{ color: textColor, marginBottom: '0.5rem' }}>{item.title}</h3>
-                <p style={{ color: contentText }}>{item.desc}</p>
+          {agent.isCustom && agent.longDesc ? (
+            /* ── Auto-formatted user description ── */
+            <AutoFormatContent text={agent.longDesc} agent={agent} textColor={textColor} contentText={contentText} />
+          ) : (
+            /* ── Template-generated content for built-in agents ── */
+            <>
+              {/* Intro Section */}
+              <div className="ad-content-section">
+                <h2 style={{ color: textColor }}>{agent.name}: Transform Your {agent.cat} Workflow</h2>
+                <p style={{ color: contentText }}>
+                  {agent.name} is an innovative platform offering powerful AI capabilities tailored for {agent.cat.toLowerCase()}. Combining a seamless interface with robust technology, {agent.name} is transforming the landscape of how professionals approach tasks in this domain, enabling faster execution and smarter outcomes.
+                </p>
               </div>
-            ))}
-          </div>
 
-          {/* Key Tools & Features */}
-          <div className="ad-content-section">
-            <h2 style={{ color: textColor }}>Platform Offerings</h2>
-            {[
-              { title: 'Templates & Blueprints', desc: `Plug-and-play configurations designed to streamline the adoption of AI in ${agent.cat.toLowerCase()}. Eliminate repetitive setup tasks and concentrate on high-level strategy.` },
-              { title: 'Performance Metrics', desc: 'A robust tracking framework to evaluate and fine-tune AI performance, ensuring outputs meet the demands of real-world scenarios.' },
-              { title: 'Seamless Integrations', desc: 'A sleek ecosystem of APIs and webhooks that easily connect to external software, ensuring your AI operations are fully integrated into your existing tech stack.' },
-            ].map(item => (
-              <div key={item.title}>
-                <h3 style={{ color: textColor, marginBottom: '0.5rem' }}>{item.title}</h3>
-                <p style={{ color: contentText }}>{item.desc}</p>
+              {/* Key Features */}
+              <div className="ad-content-section">
+                <h2 style={{ color: textColor }}>Key Features</h2>
+                <div>
+                  <h3 style={{ color: textColor }}>{agent.name} Workspace</h3>
+                  <p style={{ color: contentText }}>
+                    Experience an intuitive, streamlined interface designed to maximize your productivity. Effortlessly set up custom environments, integrations, and workflows specific to {agent.cat.toLowerCase()}. This user-friendly visual approach caters to both beginners and seasoned experts.
+                  </p>
+                </div>
+                <div>
+                  <h3 style={{ color: textColor }}>Autonomous Execution Engine</h3>
+                  <p style={{ color: contentText }}>
+                    The powerhouse of {agent.name} ensures seamless operation. Once configured, your AI workflows can run continuously and can be triggered by external sources, guaranteeing smooth and uninterrupted automation.
+                  </p>
+                </div>
+                <div>
+                  <h3 style={{ color: textColor }}>Versatile Applications</h3>
+                  <p style={{ color: contentText, marginBottom: '1rem' }}>
+                    {agent.name}'s adaptability enables diverse use cases, including:
+                  </p>
+                  <ul>
+                    <li style={{ color: contentText }}><strong style={{ color: textColor }}>Intelligent Process Automation:</strong> Identifies and responds to triggers autonomously, eliminating repetitive manual work.</li>
+                    <li style={{ color: contentText }}><strong style={{ color: textColor }}>Context-Aware Generation:</strong> Processes complex inputs to deliver highly optimized outputs perfectly suited for {agent.cat.toLowerCase()}.</li>
+                  </ul>
+                </div>
               </div>
-            ))}
-          </div>
 
-          {/* Why Choose */}
-          <div className="ad-content-section">
-            <h2 style={{ color: textColor }}>Why Choose {agent.name}?</h2>
-            <ul className="ad-bullet-list">
-              {[
-                { label: 'Intuitive Design:', text: 'Simplify your operations with an easy-to-use interface.' },
-                { label: 'Powerful Backend:', text: 'Leverage robust AI models that ensure uninterrupted and accurate operations.' },
-                { label: 'Domain Specificity:', text: `Highly tuned solutions explicitly built for ${agent.cat.toLowerCase()} use cases.` },
-                { label: 'Continuous Updates:', text: 'Benefit from rapid product iterations and a thriving ecosystem of users.' },
-              ].map(item => (
-                <li key={item.label} className="ad-bullet-item">
-                  <div className="ad-bullet-dot" />
-                  <div style={{ color: contentText }}><strong style={{ color: textColor }}>{item.label}</strong> {item.text}</div>
-                </li>
-              ))}
-            </ul>
-            <p style={{ color: contentText, marginTop: '1rem' }}>
-              {agent.name} is reshaping how we work by equipping you with tools to delegate complex {agent.cat.toLowerCase()} tasks to intelligent systems seamlessly. Start building your automated solutions today!
-            </p>
-            <p style={{ color: contentText }}>
-              <strong style={{ color: textColor }}>Explore More:</strong> Visit the <span style={{ color: '#07F258', cursor: 'pointer' }} onClick={() => window.open(agent.url, '_blank')}>Official Website</span> for deeper documentation.
-            </p>
-          </div>
-          
+              {/* Getting Started */}
+              <div className="ad-content-section">
+                <h2 style={{ color: textColor }}>Getting Started</h2>
+                {[
+                  { title: `Set Up ${agent.name}`, desc: `Follow the standard onboarding documentation to connect your accounts and initialize the primary workspace.` },
+                  { title: 'Design Your Custom Workflow', desc: `Determine your core objectives for ${agent.cat.toLowerCase()} and configure the AI parameters to align with your specific needs.` },
+                  { title: 'Deploy & Monitor', desc: `Launch your configuration and let the AI handle the execution over time.` },
+                  { title: 'Optimize for Success', desc: `Keep track of your AI's performance via the dashboard, make necessary adjustments, and optimize for improved results.` },
+                ].map(item => (
+                  <div key={item.title}>
+                    <h3 style={{ color: textColor, marginBottom: '0.5rem' }}>{item.title}</h3>
+                    <p style={{ color: contentText }}>{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+
+              {/* Platform Offerings */}
+              <div className="ad-content-section">
+                <h2 style={{ color: textColor }}>Platform Offerings</h2>
+                {[
+                  { title: 'Templates & Blueprints', desc: `Plug-and-play configurations designed to streamline the adoption of AI in ${agent.cat.toLowerCase()}. Eliminate repetitive setup tasks and concentrate on high-level strategy.` },
+                  { title: 'Performance Metrics', desc: 'A robust tracking framework to evaluate and fine-tune AI performance, ensuring outputs meet the demands of real-world scenarios.' },
+                  { title: 'Seamless Integrations', desc: 'A sleek ecosystem of APIs and webhooks that easily connect to external software, ensuring your AI operations are fully integrated into your existing tech stack.' },
+                ].map(item => (
+                  <div key={item.title}>
+                    <h3 style={{ color: textColor, marginBottom: '0.5rem' }}>{item.title}</h3>
+                    <p style={{ color: contentText }}>{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+
+              {/* Why Choose */}
+              <div className="ad-content-section">
+                <h2 style={{ color: textColor }}>Why Choose {agent.name}?</h2>
+                <ul className="ad-bullet-list">
+                  {[
+                    { label: 'Intuitive Design:', text: 'Simplify your operations with an easy-to-use interface.' },
+                    { label: 'Powerful Backend:', text: 'Leverage robust AI models that ensure uninterrupted and accurate operations.' },
+                    { label: 'Domain Specificity:', text: `Highly tuned solutions explicitly built for ${agent.cat.toLowerCase()} use cases.` },
+                    { label: 'Continuous Updates:', text: 'Benefit from rapid product iterations and a thriving ecosystem of users.' },
+                  ].map(item => (
+                    <li key={item.label} className="ad-bullet-item">
+                      <div className="ad-bullet-dot" />
+                      <div style={{ color: contentText }}><strong style={{ color: textColor }}>{item.label}</strong> {item.text}</div>
+                    </li>
+                  ))}
+                </ul>
+                <p style={{ color: contentText, marginTop: '1rem' }}>
+                  {agent.name} is reshaping how we work by equipping you with tools to delegate complex {agent.cat.toLowerCase()} tasks to intelligent systems seamlessly. Start building your automated solutions today!
+                </p>
+                <p style={{ color: contentText }}>
+                  <strong style={{ color: textColor }}>Explore More:</strong> Visit the <span style={{ color: '#07F258', cursor: 'pointer' }} onClick={() => window.open(agent.url, '_blank')}>Official Website</span> for deeper documentation.
+                </p>
+              </div>
+            </>
+          )}
         </div>
 
         {/* Similar Agents Grid */}
