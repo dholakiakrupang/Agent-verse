@@ -28,25 +28,27 @@ function NotFound() {
 
 function App() {
   return (
-    <ThemeProvider>
-      <Router>
-        <div className="app-layout">
-          <Navbar />
-          <main className="main-content">
-            <ErrorBoundary>
-              <Routes>
-                <Route path="/" element={<Landing />} />
-                <Route path="/category" element={<Navigate to="/?category=All" replace />} />
-                <Route path="/agent/:id" element={<AgentDetails />} />
-                <Route path="/submit" element={<SubmitAgent />} />
-                <Route path="*" element={<NotFound />} />
-              </Routes>
-            </ErrorBoundary>
-          </main>
+    <ErrorBoundary>
+      <ThemeProvider>
+        <Router>
+          <div className="app-layout">
+            <Navbar />
+            <main className="main-content">
+              <ErrorBoundary>
+                <Routes>
+                  <Route path="/" element={<Landing />} />
+                  <Route path="/category" element={<Navigate to="/?category=All" replace />} />
+                  <Route path="/agent/:id" element={<AgentDetails />} />
+                  <Route path="/submit" element={<SubmitAgent />} />
+                  <Route path="*" element={<NotFound />} />
+                </Routes>
+              </ErrorBoundary>
+            </main>
 {/* Footer removed because SVGs contain their own footers */}
-        </div>
-      </Router>
-    </ThemeProvider>
+          </div>
+        </Router>
+      </ThemeProvider>
+    </ErrorBoundary>
   );
 }
 

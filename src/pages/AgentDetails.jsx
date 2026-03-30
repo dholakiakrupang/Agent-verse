@@ -204,11 +204,12 @@ export default function AgentDetails() {
     window.scrollTo(0, 0);
   }, [id]);
   
-  const agentId = parseInt(id) || 1;
-  const allAgents = getAllAgents(AGENTS);
-  const agent = allAgents.find(a => a.id === agentId) || AGENTS[0];
+  const agentId = parseInt(id, 10);
+  const allAgents = (() => { try { return getAllAgents(AGENTS); } catch { return AGENTS; } })();
+  const agent = (agentId && allAgents.find(a => a.id === agentId)) || AGENTS[0] || {};
+  const safeCat = agent.cat || 'General Purpose';
   // Show only agents from the same category
-  const relatedAgents = allAgents.filter(a => a.id !== agent.id && a.cat === agent.cat).slice(0, 3);
+  const relatedAgents = allAgents.filter(a => a.id !== agent.id && a.cat === safeCat).slice(0, 3);
 
   const bg = dark ? '#031713' : '#FFFFFF';
   const textColor = dark ? '#FFFFFF' : '#0B1F18';
